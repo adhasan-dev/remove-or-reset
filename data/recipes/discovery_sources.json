@@ -1,0 +1,564 @@
+{
+  "created_utc": "2026-10-24T18:43:34.975529+00:00",
+  "exclusions": [
+    {
+      "instance_licenses": [
+        "Unknown"
+      ],
+      "original_urls": [
+        "https://aclanthology.org/D13-1170/"
+      ],
+      "reason": "license_not_in_permissive_allowlist",
+      "source": "natural",
+      "task": "task363_sst2_polarity_classification",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task363_sst2_polarity_classification.json"
+    },
+    {
+      "instance_licenses": [
+        "Unknown"
+      ],
+      "original_urls": [
+        "https://cogcomp.seas.upenn.edu/Data/QA/QC/"
+      ],
+      "reason": "license_not_in_permissive_allowlist",
+      "source": "natural",
+      "task": "task1289_trec_classification",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task1289_trec_classification.json"
+    },
+    {
+      "instance_licenses": [
+        "OANC"
+      ],
+      "original_urls": [
+        "https://cims.nyu.edu/~sbowman/multinli/paper.pdf"
+      ],
+      "reason": "license_not_in_permissive_allowlist",
+      "source": "natural",
+      "task": "task199_mnli_classification",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task199_mnli_classification.json"
+    },
+    {
+      "instance_licenses": [
+        "CC BY-NC 3.0"
+      ],
+      "original_urls": [
+        "https://ai2-public-datasets.s3.amazonaws.com/sciq/SciQ.zip"
+      ],
+      "reason": "license_not_in_permissive_allowlist",
+      "source": "natural",
+      "task": "task591_sciq_answer_generation",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task591_sciq_answer_generation.json"
+    },
+    {
+      "instance_licenses": [
+        "CC BY-NC 4.0"
+      ],
+      "original_urls": [
+        "https://huggingface.co/datasets/pasinit/xlwic"
+      ],
+      "reason": "license_not_in_permissive_allowlist",
+      "source": "natural",
+      "task": "task625_xlwic_true_or_false_answer_generation",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task625_xlwic_true_or_false_answer_generation.json"
+    }
+  ],
+  "expected_candidates_sha256": "e30f3d5a7921730e98e9bbff282277a4bc76d2443b740e3a4e12d17c30f98354",
+  "format": "cross-domain-originals-v1",
+  "notices": [
+    {
+      "bytes": 8809,
+      "path": "natural/README.md",
+      "retrieved_utc": "2026-10-24T18:43:29.265985+00:00",
+      "sha256": "bd5c0768d317f0184c00afd3233d166672aa63a6fee52fa368f3aa117111ccd7",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/README.md"
+    },
+    {
+      "bytes": 11558,
+      "path": "natural/LICENSE",
+      "retrieved_utc": "2026-10-24T18:43:29.459654+00:00",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/LICENSE"
+    },
+    {
+      "bytes": 3475,
+      "path": "bbh/README.md",
+      "retrieved_utc": "2026-10-24T18:43:33.193320+00:00",
+      "sha256": "9c41105f4a349fcba7f87a422df0e744a9ed8e7a30c2db6676a9ecad372bc9db",
+      "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/README.md"
+    },
+    {
+      "bytes": 18657,
+      "path": "licenses/CC-BY-4.0.txt",
+      "retrieved_utc": "2026-10-24T18:43:34.637155+00:00",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt"
+    },
+    {
+      "bytes": 20138,
+      "path": "licenses/CC-BY-SA-4.0.txt",
+      "retrieved_utc": "2026-10-24T18:43:34.697060+00:00",
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt"
+    },
+    {
+      "bytes": 54093,
+      "path": "licenses/CC-BY-SA-3.0.txt",
+      "retrieved_utc": "2026-10-24T18:43:34.783364+00:00",
+      "sha256": "c33d7ebdbcc5c8db073e69a794b2ac44805f5d7d9edcfb8b5181a71869a9b7d5",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/legalcode"
+    },
+    {
+      "bytes": 1062,
+      "path": "licenses/GSM8K-MIT.txt",
+      "retrieved_utc": "2026-10-24T18:43:34.874403+00:00",
+      "sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/master/LICENSE"
+    },
+    {
+      "bytes": 1070,
+      "path": "licenses/MMLU-MIT.txt",
+      "retrieved_utc": "2026-10-24T18:43:34.975529+00:00",
+      "sha256": "5d841b9eee8bf0d721359b79fbae956a8b426d3139bfefee32149c7d4f2a1a9c",
+      "url": "https://raw.githubusercontent.com/hendrycks/test/master/LICENSE"
+    }
+  ],
+  "release_note": "Historical acquisition metadata, not permission to redistribute source content. See data/DISCOVERY.md for later license corrections.",
+  "sources": [
+    {
+      "files": [
+        {
+          "bytes": 408449,
+          "path": "mmlu/all/validation-00000-of-00001.parquet",
+          "retrieved_utc": "2026-10-24T18:43:27.362660+00:00",
+          "sha256": "66cdf0b090ccb657d18d13cd81e31fdc55c3467da9642ffb178653268a97c8ef",
+          "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/all/validation-00000-of-00001.parquet"
+        }
+      ],
+      "license": "mit",
+      "license_evidence": {
+        "bytes": 53221,
+        "path": "mmlu/README.md",
+        "retrieved_utc": "2026-10-24T18:43:27.108433+00:00",
+        "sha256": "665eef35ecd8a89037c1e4f1e1a0d7fd4c154edc04c81cea5634ace2d3e96953",
+        "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/README.md"
+      },
+      "repository": "cais/mmlu",
+      "revision": "c30699e8356da336a370243923dbaf21066bb9fe",
+      "source": "mmlu"
+    },
+    {
+      "files": [
+        {
+          "bytes": 330598,
+          "path": "arc/ARC-Easy/train-00000-of-00001.parquet",
+          "retrieved_utc": "2026-10-24T18:43:28.003651+00:00",
+          "sha256": "b315db8a4be597dc7daa50a4e70d48dd7c990c32085629e6ccd8c926beaa80b5",
+          "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/210d026faf9955653af8916fad021475a3f00453/ARC-Easy/train-00000-of-00001.parquet"
+        },
+        {
+          "bytes": 189909,
+          "path": "arc/ARC-Challenge/train-00000-of-00001.parquet",
+          "retrieved_utc": "2026-10-24T18:43:28.231842+00:00",
+          "sha256": "e488c1587ffdcfc8443f916c53488a95cd471c5790e0746c6bfe4cecf20962cb",
+          "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/210d026faf9955653af8916fad021475a3f00453/ARC-Challenge/train-00000-of-00001.parquet"
+        }
+      ],
+      "license": "cc-by-sa-4.0",
+      "license_evidence": {
+        "bytes": 9001,
+        "path": "arc/README.md",
+        "retrieved_utc": "2026-10-24T18:43:27.736710+00:00",
+        "sha256": "4a293e352253d771604725c978adcea71ee6504e89ed40e1cb0024ecafa9b37e",
+        "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/210d026faf9955653af8916fad021475a3f00453/README.md"
+      },
+      "repository": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "source": "arc"
+    },
+    {
+      "files": [
+        {
+          "bytes": 2306545,
+          "path": "gsm8k/main/train-00000-of-00001.parquet",
+          "retrieved_utc": "2026-10-24T18:43:28.731082+00:00",
+          "sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+          "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/main/train-00000-of-00001.parquet"
+        }
+      ],
+      "license": "mit",
+      "license_evidence": {
+        "bytes": 7935,
+        "path": "gsm8k/README.md",
+        "retrieved_utc": "2026-10-24T18:43:28.404334+00:00",
+        "sha256": "a17e882503578c9e324560630e31017617714ee025c87cf4fea6fd916895f3c1",
+        "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/README.md"
+      },
+      "repository": "openai/gsm8k",
+      "revision": "740312add88f781978c0658806c59bc2815b9866",
+      "source": "gsm8k"
+    },
+    {
+      "files": [
+        {
+          "bytes": 33854,
+          "path": "mbpp/sanitized/train-00000-of-00001.parquet",
+          "retrieved_utc": "2026-10-24T18:43:29.152138+00:00",
+          "sha256": "d95f8ad6d2fff08fe4826122d6e3e31f75716825d0c5c340d297aca5e9e0de0e",
+          "url": "https://huggingface.co/datasets/google-research-datasets/mbpp/resolve/4bb6404fdc6cacfda99d4ac4205087b89d32030c/sanitized/train-00000-of-00001.parquet"
+        }
+      ],
+      "license": "cc-by-4.0",
+      "license_evidence": {
+        "bytes": 9058,
+        "path": "mbpp/README.md",
+        "retrieved_utc": "2026-10-24T18:43:28.927489+00:00",
+        "sha256": "6377d5c76ba46b9e650daa6d5eb592e671c9b15586e39f23f50ed9bf2ac54cf6",
+        "url": "https://huggingface.co/datasets/google-research-datasets/mbpp/resolve/4bb6404fdc6cacfda99d4ac4205087b89d32030c/README.md"
+      },
+      "repository": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "source": "mbpp"
+    },
+    {
+      "definition_license": "Apache-2.0",
+      "files": [
+        {
+          "bytes": 15197748,
+          "path": "natural/task002_quoref_answer_generation.json",
+          "retrieved_utc": "2026-10-24T18:43:29.945764+00:00",
+          "sha256": "9304456d8397a8ea33893fdd19b5bb04798e6aa6be87ca8674f5b1834d8c6b18",
+          "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task002_quoref_answer_generation.json"
+        }
+      ],
+      "instance_licenses": [
+        "CC BY 4.0"
+      ],
+      "license": [
+        "CC-BY-4.0"
+      ],
+      "license_evidence": {
+        "bytes": 15197748,
+        "path": "natural/task002_quoref_answer_generation.json",
+        "retrieved_utc": "2026-10-24T18:43:29.945764+00:00",
+        "sha256": "9304456d8397a8ea33893fdd19b5bb04798e6aa6be87ca8674f5b1834d8c6b18",
+        "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task002_quoref_answer_generation.json"
+      },
+      "original_urls": [
+        "https://allenai.org/data/quoref"
+      ],
+      "revision": "55a365637381ce7f3748fa2eac7aef1a113bbb82",
+      "source": "natural",
+      "task": "task002_quoref_answer_generation",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task002_quoref_answer_generation.json"
+    },
+    {
+      "definition_license": "Apache-2.0",
+      "files": [
+        {
+          "bytes": 6702982,
+          "path": "natural/task075_squad1.1_answer_generation.json",
+          "retrieved_utc": "2026-10-24T18:43:30.239916+00:00",
+          "sha256": "7b287548c3f70de6db16b6b9168cad2c1d79bd20a93dd0dda133559e140d05f7",
+          "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task075_squad1.1_answer_generation.json"
+        }
+      ],
+      "instance_licenses": [
+        "CC BY-SA 4.0"
+      ],
+      "license": [
+        "CC-BY-SA-4.0"
+      ],
+      "license_evidence": {
+        "bytes": 6702982,
+        "path": "natural/task075_squad1.1_answer_generation.json",
+        "retrieved_utc": "2026-10-24T18:43:30.239916+00:00",
+        "sha256": "7b287548c3f70de6db16b6b9168cad2c1d79bd20a93dd0dda133559e140d05f7",
+        "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task075_squad1.1_answer_generation.json"
+      },
+      "original_urls": [
+        "https://rajpurkar.github.io/SQuAD-explorer/"
+      ],
+      "revision": "55a365637381ce7f3748fa2eac7aef1a113bbb82",
+      "source": "natural",
+      "task": "task075_squad1.1_answer_generation",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task075_squad1.1_answer_generation.json"
+    },
+    {
+      "definition_license": "Apache-2.0",
+      "files": [
+        {
+          "bytes": 1918094,
+          "path": "natural/task190_snli_classification.json",
+          "retrieved_utc": "2026-10-24T18:43:30.489020+00:00",
+          "sha256": "d60ee5f053aba66796716a72cc5f05fe90b07325e06e1bb4bb9bb4ff8a418802",
+          "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task190_snli_classification.json"
+        }
+      ],
+      "instance_licenses": [
+        "CC BY-SA 4.0"
+      ],
+      "license": [
+        "CC-BY-SA-4.0"
+      ],
+      "license_evidence": {
+        "bytes": 1918094,
+        "path": "natural/task190_snli_classification.json",
+        "retrieved_utc": "2026-10-24T18:43:30.489020+00:00",
+        "sha256": "d60ee5f053aba66796716a72cc5f05fe90b07325e06e1bb4bb9bb4ff8a418802",
+        "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task190_snli_classification.json"
+      },
+      "original_urls": [
+        "https://nlp.stanford.edu/pubs/snli_paper.pdf"
+      ],
+      "revision": "55a365637381ce7f3748fa2eac7aef1a113bbb82",
+      "source": "natural",
+      "task": "task190_snli_classification",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task190_snli_classification.json"
+    },
+    {
+      "definition_license": "Apache-2.0",
+      "files": [
+        {
+          "bytes": 6935437,
+          "path": "natural/task349_squad2.0_answerable_unanswerable_question_classification.json",
+          "retrieved_utc": "2026-10-24T18:43:30.832810+00:00",
+          "sha256": "c68c639309e0340d809dea7857630d2373ee67845f33ff6b61225bdb8bc4df42",
+          "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task349_squad2.0_answerable_unanswerable_question_classification.json"
+        }
+      ],
+      "instance_licenses": [
+        "CC BY-SA 4.0"
+      ],
+      "license": [
+        "CC-BY-SA-4.0"
+      ],
+      "license_evidence": {
+        "bytes": 6935437,
+        "path": "natural/task349_squad2.0_answerable_unanswerable_question_classification.json",
+        "retrieved_utc": "2026-10-24T18:43:30.832810+00:00",
+        "sha256": "c68c639309e0340d809dea7857630d2373ee67845f33ff6b61225bdb8bc4df42",
+        "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task349_squad2.0_answerable_unanswerable_question_classification.json"
+      },
+      "original_urls": [
+        "https://arxiv.org/pdf/1806.03822.pdf"
+      ],
+      "revision": "55a365637381ce7f3748fa2eac7aef1a113bbb82",
+      "source": "natural",
+      "task": "task349_squad2.0_answerable_unanswerable_question_classification",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task349_squad2.0_answerable_unanswerable_question_classification.json"
+    },
+    {
+      "definition_license": "Apache-2.0",
+      "files": [
+        {
+          "bytes": 5185800,
+          "path": "natural/task380_boolq_yes_no_question.json",
+          "retrieved_utc": "2026-10-24T18:43:31.328818+00:00",
+          "sha256": "543d61802faae6fdb1d938ca93155d4114205ff33ef600b7b76c81a476565fa8",
+          "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task380_boolq_yes_no_question.json"
+        }
+      ],
+      "instance_licenses": [
+        "CC BY-SA 3.0"
+      ],
+      "license": [
+        "CC-BY-SA-3.0"
+      ],
+      "license_evidence": {
+        "bytes": 5185800,
+        "path": "natural/task380_boolq_yes_no_question.json",
+        "retrieved_utc": "2026-10-24T18:43:31.328818+00:00",
+        "sha256": "543d61802faae6fdb1d938ca93155d4114205ff33ef600b7b76c81a476565fa8",
+        "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task380_boolq_yes_no_question.json"
+      },
+      "original_urls": [
+        "https://github.com/google-research-datasets/boolean-questions"
+      ],
+      "revision": "55a365637381ce7f3748fa2eac7aef1a113bbb82",
+      "source": "natural",
+      "task": "task380_boolq_yes_no_question",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task380_boolq_yes_no_question.json"
+    },
+    {
+      "definition_license": "Apache-2.0",
+      "files": [
+        {
+          "bytes": 1875538,
+          "path": "natural/task1391_winogrande_easy_answer_generation.json",
+          "retrieved_utc": "2026-10-24T18:43:31.536067+00:00",
+          "sha256": "a5f923a7f861e06329c1fcfd774f6f62f5cdc66bc35dc60b974fab3c79f3851a",
+          "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task1391_winogrande_easy_answer_generation.json"
+        }
+      ],
+      "instance_licenses": [
+        "Apache 2.0"
+      ],
+      "license": [
+        "Apache-2.0"
+      ],
+      "license_evidence": {
+        "bytes": 1875538,
+        "path": "natural/task1391_winogrande_easy_answer_generation.json",
+        "retrieved_utc": "2026-10-24T18:43:31.536067+00:00",
+        "sha256": "a5f923a7f861e06329c1fcfd774f6f62f5cdc66bc35dc60b974fab3c79f3851a",
+        "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task1391_winogrande_easy_answer_generation.json"
+      },
+      "original_urls": [
+        "https://huggingface.co/datasets/winogrande/"
+      ],
+      "revision": "55a365637381ce7f3748fa2eac7aef1a113bbb82",
+      "source": "natural",
+      "task": "task1391_winogrande_easy_answer_generation",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task1391_winogrande_easy_answer_generation.json"
+    },
+    {
+      "definition_license": "Apache-2.0",
+      "files": [
+        {
+          "bytes": 305362,
+          "path": "natural/task1548_wiqa_binary_classification.json",
+          "retrieved_utc": "2026-10-24T18:43:31.683596+00:00",
+          "sha256": "95616bafb3930ab789574e27efb3c015890996f8fc47e65125808fdbe9c2920b",
+          "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task1548_wiqa_binary_classification.json"
+        }
+      ],
+      "instance_licenses": [
+        "Apache 2.0"
+      ],
+      "license": [
+        "Apache-2.0"
+      ],
+      "license_evidence": {
+        "bytes": 305362,
+        "path": "natural/task1548_wiqa_binary_classification.json",
+        "retrieved_utc": "2026-10-24T18:43:31.683596+00:00",
+        "sha256": "95616bafb3930ab789574e27efb3c015890996f8fc47e65125808fdbe9c2920b",
+        "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task1548_wiqa_binary_classification.json"
+      },
+      "original_urls": [
+        "https://huggingface.co/datasets/wiqa"
+      ],
+      "revision": "55a365637381ce7f3748fa2eac7aef1a113bbb82",
+      "source": "natural",
+      "task": "task1548_wiqa_binary_classification",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task1548_wiqa_binary_classification.json"
+    },
+    {
+      "definition_license": "Apache-2.0",
+      "files": [
+        {
+          "bytes": 3863673,
+          "path": "natural/task1727_wiqa_what_is_the_effect.json",
+          "retrieved_utc": "2026-10-24T18:43:31.874914+00:00",
+          "sha256": "4a5e6e3f8c8c7ae973da3b100542bda3164e3e307f95e837454975a0ce87711c",
+          "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task1727_wiqa_what_is_the_effect.json"
+        }
+      ],
+      "instance_licenses": [
+        "Apache 2.0"
+      ],
+      "license": [
+        "Apache-2.0"
+      ],
+      "license_evidence": {
+        "bytes": 3863673,
+        "path": "natural/task1727_wiqa_what_is_the_effect.json",
+        "retrieved_utc": "2026-10-24T18:43:31.874914+00:00",
+        "sha256": "4a5e6e3f8c8c7ae973da3b100542bda3164e3e307f95e837454975a0ce87711c",
+        "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task1727_wiqa_what_is_the_effect.json"
+      },
+      "original_urls": [
+        "https://allenai.org/data/wiqa"
+      ],
+      "revision": "55a365637381ce7f3748fa2eac7aef1a113bbb82",
+      "source": "natural",
+      "task": "task1727_wiqa_what_is_the_effect",
+      "url": "https://raw.githubusercontent.com/allenai/natural-instructions/55a365637381ce7f3748fa2eac7aef1a113bbb82/tasks/task1727_wiqa_what_is_the_effect.json"
+    },
+    {
+      "files": [
+        {
+          "bytes": 17172,
+          "path": "bbh/boolean_expressions.json",
+          "retrieved_utc": "2026-10-24T18:43:33.282707+00:00",
+          "sha256": "ea6c754ec005e2d3f2d085d349a740f593b5764f32ea4638ffed4cfc0061b12a",
+          "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/boolean_expressions.json"
+        },
+        {
+          "bytes": 61760,
+          "path": "bbh/date_understanding.json",
+          "retrieved_utc": "2026-10-24T18:43:33.433928+00:00",
+          "sha256": "0148d4ac5fca05b2f82373e5fef7208e15363b9c6079493034d77b3dab496bf5",
+          "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/date_understanding.json"
+        },
+        {
+          "bytes": 85255,
+          "path": "bbh/disambiguation_qa.json",
+          "retrieved_utc": "2026-10-24T18:43:33.560088+00:00",
+          "sha256": "cf06df9ebf911b883671cb1b35d3fbd1a1c306b19b9e9a012407e596c85fe8c6",
+          "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/disambiguation_qa.json"
+        },
+        {
+          "bytes": 145562,
+          "path": "bbh/formal_fallacies.json",
+          "retrieved_utc": "2026-10-24T18:43:33.674068+00:00",
+          "sha256": "4c1adb664821157faade1d4153685403afcc02648f3c180a608a18f17f589629",
+          "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/formal_fallacies.json"
+        },
+        {
+          "bytes": 112213,
+          "path": "bbh/logical_deduction_three_objects.json",
+          "retrieved_utc": "2026-10-24T18:43:33.814928+00:00",
+          "sha256": "e590fae72e3a6041fbd23bd8ff6b74baf44ca563f6ba40a041c55e7b867c1681",
+          "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/logical_deduction_three_objects.json"
+        },
+        {
+          "bytes": 35890,
+          "path": "bbh/object_counting.json",
+          "retrieved_utc": "2026-10-24T18:43:33.914876+00:00",
+          "sha256": "8acef14dbbdd40d2326ef7755750b6b5fe919fef06276af1bab3f1c297f022ff",
+          "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/object_counting.json"
+        },
+        {
+          "bytes": 148176,
+          "path": "bbh/temporal_sequences.json",
+          "retrieved_utc": "2026-10-24T18:43:34.037693+00:00",
+          "sha256": "92a1189faaa84aacc4c405aaa13f13f48c2992eb884772eedb622505252baef5",
+          "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/temporal_sequences.json"
+        },
+        {
+          "bytes": 28617,
+          "path": "bbh/sports_understanding.json",
+          "retrieved_utc": "2026-10-24T18:43:34.154775+00:00",
+          "sha256": "63ca262858f6176864515cd8cf53cdaa40839ebecc155b726d77930855d167bf",
+          "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/sports_understanding.json"
+        },
+        {
+          "bytes": 66300,
+          "path": "bbh/word_sorting.json",
+          "retrieved_utc": "2026-10-24T18:43:34.273346+00:00",
+          "sha256": "2a6132d2c99f00d0d2eb1113ac6b4a918bd969d863c48749210d969713db8d43",
+          "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/word_sorting.json"
+        },
+        {
+          "bytes": 128736,
+          "path": "bbh/tracking_shuffled_objects_three_objects.json",
+          "retrieved_utc": "2026-10-24T18:43:34.415362+00:00",
+          "sha256": "546cc7bf10c6a01a6a4c17ae28a4966485f21f29fd5d111f37858ec78e354f6b",
+          "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/tracking_shuffled_objects_three_objects.json"
+        }
+      ],
+      "license": "MIT",
+      "license_evidence": {
+        "bytes": 1068,
+        "path": "bbh/LICENSE",
+        "retrieved_utc": "2026-10-24T18:43:33.082757+00:00",
+        "sha256": "4ef2ff4295d26ab6211235039c132697408cec5391d2c091b41e983771978db8",
+        "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/LICENSE"
+      },
+      "repository": "suzgunmirac/BIG-Bench-Hard",
+      "revision": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+      "source": "bbh"
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "distribution_policy": "ORIGINAL_ONLY; all acquired content and derivatives excluded",
+  "format": "remove-reset-acquisition-v1",
+  "guided_selector_inputs": {
+    "audit_findings": [
+      {
+        "finding": "Publisher README identifies the dataset as CC-BY-2.0; an upstream Natural-Instructions task label incorrectly says Apache-2.0.",
+        "publisher_readme_sha256": "04d299cbf5022a8ecd68d95a9a384ff037b6c53452376ab52ef6d0475231e79a",
+        "source": "WinoGrande",
+        "status": "HOLD"
+      },
+      {
+        "finding": "Primary archive README has a global non-commercial/non-distribution notice that conflicts with aggregate card metadata.",
+        "publisher_archive_url": "https://s3-us-west-2.amazonaws.com/ai2-website/data/ARC-V1-Feb2018.zip",
+        "publisher_readme_sha256": "4f9f190ab3398a1278dc4940335beaa2c9e9a69a15ffd8e894a69d2d7697f81a",
+        "source": "ARC",
+        "status": "HOLD"
+      },
+      {
+        "finding": "Additional exam-origin and source attribution checks remain pending in the audit.",
+        "source": "MMLU/Wikipedia and other mixed-source families",
+        "status": "HOLD"
+      }
+    ],
+    "expected_artifacts": [
+      {
+        "bytes": 902569,
+        "id": "families",
+        "records": 316,
+        "redistribution_status": "REDISTRIBUTION_HOLD_NOT_BUNDLED",
+        "sha256": "f1fb7b13e1cd278a185ded24228b49b3bf722f76365cac3a346c8e974cf52096",
+        "source_artifact_relative_path": "prepared/selection-variations-20261025T083309Z-c8bffc/families.jsonl"
+      },
+      {
+        "bytes": 5425811,
+        "id": "variants",
+        "records": 1768,
+        "redistribution_status": "REDISTRIBUTION_HOLD_NOT_BUNDLED",
+        "sha256": "729780f59b7e3f6d67ea94364e15a986209c111d526acf961cfe500a75b2e288",
+        "source_artifact_relative_path": "prepared/selection-variations-20261025T083309Z-c8bffc/variants.jsonl"
+      },
+      {
+        "bytes": 7419745,
+        "id": "guided_calibration",
+        "redistribution_status": "REDISTRIBUTION_HOLD_NOT_BUNDLED",
+        "sha256": "fa574735941108c357f2e774a24ffb8b063ff9724b594ebf2baf2759cd32540c",
+        "source_artifact_relative_path": "runs/guided-reset-20261026T0515Z/selection/prepare-20261026T055331Z-d5f2ea95/calibration.json"
+      },
+      {
+        "bytes": 3045486,
+        "id": "guided_arrays",
+        "redistribution_status": "REDISTRIBUTION_HOLD_NOT_BUNDLED",
+        "sha256": "e6e1fe6966017d8aa9c0c4c243f2f27ac2ab5b6b63ab1d7ba808d8c54cd97baa",
+        "source_artifact_relative_path": "runs/guided-reset-20261026T0515Z/selection/prepare-20261026T055331Z-d5f2ea95/arrays.npz"
+      },
+      {
+        "bytes": 5165017,
+        "id": "guided_selection",
+        "redistribution_status": "REDISTRIBUTION_HOLD_NOT_BUNDLED",
+        "sha256": "5ee1cd85d7ff1b40ae11b06e22f420004d0e0a114e86c236cea70d9e269f6d1f",
+        "source_artifact_relative_path": "runs/guided-reset-20261026T0515Z/selection/freeze-20261026T060600Z-bc2456d4/guided_selection.json"
+      }
+    ],
+    "local_acquisition_instructions": [
+      "Do not fetch or substitute guided task text, translations, reference answers, or tokenized derivatives into this repository.",
+      "Only recreate the complete guided selector after the source-specific permissions and notices are resolved; verify the expected frozen artifact hashes listed above.",
+      "The checked-in numerical masks are separate first-party experiment inputs; their referenced selector evidence remains excluded."
+    ],
+    "status": "REDISTRIBUTION_HOLD_NOT_BUNDLED"
+  },
+  "heldout_authorship": {
+    "authorship": "AI-assisted original authoring; not claimed human-authored.",
+    "first_party_license": "CC-BY-4.0",
+    "source_material": "Factual-source citations and short original support summaries only; no source webpages, images, or exercises are included.",
+    "status": "INCLUDED_ORIGINAL_CC_BY_4_0"
+  },
+  "license_texts": [
+    {
+      "bytes": 11358,
+      "materialized_and_verified": true,
+      "materialized_by_data_exporter": false,
+      "path_from_repo_root": "LICENSES/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "spdx_id": "Apache-2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    },
+    {
+      "bytes": 20138,
+      "materialized_and_verified": true,
+      "materialized_by_data_exporter": false,
+      "path_from_repo_root": "LICENSES/CC-BY-SA-4.0.txt",
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+      "spdx_id": "CC-BY-SA-4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt",
+      "verified_source_artifact": "raw/selection-corpus-20261024T184326Z-e7d09e/licenses/CC-BY-SA-4.0.txt"
+    }
+  ],
+  "official_spider_databases": {
+    "audit_hold_reason": "Embedded CARS/AIRLINES and airport-source provenance has not been fully cleared.",
+    "expected_members": {
+      "battle_death": {
+        "archive_member": "spider_data/database/battle_death/battle_death.sqlite",
+        "path": "sql/databases/battle_death/battle_death.sqlite",
+        "sha256": "12569f4493a9655639c4ea86ba4bd8a4ea6411e1b8ae0e1fdf3d6a995344265d"
+      },
+      "car_1": {
+        "archive_member": "spider_data/database/car_1/car_1.sqlite",
+        "path": "sql/databases/car_1/car_1.sqlite",
+        "sha256": "9d851e396e02997a1de073ae982fe1e4b1769fdffce2fac6e325857a3a938709"
+      },
+      "concert_singer": {
+        "archive_member": "spider_data/database/concert_singer/concert_singer.sqlite",
+        "path": "sql/databases/concert_singer/concert_singer.sqlite",
+        "sha256": "4fa1ba5ab4577e895271088b1dc44aa94be88e25a54293317a67584112ef059d"
+      },
+      "course_teach": {
+        "archive_member": "spider_data/database/course_teach/course_teach.sqlite",
+        "path": "sql/databases/course_teach/course_teach.sqlite",
+        "sha256": "da45fcdde64ac2b9330146506b7653ad4417489d8e496e509045e1b02245d793"
+      },
+      "cre_Doc_Template_Mgt": {
+        "archive_member": "spider_data/database/cre_Doc_Template_Mgt/cre_Doc_Template_Mgt.sqlite",
+        "path": "sql/databases/cre_Doc_Template_Mgt/cre_Doc_Template_Mgt.sqlite",
+        "sha256": "9c3fdd03d8795ecde60aae782ce50c4fb1d6c03de1401fcdd6dc177342a53df5"
+      },
+      "dog_kennels": {
+        "archive_member": "spider_data/database/dog_kennels/dog_kennels.sqlite",
+        "path": "sql/databases/dog_kennels/dog_kennels.sqlite",
+        "sha256": "ea5fbc6cf6aaf500371c5c121c339d9802ba6f5fbecd948a5274c0b487a9f486"
+      },
+      "employee_hire_evaluation": {
+        "archive_member": "spider_data/database/employee_hire_evaluation/employee_hire_evaluation.sqlite",
+        "path": "sql/databases/employee_hire_evaluation/employee_hire_evaluation.sqlite",
+        "sha256": "760fec5cc872ef0cdf99242614f05c93dbd00d422ac9da87ea64fcf555be7373"
+      },
+      "flight_2": {
+        "archive_member": "spider_data/database/flight_2/flight_2.sqlite",
+        "path": "sql/databases/flight_2/flight_2.sqlite",
+        "sha256": "db777ba6488ae2b515cb138d71ff23c4533e5fd0355854648a1102faff3fb7af"
+      },
+      "museum_visit": {
+        "archive_member": "spider_data/database/museum_visit/museum_visit.sqlite",
+        "path": "sql/databases/museum_visit/museum_visit.sqlite",
+        "sha256": "3217aee38d8e3661d374bf025591b7164a1179c568ef5d20f3c338035fc6e1dd"
+      },
+      "network_1": {
+        "archive_member": "spider_data/database/network_1/network_1.sqlite",
+        "path": "sql/databases/network_1/network_1.sqlite",
+        "sha256": "bec92cd9a68d6f23469a0df246429299f44caaf75eab12275784e0bb7d0aa9ca"
+      },
+      "orchestra": {
+        "archive_member": "spider_data/database/orchestra/orchestra.sqlite",
+        "path": "sql/databases/orchestra/orchestra.sqlite",
+        "sha256": "13b64af1cf6fcbd34953a44f951b2bf79bedc000b344549212dac1a9345e2f86"
+      },
+      "pets_1": {
+        "archive_member": "spider_data/database/pets_1/pets_1.sqlite",
+        "path": "sql/databases/pets_1/pets_1.sqlite",
+        "sha256": "8ffe0ea9b3b034ca8860a2f18300a98c7583ce2522ea195726a04803f675e5bb"
+      },
+      "poker_player": {
+        "archive_member": "spider_data/database/poker_player/poker_player.sqlite",
+        "path": "sql/databases/poker_player/poker_player.sqlite",
+        "sha256": "63fffd7b68524f07a742a74b74b95a4ba178e6419f3574b9ee78b8dda1df46ba"
+      },
+      "real_estate_properties": {
+        "archive_member": "spider_data/database/real_estate_properties/real_estate_properties.sqlite",
+        "path": "sql/databases/real_estate_properties/real_estate_properties.sqlite",
+        "sha256": "5d0bd83afa93a843e68f892d8430fe625d7ed2508aae00a341926b0b5b478a29"
+      },
+      "singer": {
+        "archive_member": "spider_data/database/singer/singer.sqlite",
+        "path": "sql/databases/singer/singer.sqlite",
+        "sha256": "5c1b72755d148c294b26d7b479307e8799b93485ac918720f953e2ab84d59a0a"
+      },
+      "student_transcripts_tracking": {
+        "archive_member": "spider_data/database/student_transcripts_tracking/student_transcripts_tracking.sqlite",
+        "path": "sql/databases/student_transcripts_tracking/student_transcripts_tracking.sqlite",
+        "sha256": "5a1f4928a1fd36f6edb31c4f054203b2e2fab6b18e5951c4f5633628f82a8e56"
+      },
+      "tvshow": {
+        "archive_member": "spider_data/database/tvshow/tvshow.sqlite",
+        "path": "sql/databases/tvshow/tvshow.sqlite",
+        "sha256": "1212c2e75cf1dcf3aeb4055331a85298b073d8a613ead77975b13bd3346b9fc4"
+      },
+      "voter_1": {
+        "archive_member": "spider_data/database/voter_1/voter_1.sqlite",
+        "path": "sql/databases/voter_1/voter_1.sqlite",
+        "sha256": "815bf1611b8a32f649d292a6138562f1761a0c10cb256e20f6561199cff31531"
+      },
+      "world_1": {
+        "archive_member": "spider_data/database/world_1/world_1.sqlite",
+        "path": "sql/databases/world_1/world_1.sqlite",
+        "sha256": "17b986695f16786d58d66f85e49dba87bdfe72953207ab9b1b49da9d2301ef65"
+      },
+      "wta_1": {
+        "archive_member": "spider_data/database/wta_1/wta_1.sqlite",
+        "path": "sql/databases/wta_1/wta_1.sqlite",
+        "sha256": "8f20747456d7748674b4f05432f3de96446ced95b8bd5a6fd01284f6c28f727c"
+      }
+    },
+    "local_acquisition_instructions": [
+      "Obtain the official archive only for local use; do not add the archive or extracted SQLite files to this repository.",
+      "Verify the archive SHA-256 before extraction.",
+      "Use the repository materialize-databases command with a local archive path and ignored workspace output; it verifies the 20 expected member hashes and extracts only those members.",
+      "A successful hash check is provenance, not permission to redistribute held database contents."
+    ],
+    "official_archive": {
+      "acquisition_lock_sha256": "85a234a0ffb0fbc9f79720b6bc5c6c3027b4f144889c46ea7e787099b885b067",
+      "bytes": 205800266,
+      "sha256": "00636695dabed6b5f4b8328a16b13e069a2f16591d5efcce57660669c85b121b",
+      "source_artifact_relative_path": "raw/spider-official-archive.zip",
+      "url": "https://drive.usercontent.google.com/download?id=1403EGqzIDoHMdQF4c9Bkyl7dZLZ5Wt6J&export=download&confirm=t"
+    },
+    "publisher_license_label": "CC-BY-SA-4.0",
+    "status": "REDISTRIBUTION_HOLD_NOT_BUNDLED"
+  },
+  "source_pins": {
+    "prepared_acquisition_lock_sha256": "85a234a0ffb0fbc9f79720b6bc5c6c3027b4f144889c46ea7e787099b885b067",
+    "prepared_reproduction_manifest_sha256": "8a530ae1980d337e78bfb506a414a5b958c477980efffbd0fc82a8a35e62cbdb",
+    "prepared_reproduction_script_sha256": "b50e9415a1bc5bec365a24197c95d1e57ea265077d63b66402b761bad23c99c7",
+    "prepared_source_files": [
+      {
+        "id": "gretel-train",
+        "license": "Apache-2.0",
+        "revision": "740ab236e64503fba51be1101df7a1be83bf455d",
+        "sha256": "2bee9ac07cf5057d36b5ea30fb47d948697e882f42bd1cc661185396287c0180",
+        "size": 32363736,
+        "url": "https://huggingface.co/datasets/gretelai/synthetic_text_to_sql/resolve/740ab236e64503fba51be1101df7a1be83bf455d/synthetic_text_to_sql_train.snappy.parquet"
+      },
+      {
+        "id": "gretel-test",
+        "license": "Apache-2.0",
+        "revision": "740ab236e64503fba51be1101df7a1be83bf455d",
+        "sha256": "f2056edcd897db59c89d12bde149a36d4e242ac0d2c6d4d42b1f2bc764318993",
+        "size": 1901018,
+        "url": "https://huggingface.co/datasets/gretelai/synthetic_text_to_sql/resolve/740ab236e64503fba51be1101df7a1be83bf455d/synthetic_text_to_sql_test.snappy.parquet"
+      },
+      {
+        "id": "spider-train",
+        "license": "CC-BY-SA-4.0",
+        "revision": "0c350918f3f29ec754f1181c65cdce76cd6c133c",
+        "sha256": "cb4b681558f6f8f428e516fb94c5a1cb19c5a0a0c153c0618c8cc4a28115d4cb",
+        "size": 831359,
+        "url": "https://huggingface.co/datasets/xlangai/spider/resolve/0c350918f3f29ec754f1181c65cdce76cd6c133c/spider/train-00000-of-00001.parquet"
+      },
+      {
+        "id": "spider-validation",
+        "license": "CC-BY-SA-4.0",
+        "revision": "0c350918f3f29ec754f1181c65cdce76cd6c133c",
+        "sha256": "c3e2a46303899a2d4afe3f6a3a62e59f8d589f241b3cbfb52356479b1f054888",
+        "size": 125887,
+        "url": "https://huggingface.co/datasets/xlangai/spider/resolve/0c350918f3f29ec754f1181c65cdce76cd6c133c/spider/validation-00000-of-00001.parquet"
+      }
+    ],
+    "prepared_source_manifest_sha256": "855a10e20945386cbab11d54ee3312b2e9809aff97a8c31e85784385ce24939d",
+    "prepared_transform": [
+      "Frozen normalized/transpiled SQLite-schema/query JSONL adaptations.",
+      "Gretel rows remain Apache-2.0; Spider-derived rows/adaptations remain CC-BY-SA-4.0.",
+      "The per-row `source` field is the license discriminator; no blanket license is applied."
+    ]
+  }
+}

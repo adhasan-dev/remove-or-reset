@@ -1,0 +1,176 @@
+{
+  "files": {
+    "selection/taylor_calibration.json.gz": {
+      "bytes": 74279,
+      "first_party_auxiliary_rows": 350,
+      "license_map": {
+        "first_party_auxiliary": "CC-BY-4.0",
+        "gretel": "Apache-2.0",
+        "spider": "CC-BY-SA-4.0"
+      },
+      "panel_rows": {
+        "audit": 275,
+        "pilot": 64,
+        "score": 275
+      },
+      "sha256": "5dbf95132cc20465c9cb62ac3dd5f87825c2a4668b97c51b421b19444ea3899f",
+      "source_artifact_relative_path": "runs/taylor-selection/taylor-20261024T053049Z-577e0e/calibration.json",
+      "source_bytes": 959958,
+      "source_sha256": "02e04748c7d2db1ad98032262c48427ca261fcd58c77ade8e15c2c110f2f6323",
+      "sql_source_counts": {
+        "gretel": 233,
+        "spider": 31
+      },
+      "total_panel_rows": 614,
+      "transformation": [
+        "All pilot, score, and audit panel rows retained without filtering.",
+        "All SQL entry fields and all auxiliary row fields retained.",
+        "Only metadata.sql_cache.directory removed to avoid publishing the local path.",
+        "Deterministic gzip (mtime=0, empty filename); source JSON SHA-256 retained."
+      ],
+      "uncompressed_sha256": "5b62fa8832e7cdea5f8395861a592cca7ec980b6ad971f3fa9d9699694e850cd"
+    },
+    "sql/evaluation_panels.json": {
+      "archive_sha256": "00636695dabed6b5f4b8328a16b13e069a2f16591d5efcce57660669c85b121b",
+      "bytes": 971613,
+      "database_count": 20,
+      "database_payloads_included": false,
+      "license_map": {
+        "gretel": "Apache-2.0",
+        "reasoning_first_party": "CC-BY-4.0",
+        "spider": "CC-BY-SA-4.0"
+      },
+      "panel_counts": {
+        "reasoning": 128,
+        "sql": 128,
+        "validation": 256
+      },
+      "sha256": "2f4789b0493e24733ed7e130bd6962340edd05e58da930d031379ac1298d9b1c",
+      "source_artifact_relative_path": "runs/20261013T175100Z-a9634c9f/panels/sql.json",
+      "source_counts": {
+        "reasoning": {
+          "first_party_synthetic": 128
+        },
+        "sql": {
+          "spider": 128
+        },
+        "validation": {
+          "gretel": 240,
+          "spider": 16
+        }
+      },
+      "source_file_paths": {
+        "panels.json": "runs/20261013T175100Z-a9634c9f/panels/panels.json",
+        "reasoning": "runs/20261013T175100Z-a9634c9f/panels/reasoning.json",
+        "sql": "runs/20261013T175100Z-a9634c9f/panels/sql.json",
+        "validation": "runs/20261013T175100Z-a9634c9f/panels/validation.json"
+      },
+      "source_file_sha256s": {
+        "panels.json": "0bce15b0cd6098cad3198d676d3aa9015a2cd8c5f8c8999d78dd0174bf2c0e9f",
+        "reasoning": "e6c979511f94dc29eebe2a9eb7a70e116801770f3e83ed2427f0f2b26491b3e0",
+        "sql": "0d94e507a91c1aecbbe03a9cbe189afb3c8437a54900a085b6c26a83cafd7764",
+        "validation": "2811b89c6bd2a2a8033226bb89232d3bf2c126068ad7469ad1e2e1abd1bb70ca"
+      },
+      "source_sha256": "0d94e507a91c1aecbbe03a9cbe189afb3c8437a54900a085b6c26a83cafd7764",
+      "transformation": [
+        "Frozen input/reference rows preserved; arrays combined without row edits.",
+        "Only database path metadata is replaced with data-relative reader paths.",
+        "Database SHA-256 values and official archive member names are verified; no SQLite payload is included.",
+        "No predictions, judgments, scores, or result records are included."
+      ]
+    },
+    "sql/selection.jsonl.gz": {
+      "bytes": 2027523,
+      "license_map": {
+        "gretel": "Apache-2.0",
+        "spider": "CC-BY-SA-4.0"
+      },
+      "records": 8389,
+      "sha256": "6f7e4893ddfaea7a516eb872b46d3b014ab4e225df2c39f81241becdaecfd8b2",
+      "source_artifact_relative_path": "prepared/20261011T185827Z/selection.jsonl",
+      "source_bytes": 13170000,
+      "source_counts": {
+        "gretel": 7338,
+        "spider": 1051
+      },
+      "source_sha256": "48bdb436fe2e7d47d7ded34240b29577f39b2f9fa0133d5379f2c3fc59319de2",
+      "transformation": [
+        "Frozen prepared JSONL payload; no fields or strings changed.",
+        "Prepared rows are normalized/transpiled SQLite-schema/query adaptations.",
+        "Deterministic gzip (mtime=0, empty filename) only; decompression is byte-identical."
+      ],
+      "uncompressed_sha256": "48bdb436fe2e7d47d7ded34240b29577f39b2f9fa0133d5379f2c3fc59319de2",
+      "unique_ids": 8389
+    },
+    "sql/spider_dev.jsonl.gz": {
+      "bytes": 102247,
+      "license_map": {
+        "gretel": "Apache-2.0",
+        "spider": "CC-BY-SA-4.0"
+      },
+      "records": 1034,
+      "sha256": "d1276444464d917a469b90109f5fab5d5d3144c990f9e5e4964aabc828e2dc2d",
+      "source_artifact_relative_path": "prepared/20261011T185827Z/spider_dev.jsonl",
+      "source_bytes": 3163430,
+      "source_counts": {
+        "spider": 1034
+      },
+      "source_sha256": "042baf42eb8083cbdb2798d40aafb89017aebc6f8234a2cf2bd4eac72da31094",
+      "transformation": [
+        "Frozen prepared JSONL payload; no fields or strings changed.",
+        "Prepared rows are normalized/transpiled SQLite-schema/query adaptations.",
+        "Deterministic gzip (mtime=0, empty filename) only; decompression is byte-identical."
+      ],
+      "uncompressed_sha256": "042baf42eb8083cbdb2798d40aafb89017aebc6f8234a2cf2bd4eac72da31094",
+      "unique_ids": 1034
+    },
+    "sql/train.jsonl.gz": {
+      "bytes": 15511896,
+      "license_map": {
+        "gretel": "Apache-2.0",
+        "spider": "CC-BY-SA-4.0"
+      },
+      "records": 62817,
+      "sha256": "ae869b3afab4ad0e7769d5d0553366ed5715ab12514877f66546acb269e2182c",
+      "source_artifact_relative_path": "prepared/20261011T185827Z/train.jsonl",
+      "source_bytes": 92897495,
+      "source_counts": {
+        "gretel": 57318,
+        "spider": 5499
+      },
+      "source_sha256": "69ab28152f80a7cdf14271c3532fa484a20470001c7f2aadec17cd28f4b1b707",
+      "transformation": [
+        "Frozen prepared JSONL payload; no fields or strings changed.",
+        "Prepared rows are normalized/transpiled SQLite-schema/query adaptations.",
+        "Deterministic gzip (mtime=0, empty filename) only; decompression is byte-identical."
+      ],
+      "uncompressed_sha256": "69ab28152f80a7cdf14271c3532fa484a20470001c7f2aadec17cd28f4b1b707",
+      "unique_ids": 62817
+    },
+    "sql/validation.jsonl.gz": {
+      "bytes": 1911099,
+      "license_map": {
+        "gretel": "Apache-2.0",
+        "spider": "CC-BY-SA-4.0"
+      },
+      "records": 7553,
+      "sha256": "bfc7918eba7f3c9f74955bfefb7479c9e2d98b1e7d1d31baedc296fce2f874cd",
+      "source_artifact_relative_path": "prepared/20261011T185827Z/validation.jsonl",
+      "source_bytes": 11174578,
+      "source_counts": {
+        "gretel": 7115,
+        "spider": 438
+      },
+      "source_sha256": "827410b31d812eb8429a13d342d9e787781a63a0c9ee59c8d66703e86527d51f",
+      "transformation": [
+        "Frozen prepared JSONL payload; no fields or strings changed.",
+        "Prepared rows are normalized/transpiled SQLite-schema/query adaptations.",
+        "Deterministic gzip (mtime=0, empty filename) only; decompression is byte-identical."
+      ],
+      "uncompressed_sha256": "827410b31d812eb8429a13d342d9e787781a63a0c9ee59c8d66703e86527d51f",
+      "unique_ids": 7553
+    }
+  },
+  "format": "remove-reset-external-data-v1",
+  "note": "Expected historical derived payloads, NOT bundled. Hashes are not license grants."
+}

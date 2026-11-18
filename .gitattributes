@@ -1,0 +1,10 @@
+* text=auto eol=lf
+
+# These are checksum-bound payloads, not platform-normalized text.
+data/** -text -whitespace
+data/README.md text eol=lf whitespace
+data/*.md text eol=lf whitespace
+data/scripts/*.py text eol=lf whitespace
+data/scripts/requirements.txt text eol=lf whitespace
+LICENSES/** -text -whitespace
+environment/original-windows-lock.txt -text -whitespace

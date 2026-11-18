@@ -1,0 +1,21 @@
+{
+  "format": "remove-reset-analysis-config-v1",
+  "production": true,
+  "data": "../data",
+  "evaluations": [
+    {"arm": "ordinary_lora", "seed": 42, "path": "../work/seed-42/evaluation/ordinary_lora"},
+    {"arm": "quota_free_guided_removal", "seed": 42, "path": "../work/seed-42/evaluation/quota_free_guided_removal"},
+    {"arm": "ordinary_lora", "seed": 43, "path": "../work/seed-43/evaluation/ordinary_lora"},
+    {"arm": "quota_free_guided_removal", "seed": 43, "path": "../work/seed-43/evaluation/quota_free_guided_removal"},
+    {"arm": "ordinary_lora", "seed": 44, "path": "../work/seed-44/evaluation/ordinary_lora"},
+    {"arm": "quota_free_guided_removal", "seed": 44, "path": "../work/seed-44/evaluation/quota_free_guided_removal"}
+  ],
+  "training": [
+    {"arm": "ordinary_lora", "seed": 42, "path": "../work/seed-42/training/ordinary_lora"},
+    {"arm": "quota_free_guided_removal", "seed": 42, "path": "../work/seed-42/training/quota_free_guided_removal"},
+    {"arm": "ordinary_lora", "seed": 43, "path": "../work/seed-43/training/ordinary_lora"},
+    {"arm": "quota_free_guided_removal", "seed": 43, "path": "../work/seed-43/training/quota_free_guided_removal"},
+    {"arm": "ordinary_lora", "seed": 44, "path": "../work/seed-44/training/ordinary_lora"},
+    {"arm": "quota_free_guided_removal", "seed": 44, "path": "../work/seed-44/training/quota_free_guided_removal"}
+  ]
+}

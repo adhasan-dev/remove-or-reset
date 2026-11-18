@@ -1,0 +1,3832 @@
+{
+  "metadata": {
+    "auxiliary_groups_per_family": 21,
+    "fact_partition_counts": {
+      "audit": 21,
+      "pilot": 28,
+      "score": 69
+    },
+    "families": [
+      "sql",
+      "direct",
+      "two_step",
+      "supplied_fact",
+      "language_format"
+    ],
+    "limitations": [
+      "Chemistry symbol facts are a narrow authored recall assay, not general factual knowledge.",
+      "Language/format probes are synthetic copying, formatting and short completion, not a natural-language preservation benchmark.",
+      "Final benchmark panels were previously inspected; audit groups are selection-only."
+    ],
+    "namespace": "remove-or-reset-rq1-v1",
+    "size_decision": "Freeze before model scoring. Up to 32 groups; reduce all auxiliary families together if the disjoint 118-element fact pool cannot supply 32."
+  },
+  "panels": {
+    "audit": [
+      {
+        "family": "direct",
+        "group": "TG008",
+        "id": "taylor:TG008:direct",
+        "input": "Use only these directed relations.\nTG008N07 -> TG008N08\nTG008N00 -> TG008N10\nTG008N08 -> TG008N06\nTG008N01 -> TG008N00\nTG008N09 -> TG008N03\nTG008N11 -> TG008N07\nTG008N10 -> TG008N05\nTG008N04 -> TG008N09\nTG008N06 -> TG008N04\nTG008N05 -> TG008N11\nTG008N02 -> TG008N01\nTG008N03 -> TG008N02\n\nStarting at TG008N04, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG008N09"
+      },
+      {
+        "family": "two_step",
+        "group": "TG008",
+        "id": "taylor:TG008:two_step",
+        "input": "Use only these directed relations.\nTG008N07 -> TG008N08\nTG008N00 -> TG008N10\nTG008N08 -> TG008N06\nTG008N01 -> TG008N00\nTG008N09 -> TG008N03\nTG008N11 -> TG008N07\nTG008N10 -> TG008N05\nTG008N04 -> TG008N09\nTG008N06 -> TG008N04\nTG008N05 -> TG008N11\nTG008N02 -> TG008N01\nTG008N03 -> TG008N02\n\nStarting at TG008N04, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG008N03"
+      },
+      {
+        "family": "direct",
+        "group": "TG033",
+        "id": "taylor:TG033:direct",
+        "input": "Use only these directed relations.\nTG033N02 -> TG033N04\nTG033N11 -> TG033N05\nTG033N06 -> TG033N10\nTG033N07 -> TG033N02\nTG033N09 -> TG033N00\nTG033N08 -> TG033N09\nTG033N04 -> TG033N01\nTG033N05 -> TG033N07\nTG033N01 -> TG033N06\nTG033N10 -> TG033N03\nTG033N03 -> TG033N08\nTG033N00 -> TG033N11\n\nStarting at TG033N07, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG033N02"
+      },
+      {
+        "family": "two_step",
+        "group": "TG033",
+        "id": "taylor:TG033:two_step",
+        "input": "Use only these directed relations.\nTG033N02 -> TG033N04\nTG033N11 -> TG033N05\nTG033N06 -> TG033N10\nTG033N07 -> TG033N02\nTG033N09 -> TG033N00\nTG033N08 -> TG033N09\nTG033N04 -> TG033N01\nTG033N05 -> TG033N07\nTG033N01 -> TG033N06\nTG033N10 -> TG033N03\nTG033N03 -> TG033N08\nTG033N00 -> TG033N11\n\nStarting at TG033N07, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG033N04"
+      },
+      {
+        "family": "direct",
+        "group": "TG035",
+        "id": "taylor:TG035:direct",
+        "input": "Use only these directed relations.\nTG035N09 -> TG035N08\nTG035N07 -> TG035N00\nTG035N08 -> TG035N04\nTG035N03 -> TG035N01\nTG035N04 -> TG035N11\nTG035N05 -> TG035N06\nTG035N01 -> TG035N10\nTG035N02 -> TG035N09\nTG035N06 -> TG035N02\nTG035N11 -> TG035N07\nTG035N10 -> TG035N05\nTG035N00 -> TG035N03\n\nStarting at TG035N05, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG035N06"
+      },
+      {
+        "family": "two_step",
+        "group": "TG035",
+        "id": "taylor:TG035:two_step",
+        "input": "Use only these directed relations.\nTG035N09 -> TG035N08\nTG035N07 -> TG035N00\nTG035N08 -> TG035N04\nTG035N03 -> TG035N01\nTG035N04 -> TG035N11\nTG035N05 -> TG035N06\nTG035N01 -> TG035N10\nTG035N02 -> TG035N09\nTG035N06 -> TG035N02\nTG035N11 -> TG035N07\nTG035N10 -> TG035N05\nTG035N00 -> TG035N03\n\nStarting at TG035N05, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG035N02"
+      },
+      {
+        "family": "direct",
+        "group": "TG068",
+        "id": "taylor:TG068:direct",
+        "input": "Use only these directed relations.\nTG068N02 -> TG068N08\nTG068N07 -> TG068N01\nTG068N00 -> TG068N09\nTG068N01 -> TG068N11\nTG068N11 -> TG068N10\nTG068N04 -> TG068N05\nTG068N03 -> TG068N00\nTG068N08 -> TG068N06\nTG068N10 -> TG068N04\nTG068N06 -> TG068N03\nTG068N05 -> TG068N02\nTG068N09 -> TG068N07\n\nStarting at TG068N11, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG068N10"
+      },
+      {
+        "family": "two_step",
+        "group": "TG068",
+        "id": "taylor:TG068:two_step",
+        "input": "Use only these directed relations.\nTG068N02 -> TG068N08\nTG068N07 -> TG068N01\nTG068N00 -> TG068N09\nTG068N01 -> TG068N11\nTG068N11 -> TG068N10\nTG068N04 -> TG068N05\nTG068N03 -> TG068N00\nTG068N08 -> TG068N06\nTG068N10 -> TG068N04\nTG068N06 -> TG068N03\nTG068N05 -> TG068N02\nTG068N09 -> TG068N07\n\nStarting at TG068N11, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG068N04"
+      },
+      {
+        "family": "direct",
+        "group": "TG073",
+        "id": "taylor:TG073:direct",
+        "input": "Use only these directed relations.\nTG073N10 -> TG073N04\nTG073N01 -> TG073N02\nTG073N06 -> TG073N07\nTG073N00 -> TG073N01\nTG073N05 -> TG073N08\nTG073N03 -> TG073N10\nTG073N07 -> TG073N09\nTG073N09 -> TG073N00\nTG073N11 -> TG073N05\nTG073N04 -> TG073N11\nTG073N08 -> TG073N06\nTG073N02 -> TG073N03\n\nStarting at TG073N10, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG073N04"
+      },
+      {
+        "family": "two_step",
+        "group": "TG073",
+        "id": "taylor:TG073:two_step",
+        "input": "Use only these directed relations.\nTG073N10 -> TG073N04\nTG073N01 -> TG073N02\nTG073N06 -> TG073N07\nTG073N00 -> TG073N01\nTG073N05 -> TG073N08\nTG073N03 -> TG073N10\nTG073N07 -> TG073N09\nTG073N09 -> TG073N00\nTG073N11 -> TG073N05\nTG073N04 -> TG073N11\nTG073N08 -> TG073N06\nTG073N02 -> TG073N03\n\nStarting at TG073N10, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG073N11"
+      },
+      {
+        "family": "direct",
+        "group": "TG088",
+        "id": "taylor:TG088:direct",
+        "input": "Use only these directed relations.\nTG088N06 -> TG088N00\nTG088N09 -> TG088N03\nTG088N08 -> TG088N02\nTG088N04 -> TG088N11\nTG088N11 -> TG088N01\nTG088N05 -> TG088N09\nTG088N01 -> TG088N10\nTG088N00 -> TG088N07\nTG088N03 -> TG088N08\nTG088N02 -> TG088N06\nTG088N07 -> TG088N04\nTG088N10 -> TG088N05\n\nStarting at TG088N09, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG088N03"
+      },
+      {
+        "family": "two_step",
+        "group": "TG088",
+        "id": "taylor:TG088:two_step",
+        "input": "Use only these directed relations.\nTG088N06 -> TG088N00\nTG088N09 -> TG088N03\nTG088N08 -> TG088N02\nTG088N04 -> TG088N11\nTG088N11 -> TG088N01\nTG088N05 -> TG088N09\nTG088N01 -> TG088N10\nTG088N00 -> TG088N07\nTG088N03 -> TG088N08\nTG088N02 -> TG088N06\nTG088N07 -> TG088N04\nTG088N10 -> TG088N05\n\nStarting at TG088N09, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG088N08"
+      },
+      {
+        "family": "direct",
+        "group": "TG105",
+        "id": "taylor:TG105:direct",
+        "input": "Use only these directed relations.\nTG105N06 -> TG105N10\nTG105N11 -> TG105N08\nTG105N01 -> TG105N02\nTG105N07 -> TG105N09\nTG105N00 -> TG105N04\nTG105N03 -> TG105N07\nTG105N05 -> TG105N11\nTG105N10 -> TG105N01\nTG105N09 -> TG105N06\nTG105N02 -> TG105N05\nTG105N04 -> TG105N03\nTG105N08 -> TG105N00\n\nStarting at TG105N02, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG105N05"
+      },
+      {
+        "family": "two_step",
+        "group": "TG105",
+        "id": "taylor:TG105:two_step",
+        "input": "Use only these directed relations.\nTG105N06 -> TG105N10\nTG105N11 -> TG105N08\nTG105N01 -> TG105N02\nTG105N07 -> TG105N09\nTG105N00 -> TG105N04\nTG105N03 -> TG105N07\nTG105N05 -> TG105N11\nTG105N10 -> TG105N01\nTG105N09 -> TG105N06\nTG105N02 -> TG105N05\nTG105N04 -> TG105N03\nTG105N08 -> TG105N00\n\nStarting at TG105N02, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG105N11"
+      },
+      {
+        "family": "direct",
+        "group": "TG110",
+        "id": "taylor:TG110:direct",
+        "input": "Use only these directed relations.\nTG110N00 -> TG110N06\nTG110N03 -> TG110N11\nTG110N04 -> TG110N10\nTG110N07 -> TG110N05\nTG110N11 -> TG110N07\nTG110N05 -> TG110N01\nTG110N09 -> TG110N03\nTG110N08 -> TG110N02\nTG110N06 -> TG110N09\nTG110N01 -> TG110N08\nTG110N10 -> TG110N00\nTG110N02 -> TG110N04\n\nStarting at TG110N00, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG110N06"
+      },
+      {
+        "family": "two_step",
+        "group": "TG110",
+        "id": "taylor:TG110:two_step",
+        "input": "Use only these directed relations.\nTG110N00 -> TG110N06\nTG110N03 -> TG110N11\nTG110N04 -> TG110N10\nTG110N07 -> TG110N05\nTG110N11 -> TG110N07\nTG110N05 -> TG110N01\nTG110N09 -> TG110N03\nTG110N08 -> TG110N02\nTG110N06 -> TG110N09\nTG110N01 -> TG110N08\nTG110N10 -> TG110N00\nTG110N02 -> TG110N04\n\nStarting at TG110N00, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG110N09"
+      },
+      {
+        "family": "direct",
+        "group": "TG115",
+        "id": "taylor:TG115:direct",
+        "input": "Use only these directed relations.\nTG115N09 -> TG115N01\nTG115N05 -> TG115N06\nTG115N00 -> TG115N04\nTG115N04 -> TG115N11\nTG115N11 -> TG115N09\nTG115N10 -> TG115N05\nTG115N07 -> TG115N08\nTG115N01 -> TG115N10\nTG115N08 -> TG115N03\nTG115N03 -> TG115N02\nTG115N02 -> TG115N00\nTG115N06 -> TG115N07\n\nStarting at TG115N11, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG115N09"
+      },
+      {
+        "family": "two_step",
+        "group": "TG115",
+        "id": "taylor:TG115:two_step",
+        "input": "Use only these directed relations.\nTG115N09 -> TG115N01\nTG115N05 -> TG115N06\nTG115N00 -> TG115N04\nTG115N04 -> TG115N11\nTG115N11 -> TG115N09\nTG115N10 -> TG115N05\nTG115N07 -> TG115N08\nTG115N01 -> TG115N10\nTG115N08 -> TG115N03\nTG115N03 -> TG115N02\nTG115N02 -> TG115N00\nTG115N06 -> TG115N07\n\nStarting at TG115N11, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG115N01"
+      },
+      {
+        "family": "direct",
+        "group": "TG121",
+        "id": "taylor:TG121:direct",
+        "input": "Use only these directed relations.\nTG121N00 -> TG121N03\nTG121N01 -> TG121N04\nTG121N05 -> TG121N09\nTG121N03 -> TG121N06\nTG121N09 -> TG121N11\nTG121N04 -> TG121N00\nTG121N06 -> TG121N10\nTG121N10 -> TG121N02\nTG121N02 -> TG121N05\nTG121N11 -> TG121N07\nTG121N08 -> TG121N01\nTG121N07 -> TG121N08\n\nStarting at TG121N07, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG121N08"
+      },
+      {
+        "family": "two_step",
+        "group": "TG121",
+        "id": "taylor:TG121:two_step",
+        "input": "Use only these directed relations.\nTG121N00 -> TG121N03\nTG121N01 -> TG121N04\nTG121N05 -> TG121N09\nTG121N03 -> TG121N06\nTG121N09 -> TG121N11\nTG121N04 -> TG121N00\nTG121N06 -> TG121N10\nTG121N10 -> TG121N02\nTG121N02 -> TG121N05\nTG121N11 -> TG121N07\nTG121N08 -> TG121N01\nTG121N07 -> TG121N08\n\nStarting at TG121N07, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG121N01"
+      },
+      {
+        "family": "direct",
+        "group": "TG155",
+        "id": "taylor:TG155:direct",
+        "input": "Use only these directed relations.\nTG155N07 -> TG155N08\nTG155N08 -> TG155N06\nTG155N05 -> TG155N11\nTG155N09 -> TG155N02\nTG155N00 -> TG155N10\nTG155N11 -> TG155N09\nTG155N06 -> TG155N03\nTG155N01 -> TG155N05\nTG155N04 -> TG155N00\nTG155N10 -> TG155N01\nTG155N03 -> TG155N04\nTG155N02 -> TG155N07\n\nStarting at TG155N05, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG155N11"
+      },
+      {
+        "family": "two_step",
+        "group": "TG155",
+        "id": "taylor:TG155:two_step",
+        "input": "Use only these directed relations.\nTG155N07 -> TG155N08\nTG155N08 -> TG155N06\nTG155N05 -> TG155N11\nTG155N09 -> TG155N02\nTG155N00 -> TG155N10\nTG155N11 -> TG155N09\nTG155N06 -> TG155N03\nTG155N01 -> TG155N05\nTG155N04 -> TG155N00\nTG155N10 -> TG155N01\nTG155N03 -> TG155N04\nTG155N02 -> TG155N07\n\nStarting at TG155N05, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG155N09"
+      },
+      {
+        "family": "direct",
+        "group": "TG160",
+        "id": "taylor:TG160:direct",
+        "input": "Use only these directed relations.\nTG160N06 -> TG160N07\nTG160N04 -> TG160N06\nTG160N08 -> TG160N09\nTG160N03 -> TG160N08\nTG160N05 -> TG160N04\nTG160N00 -> TG160N01\nTG160N01 -> TG160N11\nTG160N10 -> TG160N05\nTG160N11 -> TG160N10\nTG160N07 -> TG160N03\nTG160N02 -> TG160N00\nTG160N09 -> TG160N02\n\nStarting at TG160N03, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG160N08"
+      },
+      {
+        "family": "two_step",
+        "group": "TG160",
+        "id": "taylor:TG160:two_step",
+        "input": "Use only these directed relations.\nTG160N06 -> TG160N07\nTG160N04 -> TG160N06\nTG160N08 -> TG160N09\nTG160N03 -> TG160N08\nTG160N05 -> TG160N04\nTG160N00 -> TG160N01\nTG160N01 -> TG160N11\nTG160N10 -> TG160N05\nTG160N11 -> TG160N10\nTG160N07 -> TG160N03\nTG160N02 -> TG160N00\nTG160N09 -> TG160N02\n\nStarting at TG160N03, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG160N09"
+      },
+      {
+        "family": "direct",
+        "group": "TG174",
+        "id": "taylor:TG174:direct",
+        "input": "Use only these directed relations.\nTG174N10 -> TG174N11\nTG174N01 -> TG174N02\nTG174N06 -> TG174N09\nTG174N08 -> TG174N04\nTG174N02 -> TG174N07\nTG174N05 -> TG174N01\nTG174N00 -> TG174N10\nTG174N04 -> TG174N00\nTG174N03 -> TG174N05\nTG174N09 -> TG174N03\nTG174N11 -> TG174N06\nTG174N07 -> TG174N08\n\nStarting at TG174N03, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG174N05"
+      },
+      {
+        "family": "two_step",
+        "group": "TG174",
+        "id": "taylor:TG174:two_step",
+        "input": "Use only these directed relations.\nTG174N10 -> TG174N11\nTG174N01 -> TG174N02\nTG174N06 -> TG174N09\nTG174N08 -> TG174N04\nTG174N02 -> TG174N07\nTG174N05 -> TG174N01\nTG174N00 -> TG174N10\nTG174N04 -> TG174N00\nTG174N03 -> TG174N05\nTG174N09 -> TG174N03\nTG174N11 -> TG174N06\nTG174N07 -> TG174N08\n\nStarting at TG174N03, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG174N01"
+      },
+      {
+        "family": "direct",
+        "group": "TG179",
+        "id": "taylor:TG179:direct",
+        "input": "Use only these directed relations.\nTG179N02 -> TG179N09\nTG179N10 -> TG179N06\nTG179N01 -> TG179N02\nTG179N04 -> TG179N03\nTG179N05 -> TG179N07\nTG179N07 -> TG179N11\nTG179N03 -> TG179N00\nTG179N00 -> TG179N05\nTG179N06 -> TG179N08\nTG179N08 -> TG179N04\nTG179N09 -> TG179N10\nTG179N11 -> TG179N01\n\nStarting at TG179N04, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG179N03"
+      },
+      {
+        "family": "two_step",
+        "group": "TG179",
+        "id": "taylor:TG179:two_step",
+        "input": "Use only these directed relations.\nTG179N02 -> TG179N09\nTG179N10 -> TG179N06\nTG179N01 -> TG179N02\nTG179N04 -> TG179N03\nTG179N05 -> TG179N07\nTG179N07 -> TG179N11\nTG179N03 -> TG179N00\nTG179N00 -> TG179N05\nTG179N06 -> TG179N08\nTG179N08 -> TG179N04\nTG179N09 -> TG179N10\nTG179N11 -> TG179N01\n\nStarting at TG179N04, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG179N00"
+      },
+      {
+        "family": "direct",
+        "group": "TG197",
+        "id": "taylor:TG197:direct",
+        "input": "Use only these directed relations.\nTG197N07 -> TG197N09\nTG197N02 -> TG197N11\nTG197N03 -> TG197N01\nTG197N10 -> TG197N08\nTG197N00 -> TG197N02\nTG197N05 -> TG197N03\nTG197N08 -> TG197N06\nTG197N06 -> TG197N04\nTG197N04 -> TG197N05\nTG197N09 -> TG197N10\nTG197N01 -> TG197N00\nTG197N11 -> TG197N07\n\nStarting at TG197N03, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG197N01"
+      },
+      {
+        "family": "two_step",
+        "group": "TG197",
+        "id": "taylor:TG197:two_step",
+        "input": "Use only these directed relations.\nTG197N07 -> TG197N09\nTG197N02 -> TG197N11\nTG197N03 -> TG197N01\nTG197N10 -> TG197N08\nTG197N00 -> TG197N02\nTG197N05 -> TG197N03\nTG197N08 -> TG197N06\nTG197N06 -> TG197N04\nTG197N04 -> TG197N05\nTG197N09 -> TG197N10\nTG197N01 -> TG197N00\nTG197N11 -> TG197N07\n\nStarting at TG197N03, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG197N00"
+      },
+      {
+        "family": "direct",
+        "group": "TG204",
+        "id": "taylor:TG204:direct",
+        "input": "Use only these directed relations.\nTG204N07 -> TG204N03\nTG204N04 -> TG204N08\nTG204N08 -> TG204N11\nTG204N05 -> TG204N00\nTG204N09 -> TG204N04\nTG204N00 -> TG204N06\nTG204N10 -> TG204N07\nTG204N03 -> TG204N09\nTG204N01 -> TG204N10\nTG204N11 -> TG204N02\nTG204N06 -> TG204N01\nTG204N02 -> TG204N05\n\nStarting at TG204N03, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG204N09"
+      },
+      {
+        "family": "two_step",
+        "group": "TG204",
+        "id": "taylor:TG204:two_step",
+        "input": "Use only these directed relations.\nTG204N07 -> TG204N03\nTG204N04 -> TG204N08\nTG204N08 -> TG204N11\nTG204N05 -> TG204N00\nTG204N09 -> TG204N04\nTG204N00 -> TG204N06\nTG204N10 -> TG204N07\nTG204N03 -> TG204N09\nTG204N01 -> TG204N10\nTG204N11 -> TG204N02\nTG204N06 -> TG204N01\nTG204N02 -> TG204N05\n\nStarting at TG204N03, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG204N04"
+      },
+      {
+        "family": "direct",
+        "group": "TG209",
+        "id": "taylor:TG209:direct",
+        "input": "Use only these directed relations.\nTG209N01 -> TG209N03\nTG209N06 -> TG209N07\nTG209N07 -> TG209N08\nTG209N10 -> TG209N01\nTG209N02 -> TG209N05\nTG209N04 -> TG209N10\nTG209N05 -> TG209N09\nTG209N00 -> TG209N04\nTG209N03 -> TG209N02\nTG209N11 -> TG209N00\nTG209N09 -> TG209N06\nTG209N08 -> TG209N11\n\nStarting at TG209N01, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG209N03"
+      },
+      {
+        "family": "two_step",
+        "group": "TG209",
+        "id": "taylor:TG209:two_step",
+        "input": "Use only these directed relations.\nTG209N01 -> TG209N03\nTG209N06 -> TG209N07\nTG209N07 -> TG209N08\nTG209N10 -> TG209N01\nTG209N02 -> TG209N05\nTG209N04 -> TG209N10\nTG209N05 -> TG209N09\nTG209N00 -> TG209N04\nTG209N03 -> TG209N02\nTG209N11 -> TG209N00\nTG209N09 -> TG209N06\nTG209N08 -> TG209N11\n\nStarting at TG209N01, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG209N02"
+      },
+      {
+        "family": "direct",
+        "group": "TG212",
+        "id": "taylor:TG212:direct",
+        "input": "Use only these directed relations.\nTG212N03 -> TG212N06\nTG212N09 -> TG212N11\nTG212N07 -> TG212N04\nTG212N06 -> TG212N10\nTG212N08 -> TG212N02\nTG212N02 -> TG212N09\nTG212N05 -> TG212N07\nTG212N00 -> TG212N08\nTG212N01 -> TG212N00\nTG212N04 -> TG212N03\nTG212N10 -> TG212N01\nTG212N11 -> TG212N05\n\nStarting at TG212N00, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG212N08"
+      },
+      {
+        "family": "two_step",
+        "group": "TG212",
+        "id": "taylor:TG212:two_step",
+        "input": "Use only these directed relations.\nTG212N03 -> TG212N06\nTG212N09 -> TG212N11\nTG212N07 -> TG212N04\nTG212N06 -> TG212N10\nTG212N08 -> TG212N02\nTG212N02 -> TG212N09\nTG212N05 -> TG212N07\nTG212N00 -> TG212N08\nTG212N01 -> TG212N00\nTG212N04 -> TG212N03\nTG212N10 -> TG212N01\nTG212N11 -> TG212N05\n\nStarting at TG212N00, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG212N02"
+      },
+      {
+        "family": "direct",
+        "group": "TG222",
+        "id": "taylor:TG222:direct",
+        "input": "Use only these directed relations.\nTG222N09 -> TG222N05\nTG222N10 -> TG222N02\nTG222N02 -> TG222N06\nTG222N08 -> TG222N10\nTG222N05 -> TG222N04\nTG222N07 -> TG222N01\nTG222N01 -> TG222N08\nTG222N11 -> TG222N00\nTG222N00 -> TG222N09\nTG222N06 -> TG222N11\nTG222N04 -> TG222N03\nTG222N03 -> TG222N07\n\nStarting at TG222N09, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG222N05"
+      },
+      {
+        "family": "two_step",
+        "group": "TG222",
+        "id": "taylor:TG222:two_step",
+        "input": "Use only these directed relations.\nTG222N09 -> TG222N05\nTG222N10 -> TG222N02\nTG222N02 -> TG222N06\nTG222N08 -> TG222N10\nTG222N05 -> TG222N04\nTG222N07 -> TG222N01\nTG222N01 -> TG222N08\nTG222N11 -> TG222N00\nTG222N00 -> TG222N09\nTG222N06 -> TG222N11\nTG222N04 -> TG222N03\nTG222N03 -> TG222N07\n\nStarting at TG222N09, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG222N04"
+      },
+      {
+        "family": "direct",
+        "group": "TG240",
+        "id": "taylor:TG240:direct",
+        "input": "Use only these directed relations.\nTG240N10 -> TG240N04\nTG240N03 -> TG240N06\nTG240N01 -> TG240N08\nTG240N06 -> TG240N01\nTG240N09 -> TG240N03\nTG240N05 -> TG240N11\nTG240N02 -> TG240N05\nTG240N08 -> TG240N02\nTG240N11 -> TG240N00\nTG240N07 -> TG240N09\nTG240N04 -> TG240N07\nTG240N00 -> TG240N10\n\nStarting at TG240N05, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG240N11"
+      },
+      {
+        "family": "two_step",
+        "group": "TG240",
+        "id": "taylor:TG240:two_step",
+        "input": "Use only these directed relations.\nTG240N10 -> TG240N04\nTG240N03 -> TG240N06\nTG240N01 -> TG240N08\nTG240N06 -> TG240N01\nTG240N09 -> TG240N03\nTG240N05 -> TG240N11\nTG240N02 -> TG240N05\nTG240N08 -> TG240N02\nTG240N11 -> TG240N00\nTG240N07 -> TG240N09\nTG240N04 -> TG240N07\nTG240N00 -> TG240N10\n\nStarting at TG240N05, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG240N00"
+      },
+      {
+        "family": "direct",
+        "group": "TG243",
+        "id": "taylor:TG243:direct",
+        "input": "Use only these directed relations.\nTG243N02 -> TG243N07\nTG243N01 -> TG243N09\nTG243N05 -> TG243N08\nTG243N04 -> TG243N10\nTG243N00 -> TG243N05\nTG243N06 -> TG243N02\nTG243N07 -> TG243N04\nTG243N10 -> TG243N01\nTG243N11 -> TG243N06\nTG243N03 -> TG243N11\nTG243N09 -> TG243N00\nTG243N08 -> TG243N03\n\nStarting at TG243N09, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG243N00"
+      },
+      {
+        "family": "two_step",
+        "group": "TG243",
+        "id": "taylor:TG243:two_step",
+        "input": "Use only these directed relations.\nTG243N02 -> TG243N07\nTG243N01 -> TG243N09\nTG243N05 -> TG243N08\nTG243N04 -> TG243N10\nTG243N00 -> TG243N05\nTG243N06 -> TG243N02\nTG243N07 -> TG243N04\nTG243N10 -> TG243N01\nTG243N11 -> TG243N06\nTG243N03 -> TG243N11\nTG243N09 -> TG243N00\nTG243N08 -> TG243N03\n\nStarting at TG243N09, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG243N05"
+      },
+      {
+        "fact": {
+          "element": "oxygen",
+          "symbol": "O"
+        },
+        "family": "supplied_fact",
+        "foil": "Mn",
+        "group": "oxygen",
+        "id": "taylor:fact:oxygen:0:context",
+        "input": "Use the supplied fact: the chemical symbol for oxygen is O.\nWhat is the chemical symbol for oxygen?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "O"
+      },
+      {
+        "fact": {
+          "element": "oxygen",
+          "symbol": "O"
+        },
+        "family": "recall",
+        "foil": "Mn",
+        "group": "oxygen",
+        "id": "taylor:fact:oxygen:0:recall",
+        "input": "What is the chemical symbol for oxygen?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "O"
+      },
+      {
+        "fact": {
+          "element": "oxygen",
+          "symbol": "O"
+        },
+        "family": "supplied_fact",
+        "foil": "Mn",
+        "group": "oxygen",
+        "id": "taylor:fact:oxygen:1:context",
+        "input": "Use the supplied fact: the chemical symbol for oxygen is O.\nGive the element symbol of oxygen.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "O"
+      },
+      {
+        "fact": {
+          "element": "oxygen",
+          "symbol": "O"
+        },
+        "family": "recall",
+        "foil": "Mn",
+        "group": "oxygen",
+        "id": "taylor:fact:oxygen:1:recall",
+        "input": "Give the element symbol of oxygen.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "O"
+      },
+      {
+        "fact": {
+          "element": "argon",
+          "symbol": "Ar"
+        },
+        "family": "supplied_fact",
+        "foil": "Br",
+        "group": "argon",
+        "id": "taylor:fact:argon:0:context",
+        "input": "Use the supplied fact: the chemical symbol for argon is Ar.\nWhat is the chemical symbol for argon?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ar"
+      },
+      {
+        "fact": {
+          "element": "argon",
+          "symbol": "Ar"
+        },
+        "family": "recall",
+        "foil": "Br",
+        "group": "argon",
+        "id": "taylor:fact:argon:0:recall",
+        "input": "What is the chemical symbol for argon?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ar"
+      },
+      {
+        "fact": {
+          "element": "argon",
+          "symbol": "Ar"
+        },
+        "family": "supplied_fact",
+        "foil": "Br",
+        "group": "argon",
+        "id": "taylor:fact:argon:1:context",
+        "input": "Use the supplied fact: the chemical symbol for argon is Ar.\nGive the element symbol of argon.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ar"
+      },
+      {
+        "fact": {
+          "element": "argon",
+          "symbol": "Ar"
+        },
+        "family": "recall",
+        "foil": "Br",
+        "group": "argon",
+        "id": "taylor:fact:argon:1:recall",
+        "input": "Give the element symbol of argon.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ar"
+      },
+      {
+        "fact": {
+          "element": "chromium",
+          "symbol": "Cr"
+        },
+        "family": "supplied_fact",
+        "foil": "Nb",
+        "group": "chromium",
+        "id": "taylor:fact:chromium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for chromium is Cr.\nWhat is the chemical symbol for chromium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cr"
+      },
+      {
+        "fact": {
+          "element": "chromium",
+          "symbol": "Cr"
+        },
+        "family": "recall",
+        "foil": "Nb",
+        "group": "chromium",
+        "id": "taylor:fact:chromium:0:recall",
+        "input": "What is the chemical symbol for chromium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cr"
+      },
+      {
+        "fact": {
+          "element": "chromium",
+          "symbol": "Cr"
+        },
+        "family": "supplied_fact",
+        "foil": "Nb",
+        "group": "chromium",
+        "id": "taylor:fact:chromium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for chromium is Cr.\nGive the element symbol of chromium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cr"
+      },
+      {
+        "fact": {
+          "element": "chromium",
+          "symbol": "Cr"
+        },
+        "family": "recall",
+        "foil": "Nb",
+        "group": "chromium",
+        "id": "taylor:fact:chromium:1:recall",
+        "input": "Give the element symbol of chromium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cr"
+      },
+      {
+        "fact": {
+          "element": "germanium",
+          "symbol": "Ge"
+        },
+        "family": "supplied_fact",
+        "foil": "In",
+        "group": "germanium",
+        "id": "taylor:fact:germanium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for germanium is Ge.\nWhat is the chemical symbol for germanium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ge"
+      },
+      {
+        "fact": {
+          "element": "germanium",
+          "symbol": "Ge"
+        },
+        "family": "recall",
+        "foil": "In",
+        "group": "germanium",
+        "id": "taylor:fact:germanium:0:recall",
+        "input": "What is the chemical symbol for germanium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ge"
+      },
+      {
+        "fact": {
+          "element": "germanium",
+          "symbol": "Ge"
+        },
+        "family": "supplied_fact",
+        "foil": "In",
+        "group": "germanium",
+        "id": "taylor:fact:germanium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for germanium is Ge.\nGive the element symbol of germanium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ge"
+      },
+      {
+        "fact": {
+          "element": "germanium",
+          "symbol": "Ge"
+        },
+        "family": "recall",
+        "foil": "In",
+        "group": "germanium",
+        "id": "taylor:fact:germanium:1:recall",
+        "input": "Give the element symbol of germanium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ge"
+      },
+      {
+        "fact": {
+          "element": "strontium",
+          "symbol": "Sr"
+        },
+        "family": "supplied_fact",
+        "foil": "Cs",
+        "group": "strontium",
+        "id": "taylor:fact:strontium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for strontium is Sr.\nWhat is the chemical symbol for strontium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sr"
+      },
+      {
+        "fact": {
+          "element": "strontium",
+          "symbol": "Sr"
+        },
+        "family": "recall",
+        "foil": "Cs",
+        "group": "strontium",
+        "id": "taylor:fact:strontium:0:recall",
+        "input": "What is the chemical symbol for strontium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sr"
+      },
+      {
+        "fact": {
+          "element": "strontium",
+          "symbol": "Sr"
+        },
+        "family": "supplied_fact",
+        "foil": "Cs",
+        "group": "strontium",
+        "id": "taylor:fact:strontium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for strontium is Sr.\nGive the element symbol of strontium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sr"
+      },
+      {
+        "fact": {
+          "element": "strontium",
+          "symbol": "Sr"
+        },
+        "family": "recall",
+        "foil": "Cs",
+        "group": "strontium",
+        "id": "taylor:fact:strontium:1:recall",
+        "input": "Give the element symbol of strontium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sr"
+      },
+      {
+        "fact": {
+          "element": "zirconium",
+          "symbol": "Zr"
+        },
+        "family": "supplied_fact",
+        "foil": "La",
+        "group": "zirconium",
+        "id": "taylor:fact:zirconium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for zirconium is Zr.\nWhat is the chemical symbol for zirconium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Zr"
+      },
+      {
+        "fact": {
+          "element": "zirconium",
+          "symbol": "Zr"
+        },
+        "family": "recall",
+        "foil": "La",
+        "group": "zirconium",
+        "id": "taylor:fact:zirconium:0:recall",
+        "input": "What is the chemical symbol for zirconium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Zr"
+      },
+      {
+        "fact": {
+          "element": "zirconium",
+          "symbol": "Zr"
+        },
+        "family": "supplied_fact",
+        "foil": "La",
+        "group": "zirconium",
+        "id": "taylor:fact:zirconium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for zirconium is Zr.\nGive the element symbol of zirconium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Zr"
+      },
+      {
+        "fact": {
+          "element": "zirconium",
+          "symbol": "Zr"
+        },
+        "family": "recall",
+        "foil": "La",
+        "group": "zirconium",
+        "id": "taylor:fact:zirconium:1:recall",
+        "input": "Give the element symbol of zirconium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Zr"
+      },
+      {
+        "fact": {
+          "element": "rhodium",
+          "symbol": "Rh"
+        },
+        "family": "supplied_fact",
+        "foil": "Sm",
+        "group": "rhodium",
+        "id": "taylor:fact:rhodium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for rhodium is Rh.\nWhat is the chemical symbol for rhodium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rh"
+      },
+      {
+        "fact": {
+          "element": "rhodium",
+          "symbol": "Rh"
+        },
+        "family": "recall",
+        "foil": "Sm",
+        "group": "rhodium",
+        "id": "taylor:fact:rhodium:0:recall",
+        "input": "What is the chemical symbol for rhodium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rh"
+      },
+      {
+        "fact": {
+          "element": "rhodium",
+          "symbol": "Rh"
+        },
+        "family": "supplied_fact",
+        "foil": "Sm",
+        "group": "rhodium",
+        "id": "taylor:fact:rhodium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for rhodium is Rh.\nGive the element symbol of rhodium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rh"
+      },
+      {
+        "fact": {
+          "element": "rhodium",
+          "symbol": "Rh"
+        },
+        "family": "recall",
+        "foil": "Sm",
+        "group": "rhodium",
+        "id": "taylor:fact:rhodium:1:recall",
+        "input": "Give the element symbol of rhodium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rh"
+      },
+      {
+        "fact": {
+          "element": "tellurium",
+          "symbol": "Te"
+        },
+        "family": "supplied_fact",
+        "foil": "Tm",
+        "group": "tellurium",
+        "id": "taylor:fact:tellurium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for tellurium is Te.\nWhat is the chemical symbol for tellurium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Te"
+      },
+      {
+        "fact": {
+          "element": "tellurium",
+          "symbol": "Te"
+        },
+        "family": "recall",
+        "foil": "Tm",
+        "group": "tellurium",
+        "id": "taylor:fact:tellurium:0:recall",
+        "input": "What is the chemical symbol for tellurium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Te"
+      },
+      {
+        "fact": {
+          "element": "tellurium",
+          "symbol": "Te"
+        },
+        "family": "supplied_fact",
+        "foil": "Tm",
+        "group": "tellurium",
+        "id": "taylor:fact:tellurium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for tellurium is Te.\nGive the element symbol of tellurium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Te"
+      },
+      {
+        "fact": {
+          "element": "tellurium",
+          "symbol": "Te"
+        },
+        "family": "recall",
+        "foil": "Tm",
+        "group": "tellurium",
+        "id": "taylor:fact:tellurium:1:recall",
+        "input": "Give the element symbol of tellurium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Te"
+      },
+      {
+        "fact": {
+          "element": "xenon",
+          "symbol": "Xe"
+        },
+        "family": "supplied_fact",
+        "foil": "Lu",
+        "group": "xenon",
+        "id": "taylor:fact:xenon:0:context",
+        "input": "Use the supplied fact: the chemical symbol for xenon is Xe.\nWhat is the chemical symbol for xenon?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Xe"
+      },
+      {
+        "fact": {
+          "element": "xenon",
+          "symbol": "Xe"
+        },
+        "family": "recall",
+        "foil": "Lu",
+        "group": "xenon",
+        "id": "taylor:fact:xenon:0:recall",
+        "input": "What is the chemical symbol for xenon?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Xe"
+      },
+      {
+        "fact": {
+          "element": "xenon",
+          "symbol": "Xe"
+        },
+        "family": "supplied_fact",
+        "foil": "Lu",
+        "group": "xenon",
+        "id": "taylor:fact:xenon:1:context",
+        "input": "Use the supplied fact: the chemical symbol for xenon is Xe.\nGive the element symbol of xenon.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Xe"
+      },
+      {
+        "fact": {
+          "element": "xenon",
+          "symbol": "Xe"
+        },
+        "family": "recall",
+        "foil": "Lu",
+        "group": "xenon",
+        "id": "taylor:fact:xenon:1:recall",
+        "input": "Give the element symbol of xenon.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Xe"
+      },
+      {
+        "fact": {
+          "element": "caesium",
+          "symbol": "Cs"
+        },
+        "family": "supplied_fact",
+        "foil": "Hf",
+        "group": "caesium",
+        "id": "taylor:fact:caesium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for caesium is Cs.\nWhat is the chemical symbol for caesium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cs"
+      },
+      {
+        "fact": {
+          "element": "caesium",
+          "symbol": "Cs"
+        },
+        "family": "recall",
+        "foil": "Hf",
+        "group": "caesium",
+        "id": "taylor:fact:caesium:0:recall",
+        "input": "What is the chemical symbol for caesium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cs"
+      },
+      {
+        "fact": {
+          "element": "caesium",
+          "symbol": "Cs"
+        },
+        "family": "supplied_fact",
+        "foil": "Hf",
+        "group": "caesium",
+        "id": "taylor:fact:caesium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for caesium is Cs.\nGive the element symbol of caesium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cs"
+      },
+      {
+        "fact": {
+          "element": "caesium",
+          "symbol": "Cs"
+        },
+        "family": "recall",
+        "foil": "Hf",
+        "group": "caesium",
+        "id": "taylor:fact:caesium:1:recall",
+        "input": "Give the element symbol of caesium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cs"
+      },
+      {
+        "fact": {
+          "element": "erbium",
+          "symbol": "Er"
+        },
+        "family": "supplied_fact",
+        "foil": "At",
+        "group": "erbium",
+        "id": "taylor:fact:erbium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for erbium is Er.\nWhat is the chemical symbol for erbium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Er"
+      },
+      {
+        "fact": {
+          "element": "erbium",
+          "symbol": "Er"
+        },
+        "family": "recall",
+        "foil": "At",
+        "group": "erbium",
+        "id": "taylor:fact:erbium:0:recall",
+        "input": "What is the chemical symbol for erbium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Er"
+      },
+      {
+        "fact": {
+          "element": "erbium",
+          "symbol": "Er"
+        },
+        "family": "supplied_fact",
+        "foil": "At",
+        "group": "erbium",
+        "id": "taylor:fact:erbium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for erbium is Er.\nGive the element symbol of erbium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Er"
+      },
+      {
+        "fact": {
+          "element": "erbium",
+          "symbol": "Er"
+        },
+        "family": "recall",
+        "foil": "At",
+        "group": "erbium",
+        "id": "taylor:fact:erbium:1:recall",
+        "input": "Give the element symbol of erbium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Er"
+      },
+      {
+        "fact": {
+          "element": "francium",
+          "symbol": "Fr"
+        },
+        "family": "supplied_fact",
+        "foil": "Rf",
+        "group": "francium",
+        "id": "taylor:fact:francium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for francium is Fr.\nWhat is the chemical symbol for francium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Fr"
+      },
+      {
+        "fact": {
+          "element": "francium",
+          "symbol": "Fr"
+        },
+        "family": "recall",
+        "foil": "Rf",
+        "group": "francium",
+        "id": "taylor:fact:francium:0:recall",
+        "input": "What is the chemical symbol for francium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Fr"
+      },
+      {
+        "fact": {
+          "element": "francium",
+          "symbol": "Fr"
+        },
+        "family": "supplied_fact",
+        "foil": "Rf",
+        "group": "francium",
+        "id": "taylor:fact:francium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for francium is Fr.\nGive the element symbol of francium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Fr"
+      },
+      {
+        "fact": {
+          "element": "francium",
+          "symbol": "Fr"
+        },
+        "family": "recall",
+        "foil": "Rf",
+        "group": "francium",
+        "id": "taylor:fact:francium:1:recall",
+        "input": "Give the element symbol of francium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Fr"
+      },
+      {
+        "fact": {
+          "element": "radium",
+          "symbol": "Ra"
+        },
+        "family": "supplied_fact",
+        "foil": "Db",
+        "group": "radium",
+        "id": "taylor:fact:radium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for radium is Ra.\nWhat is the chemical symbol for radium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ra"
+      },
+      {
+        "fact": {
+          "element": "radium",
+          "symbol": "Ra"
+        },
+        "family": "recall",
+        "foil": "Db",
+        "group": "radium",
+        "id": "taylor:fact:radium:0:recall",
+        "input": "What is the chemical symbol for radium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ra"
+      },
+      {
+        "fact": {
+          "element": "radium",
+          "symbol": "Ra"
+        },
+        "family": "supplied_fact",
+        "foil": "Db",
+        "group": "radium",
+        "id": "taylor:fact:radium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for radium is Ra.\nGive the element symbol of radium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ra"
+      },
+      {
+        "fact": {
+          "element": "radium",
+          "symbol": "Ra"
+        },
+        "family": "recall",
+        "foil": "Db",
+        "group": "radium",
+        "id": "taylor:fact:radium:1:recall",
+        "input": "Give the element symbol of radium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ra"
+      },
+      {
+        "fact": {
+          "element": "uranium",
+          "symbol": "U"
+        },
+        "family": "supplied_fact",
+        "foil": "Mt",
+        "group": "uranium",
+        "id": "taylor:fact:uranium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for uranium is U.\nWhat is the chemical symbol for uranium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "U"
+      },
+      {
+        "fact": {
+          "element": "uranium",
+          "symbol": "U"
+        },
+        "family": "recall",
+        "foil": "Mt",
+        "group": "uranium",
+        "id": "taylor:fact:uranium:0:recall",
+        "input": "What is the chemical symbol for uranium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "U"
+      },
+      {
+        "fact": {
+          "element": "uranium",
+          "symbol": "U"
+        },
+        "family": "supplied_fact",
+        "foil": "Mt",
+        "group": "uranium",
+        "id": "taylor:fact:uranium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for uranium is U.\nGive the element symbol of uranium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "U"
+      },
+      {
+        "fact": {
+          "element": "uranium",
+          "symbol": "U"
+        },
+        "family": "recall",
+        "foil": "Mt",
+        "group": "uranium",
+        "id": "taylor:fact:uranium:1:recall",
+        "input": "Give the element symbol of uranium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "U"
+      },
+      {
+        "fact": {
+          "element": "einsteinium",
+          "symbol": "Es"
+        },
+        "family": "supplied_fact",
+        "foil": "Lv",
+        "group": "einsteinium",
+        "id": "taylor:fact:einsteinium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for einsteinium is Es.\nWhat is the chemical symbol for einsteinium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Es"
+      },
+      {
+        "fact": {
+          "element": "einsteinium",
+          "symbol": "Es"
+        },
+        "family": "recall",
+        "foil": "Lv",
+        "group": "einsteinium",
+        "id": "taylor:fact:einsteinium:0:recall",
+        "input": "What is the chemical symbol for einsteinium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Es"
+      },
+      {
+        "fact": {
+          "element": "einsteinium",
+          "symbol": "Es"
+        },
+        "family": "supplied_fact",
+        "foil": "Lv",
+        "group": "einsteinium",
+        "id": "taylor:fact:einsteinium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for einsteinium is Es.\nGive the element symbol of einsteinium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Es"
+      },
+      {
+        "fact": {
+          "element": "einsteinium",
+          "symbol": "Es"
+        },
+        "family": "recall",
+        "foil": "Lv",
+        "group": "einsteinium",
+        "id": "taylor:fact:einsteinium:1:recall",
+        "input": "Give the element symbol of einsteinium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Es"
+      },
+      {
+        "fact": {
+          "element": "fermium",
+          "symbol": "Fm"
+        },
+        "family": "supplied_fact",
+        "foil": "Ts",
+        "group": "fermium",
+        "id": "taylor:fact:fermium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for fermium is Fm.\nWhat is the chemical symbol for fermium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Fm"
+      },
+      {
+        "fact": {
+          "element": "fermium",
+          "symbol": "Fm"
+        },
+        "family": "recall",
+        "foil": "Ts",
+        "group": "fermium",
+        "id": "taylor:fact:fermium:0:recall",
+        "input": "What is the chemical symbol for fermium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Fm"
+      },
+      {
+        "fact": {
+          "element": "fermium",
+          "symbol": "Fm"
+        },
+        "family": "supplied_fact",
+        "foil": "Ts",
+        "group": "fermium",
+        "id": "taylor:fact:fermium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for fermium is Fm.\nGive the element symbol of fermium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Fm"
+      },
+      {
+        "fact": {
+          "element": "fermium",
+          "symbol": "Fm"
+        },
+        "family": "recall",
+        "foil": "Ts",
+        "group": "fermium",
+        "id": "taylor:fact:fermium:1:recall",
+        "input": "Give the element symbol of fermium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Fm"
+      },
+      {
+        "fact": {
+          "element": "darmstadtium",
+          "symbol": "Ds"
+        },
+        "family": "supplied_fact",
+        "foil": "F",
+        "group": "darmstadtium",
+        "id": "taylor:fact:darmstadtium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for darmstadtium is Ds.\nWhat is the chemical symbol for darmstadtium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ds"
+      },
+      {
+        "fact": {
+          "element": "darmstadtium",
+          "symbol": "Ds"
+        },
+        "family": "recall",
+        "foil": "F",
+        "group": "darmstadtium",
+        "id": "taylor:fact:darmstadtium:0:recall",
+        "input": "What is the chemical symbol for darmstadtium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ds"
+      },
+      {
+        "fact": {
+          "element": "darmstadtium",
+          "symbol": "Ds"
+        },
+        "family": "supplied_fact",
+        "foil": "F",
+        "group": "darmstadtium",
+        "id": "taylor:fact:darmstadtium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for darmstadtium is Ds.\nGive the element symbol of darmstadtium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ds"
+      },
+      {
+        "fact": {
+          "element": "darmstadtium",
+          "symbol": "Ds"
+        },
+        "family": "recall",
+        "foil": "F",
+        "group": "darmstadtium",
+        "id": "taylor:fact:darmstadtium:1:recall",
+        "input": "Give the element symbol of darmstadtium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ds"
+      },
+      {
+        "fact": {
+          "element": "copernicium",
+          "symbol": "Cn"
+        },
+        "family": "supplied_fact",
+        "foil": "Na",
+        "group": "copernicium",
+        "id": "taylor:fact:copernicium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for copernicium is Cn.\nWhat is the chemical symbol for copernicium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cn"
+      },
+      {
+        "fact": {
+          "element": "copernicium",
+          "symbol": "Cn"
+        },
+        "family": "recall",
+        "foil": "Na",
+        "group": "copernicium",
+        "id": "taylor:fact:copernicium:0:recall",
+        "input": "What is the chemical symbol for copernicium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cn"
+      },
+      {
+        "fact": {
+          "element": "copernicium",
+          "symbol": "Cn"
+        },
+        "family": "supplied_fact",
+        "foil": "Na",
+        "group": "copernicium",
+        "id": "taylor:fact:copernicium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for copernicium is Cn.\nGive the element symbol of copernicium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cn"
+      },
+      {
+        "fact": {
+          "element": "copernicium",
+          "symbol": "Cn"
+        },
+        "family": "recall",
+        "foil": "Na",
+        "group": "copernicium",
+        "id": "taylor:fact:copernicium:1:recall",
+        "input": "Give the element symbol of copernicium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cn"
+      },
+      {
+        "fact": {
+          "element": "moscovium",
+          "symbol": "Mc"
+        },
+        "family": "supplied_fact",
+        "foil": "Si",
+        "group": "moscovium",
+        "id": "taylor:fact:moscovium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for moscovium is Mc.\nWhat is the chemical symbol for moscovium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Mc"
+      },
+      {
+        "fact": {
+          "element": "moscovium",
+          "symbol": "Mc"
+        },
+        "family": "recall",
+        "foil": "Si",
+        "group": "moscovium",
+        "id": "taylor:fact:moscovium:0:recall",
+        "input": "What is the chemical symbol for moscovium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Mc"
+      },
+      {
+        "fact": {
+          "element": "moscovium",
+          "symbol": "Mc"
+        },
+        "family": "supplied_fact",
+        "foil": "Si",
+        "group": "moscovium",
+        "id": "taylor:fact:moscovium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for moscovium is Mc.\nGive the element symbol of moscovium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Mc"
+      },
+      {
+        "fact": {
+          "element": "moscovium",
+          "symbol": "Mc"
+        },
+        "family": "recall",
+        "foil": "Si",
+        "group": "moscovium",
+        "id": "taylor:fact:moscovium:1:recall",
+        "input": "Give the element symbol of moscovium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Mc"
+      },
+      {
+        "fact": {
+          "element": "livermorium",
+          "symbol": "Lv"
+        },
+        "family": "supplied_fact",
+        "foil": "P",
+        "group": "livermorium",
+        "id": "taylor:fact:livermorium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for livermorium is Lv.\nWhat is the chemical symbol for livermorium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Lv"
+      },
+      {
+        "fact": {
+          "element": "livermorium",
+          "symbol": "Lv"
+        },
+        "family": "recall",
+        "foil": "P",
+        "group": "livermorium",
+        "id": "taylor:fact:livermorium:0:recall",
+        "input": "What is the chemical symbol for livermorium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Lv"
+      },
+      {
+        "fact": {
+          "element": "livermorium",
+          "symbol": "Lv"
+        },
+        "family": "supplied_fact",
+        "foil": "P",
+        "group": "livermorium",
+        "id": "taylor:fact:livermorium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for livermorium is Lv.\nGive the element symbol of livermorium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Lv"
+      },
+      {
+        "fact": {
+          "element": "livermorium",
+          "symbol": "Lv"
+        },
+        "family": "recall",
+        "foil": "P",
+        "group": "livermorium",
+        "id": "taylor:fact:livermorium:1:recall",
+        "input": "Give the element symbol of livermorium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Lv"
+      },
+      {
+        "fact": {
+          "element": "oganesson",
+          "symbol": "Og"
+        },
+        "family": "supplied_fact",
+        "foil": "Cl",
+        "group": "oganesson",
+        "id": "taylor:fact:oganesson:0:context",
+        "input": "Use the supplied fact: the chemical symbol for oganesson is Og.\nWhat is the chemical symbol for oganesson?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Og"
+      },
+      {
+        "fact": {
+          "element": "oganesson",
+          "symbol": "Og"
+        },
+        "family": "recall",
+        "foil": "Cl",
+        "group": "oganesson",
+        "id": "taylor:fact:oganesson:0:recall",
+        "input": "What is the chemical symbol for oganesson?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Og"
+      },
+      {
+        "fact": {
+          "element": "oganesson",
+          "symbol": "Og"
+        },
+        "family": "supplied_fact",
+        "foil": "Cl",
+        "group": "oganesson",
+        "id": "taylor:fact:oganesson:1:context",
+        "input": "Use the supplied fact: the chemical symbol for oganesson is Og.\nGive the element symbol of oganesson.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Og"
+      },
+      {
+        "fact": {
+          "element": "oganesson",
+          "symbol": "Og"
+        },
+        "family": "recall",
+        "foil": "Cl",
+        "group": "oganesson",
+        "id": "taylor:fact:oganesson:1:recall",
+        "input": "Give the element symbol of oganesson.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Og"
+      },
+      {
+        "family": "language_format",
+        "group": "format-014",
+        "id": "taylor:format-014",
+        "input": "Complete this sentence using the supplied word 'item_014': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_014."
+      },
+      {
+        "family": "language_format",
+        "group": "format-039",
+        "id": "taylor:format-039",
+        "input": "Convert the supplied word to uppercase: item_039\nAnswer:",
+        "kind": "format",
+        "target": "ITEM_039"
+      },
+      {
+        "family": "language_format",
+        "group": "format-045",
+        "id": "taylor:format-045",
+        "input": "Return only a JSON object whose key is code and value is item_045.\nJSON:",
+        "kind": "format",
+        "target": "{\"code\": \"item_045\"}"
+      },
+      {
+        "family": "language_format",
+        "group": "format-047",
+        "id": "taylor:format-047",
+        "input": "Convert the supplied word to uppercase: item_047\nAnswer:",
+        "kind": "format",
+        "target": "ITEM_047"
+      },
+      {
+        "family": "language_format",
+        "group": "format-049",
+        "id": "taylor:format-049",
+        "input": "Return only a JSON object whose key is code and value is item_049.\nJSON:",
+        "kind": "format",
+        "target": "{\"code\": \"item_049\"}"
+      },
+      {
+        "family": "language_format",
+        "group": "format-052",
+        "id": "taylor:format-052",
+        "input": "Copy the supplied identifier exactly: item_052\nIdentifier:",
+        "kind": "format",
+        "target": "item_052"
+      },
+      {
+        "family": "language_format",
+        "group": "format-065",
+        "id": "taylor:format-065",
+        "input": "Return only a JSON object whose key is code and value is item_065.\nJSON:",
+        "kind": "format",
+        "target": "{\"code\": \"item_065\"}"
+      },
+      {
+        "family": "language_format",
+        "group": "format-086",
+        "id": "taylor:format-086",
+        "input": "Complete this sentence using the supplied word 'item_086': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_086."
+      },
+      {
+        "family": "language_format",
+        "group": "format-104",
+        "id": "taylor:format-104",
+        "input": "Copy the supplied identifier exactly: item_104\nIdentifier:",
+        "kind": "format",
+        "target": "item_104"
+      },
+      {
+        "family": "language_format",
+        "group": "format-125",
+        "id": "taylor:format-125",
+        "input": "Return only a JSON object whose key is code and value is item_125.\nJSON:",
+        "kind": "format",
+        "target": "{\"code\": \"item_125\"}"
+      },
+      {
+        "family": "language_format",
+        "group": "format-142",
+        "id": "taylor:format-142",
+        "input": "Complete this sentence using the supplied word 'item_142': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_142."
+      },
+      {
+        "family": "language_format",
+        "group": "format-173",
+        "id": "taylor:format-173",
+        "input": "Return only a JSON object whose key is code and value is item_173.\nJSON:",
+        "kind": "format",
+        "target": "{\"code\": \"item_173\"}"
+      },
+      {
+        "family": "language_format",
+        "group": "format-185",
+        "id": "taylor:format-185",
+        "input": "Return only a JSON object whose key is code and value is item_185.\nJSON:",
+        "kind": "format",
+        "target": "{\"code\": \"item_185\"}"
+      },
+      {
+        "family": "language_format",
+        "group": "format-187",
+        "id": "taylor:format-187",
+        "input": "Convert the supplied word to uppercase: item_187\nAnswer:",
+        "kind": "format",
+        "target": "ITEM_187"
+      },
+      {
+        "family": "language_format",
+        "group": "format-200",
+        "id": "taylor:format-200",
+        "input": "Copy the supplied identifier exactly: item_200\nIdentifier:",
+        "kind": "format",
+        "target": "item_200"
+      },
+      {
+        "family": "language_format",
+        "group": "format-202",
+        "id": "taylor:format-202",
+        "input": "Complete this sentence using the supplied word 'item_202': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_202."
+      },
+      {
+        "family": "language_format",
+        "group": "format-231",
+        "id": "taylor:format-231",
+        "input": "Convert the supplied word to uppercase: item_231\nAnswer:",
+        "kind": "format",
+        "target": "ITEM_231"
+      },
+      {
+        "family": "language_format",
+        "group": "format-237",
+        "id": "taylor:format-237",
+        "input": "Return only a JSON object whose key is code and value is item_237.\nJSON:",
+        "kind": "format",
+        "target": "{\"code\": \"item_237\"}"
+      },
+      {
+        "family": "language_format",
+        "group": "format-244",
+        "id": "taylor:format-244",
+        "input": "Copy the supplied identifier exactly: item_244\nIdentifier:",
+        "kind": "format",
+        "target": "item_244"
+      },
+      {
+        "family": "language_format",
+        "group": "format-245",
+        "id": "taylor:format-245",
+        "input": "Return only a JSON object whose key is code and value is item_245.\nJSON:",
+        "kind": "format",
+        "target": "{\"code\": \"item_245\"}"
+      },
+      {
+        "family": "language_format",
+        "group": "format-251",
+        "id": "taylor:format-251",
+        "input": "Convert the supplied word to uppercase: item_251\nAnswer:",
+        "kind": "format",
+        "target": "ITEM_251"
+      }
+    ],
+    "pilot": [
+      {
+        "family": "direct",
+        "group": "TG015",
+        "id": "taylor:TG015:direct",
+        "input": "Use only these directed relations.\nTG015N01 -> TG015N11\nTG015N04 -> TG015N03\nTG015N00 -> TG015N02\nTG015N07 -> TG015N06\nTG015N03 -> TG015N00\nTG015N02 -> TG015N05\nTG015N09 -> TG015N10\nTG015N11 -> TG015N09\nTG015N05 -> TG015N08\nTG015N08 -> TG015N01\nTG015N06 -> TG015N04\nTG015N10 -> TG015N07\n\nStarting at TG015N04, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG015N03"
+      },
+      {
+        "family": "two_step",
+        "group": "TG015",
+        "id": "taylor:TG015:two_step",
+        "input": "Use only these directed relations.\nTG015N01 -> TG015N11\nTG015N04 -> TG015N03\nTG015N00 -> TG015N02\nTG015N07 -> TG015N06\nTG015N03 -> TG015N00\nTG015N02 -> TG015N05\nTG015N09 -> TG015N10\nTG015N11 -> TG015N09\nTG015N05 -> TG015N08\nTG015N08 -> TG015N01\nTG015N06 -> TG015N04\nTG015N10 -> TG015N07\n\nStarting at TG015N04, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG015N00"
+      },
+      {
+        "family": "direct",
+        "group": "TG017",
+        "id": "taylor:TG017:direct",
+        "input": "Use only these directed relations.\nTG017N09 -> TG017N05\nTG017N10 -> TG017N00\nTG017N00 -> TG017N04\nTG017N04 -> TG017N07\nTG017N03 -> TG017N09\nTG017N07 -> TG017N03\nTG017N02 -> TG017N06\nTG017N08 -> TG017N11\nTG017N05 -> TG017N02\nTG017N01 -> TG017N10\nTG017N11 -> TG017N01\nTG017N06 -> TG017N08\n\nStarting at TG017N10, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG017N00"
+      },
+      {
+        "family": "two_step",
+        "group": "TG017",
+        "id": "taylor:TG017:two_step",
+        "input": "Use only these directed relations.\nTG017N09 -> TG017N05\nTG017N10 -> TG017N00\nTG017N00 -> TG017N04\nTG017N04 -> TG017N07\nTG017N03 -> TG017N09\nTG017N07 -> TG017N03\nTG017N02 -> TG017N06\nTG017N08 -> TG017N11\nTG017N05 -> TG017N02\nTG017N01 -> TG017N10\nTG017N11 -> TG017N01\nTG017N06 -> TG017N08\n\nStarting at TG017N10, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG017N04"
+      },
+      {
+        "family": "direct",
+        "group": "TG058",
+        "id": "taylor:TG058:direct",
+        "input": "Use only these directed relations.\nTG058N09 -> TG058N03\nTG058N11 -> TG058N02\nTG058N04 -> TG058N11\nTG058N07 -> TG058N05\nTG058N03 -> TG058N10\nTG058N08 -> TG058N07\nTG058N06 -> TG058N00\nTG058N10 -> TG058N06\nTG058N01 -> TG058N08\nTG058N02 -> TG058N01\nTG058N05 -> TG058N09\nTG058N00 -> TG058N04\n\nStarting at TG058N03, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG058N10"
+      },
+      {
+        "family": "two_step",
+        "group": "TG058",
+        "id": "taylor:TG058:two_step",
+        "input": "Use only these directed relations.\nTG058N09 -> TG058N03\nTG058N11 -> TG058N02\nTG058N04 -> TG058N11\nTG058N07 -> TG058N05\nTG058N03 -> TG058N10\nTG058N08 -> TG058N07\nTG058N06 -> TG058N00\nTG058N10 -> TG058N06\nTG058N01 -> TG058N08\nTG058N02 -> TG058N01\nTG058N05 -> TG058N09\nTG058N00 -> TG058N04\n\nStarting at TG058N03, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG058N06"
+      },
+      {
+        "family": "direct",
+        "group": "TG147",
+        "id": "taylor:TG147:direct",
+        "input": "Use only these directed relations.\nTG147N06 -> TG147N03\nTG147N10 -> TG147N04\nTG147N07 -> TG147N02\nTG147N05 -> TG147N11\nTG147N00 -> TG147N01\nTG147N03 -> TG147N00\nTG147N02 -> TG147N06\nTG147N04 -> TG147N07\nTG147N08 -> TG147N10\nTG147N01 -> TG147N09\nTG147N09 -> TG147N05\nTG147N11 -> TG147N08\n\nStarting at TG147N05, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG147N11"
+      },
+      {
+        "family": "two_step",
+        "group": "TG147",
+        "id": "taylor:TG147:two_step",
+        "input": "Use only these directed relations.\nTG147N06 -> TG147N03\nTG147N10 -> TG147N04\nTG147N07 -> TG147N02\nTG147N05 -> TG147N11\nTG147N00 -> TG147N01\nTG147N03 -> TG147N00\nTG147N02 -> TG147N06\nTG147N04 -> TG147N07\nTG147N08 -> TG147N10\nTG147N01 -> TG147N09\nTG147N09 -> TG147N05\nTG147N11 -> TG147N08\n\nStarting at TG147N05, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG147N08"
+      },
+      {
+        "family": "direct",
+        "group": "TG164",
+        "id": "taylor:TG164:direct",
+        "input": "Use only these directed relations.\nTG164N07 -> TG164N11\nTG164N02 -> TG164N09\nTG164N10 -> TG164N04\nTG164N01 -> TG164N03\nTG164N05 -> TG164N10\nTG164N03 -> TG164N07\nTG164N09 -> TG164N06\nTG164N11 -> TG164N00\nTG164N04 -> TG164N02\nTG164N06 -> TG164N01\nTG164N08 -> TG164N05\nTG164N00 -> TG164N08\n\nStarting at TG164N04, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG164N02"
+      },
+      {
+        "family": "two_step",
+        "group": "TG164",
+        "id": "taylor:TG164:two_step",
+        "input": "Use only these directed relations.\nTG164N07 -> TG164N11\nTG164N02 -> TG164N09\nTG164N10 -> TG164N04\nTG164N01 -> TG164N03\nTG164N05 -> TG164N10\nTG164N03 -> TG164N07\nTG164N09 -> TG164N06\nTG164N11 -> TG164N00\nTG164N04 -> TG164N02\nTG164N06 -> TG164N01\nTG164N08 -> TG164N05\nTG164N00 -> TG164N08\n\nStarting at TG164N04, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG164N09"
+      },
+      {
+        "family": "direct",
+        "group": "TG213",
+        "id": "taylor:TG213:direct",
+        "input": "Use only these directed relations.\nTG213N06 -> TG213N09\nTG213N05 -> TG213N02\nTG213N02 -> TG213N03\nTG213N04 -> TG213N05\nTG213N07 -> TG213N01\nTG213N10 -> TG213N06\nTG213N00 -> TG213N08\nTG213N09 -> TG213N07\nTG213N01 -> TG213N04\nTG213N11 -> TG213N00\nTG213N08 -> TG213N10\nTG213N03 -> TG213N11\n\nStarting at TG213N00, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG213N08"
+      },
+      {
+        "family": "two_step",
+        "group": "TG213",
+        "id": "taylor:TG213:two_step",
+        "input": "Use only these directed relations.\nTG213N06 -> TG213N09\nTG213N05 -> TG213N02\nTG213N02 -> TG213N03\nTG213N04 -> TG213N05\nTG213N07 -> TG213N01\nTG213N10 -> TG213N06\nTG213N00 -> TG213N08\nTG213N09 -> TG213N07\nTG213N01 -> TG213N04\nTG213N11 -> TG213N00\nTG213N08 -> TG213N10\nTG213N03 -> TG213N11\n\nStarting at TG213N00, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG213N10"
+      },
+      {
+        "family": "direct",
+        "group": "TG227",
+        "id": "taylor:TG227:direct",
+        "input": "Use only these directed relations.\nTG227N07 -> TG227N11\nTG227N08 -> TG227N01\nTG227N11 -> TG227N08\nTG227N00 -> TG227N09\nTG227N09 -> TG227N03\nTG227N03 -> TG227N07\nTG227N10 -> TG227N00\nTG227N05 -> TG227N02\nTG227N02 -> TG227N10\nTG227N06 -> TG227N04\nTG227N04 -> TG227N05\nTG227N01 -> TG227N06\n\nStarting at TG227N11, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG227N08"
+      },
+      {
+        "family": "two_step",
+        "group": "TG227",
+        "id": "taylor:TG227:two_step",
+        "input": "Use only these directed relations.\nTG227N07 -> TG227N11\nTG227N08 -> TG227N01\nTG227N11 -> TG227N08\nTG227N00 -> TG227N09\nTG227N09 -> TG227N03\nTG227N03 -> TG227N07\nTG227N10 -> TG227N00\nTG227N05 -> TG227N02\nTG227N02 -> TG227N10\nTG227N06 -> TG227N04\nTG227N04 -> TG227N05\nTG227N01 -> TG227N06\n\nStarting at TG227N11, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG227N01"
+      },
+      {
+        "family": "direct",
+        "group": "TG228",
+        "id": "taylor:TG228:direct",
+        "input": "Use only these directed relations.\nTG228N09 -> TG228N00\nTG228N10 -> TG228N11\nTG228N04 -> TG228N09\nTG228N02 -> TG228N03\nTG228N08 -> TG228N10\nTG228N05 -> TG228N06\nTG228N11 -> TG228N05\nTG228N06 -> TG228N01\nTG228N00 -> TG228N07\nTG228N03 -> TG228N08\nTG228N01 -> TG228N04\nTG228N07 -> TG228N02\n\nStarting at TG228N07, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG228N02"
+      },
+      {
+        "family": "two_step",
+        "group": "TG228",
+        "id": "taylor:TG228:two_step",
+        "input": "Use only these directed relations.\nTG228N09 -> TG228N00\nTG228N10 -> TG228N11\nTG228N04 -> TG228N09\nTG228N02 -> TG228N03\nTG228N08 -> TG228N10\nTG228N05 -> TG228N06\nTG228N11 -> TG228N05\nTG228N06 -> TG228N01\nTG228N00 -> TG228N07\nTG228N03 -> TG228N08\nTG228N01 -> TG228N04\nTG228N07 -> TG228N02\n\nStarting at TG228N07, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG228N03"
+      },
+      {
+        "fact": {
+          "element": "silicon",
+          "symbol": "Si"
+        },
+        "family": "supplied_fact",
+        "foil": "Ga",
+        "group": "silicon",
+        "id": "taylor:fact:silicon:0:context",
+        "input": "Use the supplied fact: the chemical symbol for silicon is Si.\nWhat is the chemical symbol for silicon?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Si"
+      },
+      {
+        "fact": {
+          "element": "silicon",
+          "symbol": "Si"
+        },
+        "family": "recall",
+        "foil": "Ga",
+        "group": "silicon",
+        "id": "taylor:fact:silicon:0:recall",
+        "input": "What is the chemical symbol for silicon?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Si"
+      },
+      {
+        "fact": {
+          "element": "silicon",
+          "symbol": "Si"
+        },
+        "family": "supplied_fact",
+        "foil": "Ga",
+        "group": "silicon",
+        "id": "taylor:fact:silicon:1:context",
+        "input": "Use the supplied fact: the chemical symbol for silicon is Si.\nGive the element symbol of silicon.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Si"
+      },
+      {
+        "fact": {
+          "element": "silicon",
+          "symbol": "Si"
+        },
+        "family": "recall",
+        "foil": "Ga",
+        "group": "silicon",
+        "id": "taylor:fact:silicon:1:recall",
+        "input": "Give the element symbol of silicon.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Si"
+      },
+      {
+        "fact": {
+          "element": "rubidium",
+          "symbol": "Rb"
+        },
+        "family": "supplied_fact",
+        "foil": "Xe",
+        "group": "rubidium",
+        "id": "taylor:fact:rubidium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for rubidium is Rb.\nWhat is the chemical symbol for rubidium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rb"
+      },
+      {
+        "fact": {
+          "element": "rubidium",
+          "symbol": "Rb"
+        },
+        "family": "recall",
+        "foil": "Xe",
+        "group": "rubidium",
+        "id": "taylor:fact:rubidium:0:recall",
+        "input": "What is the chemical symbol for rubidium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rb"
+      },
+      {
+        "fact": {
+          "element": "rubidium",
+          "symbol": "Rb"
+        },
+        "family": "supplied_fact",
+        "foil": "Xe",
+        "group": "rubidium",
+        "id": "taylor:fact:rubidium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for rubidium is Rb.\nGive the element symbol of rubidium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rb"
+      },
+      {
+        "fact": {
+          "element": "rubidium",
+          "symbol": "Rb"
+        },
+        "family": "recall",
+        "foil": "Xe",
+        "group": "rubidium",
+        "id": "taylor:fact:rubidium:1:recall",
+        "input": "Give the element symbol of rubidium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rb"
+      },
+      {
+        "fact": {
+          "element": "technetium",
+          "symbol": "Tc"
+        },
+        "family": "supplied_fact",
+        "foil": "Nd",
+        "group": "technetium",
+        "id": "taylor:fact:technetium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for technetium is Tc.\nWhat is the chemical symbol for technetium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Tc"
+      },
+      {
+        "fact": {
+          "element": "technetium",
+          "symbol": "Tc"
+        },
+        "family": "recall",
+        "foil": "Nd",
+        "group": "technetium",
+        "id": "taylor:fact:technetium:0:recall",
+        "input": "What is the chemical symbol for technetium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Tc"
+      },
+      {
+        "fact": {
+          "element": "technetium",
+          "symbol": "Tc"
+        },
+        "family": "supplied_fact",
+        "foil": "Nd",
+        "group": "technetium",
+        "id": "taylor:fact:technetium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for technetium is Tc.\nGive the element symbol of technetium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Tc"
+      },
+      {
+        "fact": {
+          "element": "technetium",
+          "symbol": "Tc"
+        },
+        "family": "recall",
+        "foil": "Nd",
+        "group": "technetium",
+        "id": "taylor:fact:technetium:1:recall",
+        "input": "Give the element symbol of technetium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Tc"
+      },
+      {
+        "fact": {
+          "element": "tungsten",
+          "symbol": "W"
+        },
+        "family": "supplied_fact",
+        "foil": "Pa",
+        "group": "tungsten",
+        "id": "taylor:fact:tungsten:0:context",
+        "input": "Use the supplied fact: the chemical symbol for tungsten is W.\nWhat is the chemical symbol for tungsten?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "W"
+      },
+      {
+        "fact": {
+          "element": "tungsten",
+          "symbol": "W"
+        },
+        "family": "recall",
+        "foil": "Pa",
+        "group": "tungsten",
+        "id": "taylor:fact:tungsten:0:recall",
+        "input": "What is the chemical symbol for tungsten?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "W"
+      },
+      {
+        "fact": {
+          "element": "tungsten",
+          "symbol": "W"
+        },
+        "family": "supplied_fact",
+        "foil": "Pa",
+        "group": "tungsten",
+        "id": "taylor:fact:tungsten:1:context",
+        "input": "Use the supplied fact: the chemical symbol for tungsten is W.\nGive the element symbol of tungsten.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "W"
+      },
+      {
+        "fact": {
+          "element": "tungsten",
+          "symbol": "W"
+        },
+        "family": "recall",
+        "foil": "Pa",
+        "group": "tungsten",
+        "id": "taylor:fact:tungsten:1:recall",
+        "input": "Give the element symbol of tungsten.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "W"
+      },
+      {
+        "fact": {
+          "element": "bismuth",
+          "symbol": "Bi"
+        },
+        "family": "supplied_fact",
+        "foil": "Fm",
+        "group": "bismuth",
+        "id": "taylor:fact:bismuth:0:context",
+        "input": "Use the supplied fact: the chemical symbol for bismuth is Bi.\nWhat is the chemical symbol for bismuth?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Bi"
+      },
+      {
+        "fact": {
+          "element": "bismuth",
+          "symbol": "Bi"
+        },
+        "family": "recall",
+        "foil": "Fm",
+        "group": "bismuth",
+        "id": "taylor:fact:bismuth:0:recall",
+        "input": "What is the chemical symbol for bismuth?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Bi"
+      },
+      {
+        "fact": {
+          "element": "bismuth",
+          "symbol": "Bi"
+        },
+        "family": "supplied_fact",
+        "foil": "Fm",
+        "group": "bismuth",
+        "id": "taylor:fact:bismuth:1:context",
+        "input": "Use the supplied fact: the chemical symbol for bismuth is Bi.\nGive the element symbol of bismuth.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Bi"
+      },
+      {
+        "fact": {
+          "element": "bismuth",
+          "symbol": "Bi"
+        },
+        "family": "recall",
+        "foil": "Fm",
+        "group": "bismuth",
+        "id": "taylor:fact:bismuth:1:recall",
+        "input": "Give the element symbol of bismuth.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Bi"
+      },
+      {
+        "fact": {
+          "element": "radon",
+          "symbol": "Rn"
+        },
+        "family": "supplied_fact",
+        "foil": "Lr",
+        "group": "radon",
+        "id": "taylor:fact:radon:0:context",
+        "input": "Use the supplied fact: the chemical symbol for radon is Rn.\nWhat is the chemical symbol for radon?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rn"
+      },
+      {
+        "fact": {
+          "element": "radon",
+          "symbol": "Rn"
+        },
+        "family": "recall",
+        "foil": "Lr",
+        "group": "radon",
+        "id": "taylor:fact:radon:0:recall",
+        "input": "What is the chemical symbol for radon?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rn"
+      },
+      {
+        "fact": {
+          "element": "radon",
+          "symbol": "Rn"
+        },
+        "family": "supplied_fact",
+        "foil": "Lr",
+        "group": "radon",
+        "id": "taylor:fact:radon:1:context",
+        "input": "Use the supplied fact: the chemical symbol for radon is Rn.\nGive the element symbol of radon.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rn"
+      },
+      {
+        "fact": {
+          "element": "radon",
+          "symbol": "Rn"
+        },
+        "family": "recall",
+        "foil": "Lr",
+        "group": "radon",
+        "id": "taylor:fact:radon:1:recall",
+        "input": "Give the element symbol of radon.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rn"
+      },
+      {
+        "fact": {
+          "element": "americium",
+          "symbol": "Am"
+        },
+        "family": "supplied_fact",
+        "foil": "Cn",
+        "group": "americium",
+        "id": "taylor:fact:americium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for americium is Am.\nWhat is the chemical symbol for americium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Am"
+      },
+      {
+        "fact": {
+          "element": "americium",
+          "symbol": "Am"
+        },
+        "family": "recall",
+        "foil": "Cn",
+        "group": "americium",
+        "id": "taylor:fact:americium:0:recall",
+        "input": "What is the chemical symbol for americium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Am"
+      },
+      {
+        "fact": {
+          "element": "americium",
+          "symbol": "Am"
+        },
+        "family": "supplied_fact",
+        "foil": "Cn",
+        "group": "americium",
+        "id": "taylor:fact:americium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for americium is Am.\nGive the element symbol of americium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Am"
+      },
+      {
+        "fact": {
+          "element": "americium",
+          "symbol": "Am"
+        },
+        "family": "recall",
+        "foil": "Cn",
+        "group": "americium",
+        "id": "taylor:fact:americium:1:recall",
+        "input": "Give the element symbol of americium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Am"
+      },
+      {
+        "fact": {
+          "element": "lawrencium",
+          "symbol": "Lr"
+        },
+        "family": "supplied_fact",
+        "foil": "He",
+        "group": "lawrencium",
+        "id": "taylor:fact:lawrencium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for lawrencium is Lr.\nWhat is the chemical symbol for lawrencium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Lr"
+      },
+      {
+        "fact": {
+          "element": "lawrencium",
+          "symbol": "Lr"
+        },
+        "family": "recall",
+        "foil": "He",
+        "group": "lawrencium",
+        "id": "taylor:fact:lawrencium:0:recall",
+        "input": "What is the chemical symbol for lawrencium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Lr"
+      },
+      {
+        "fact": {
+          "element": "lawrencium",
+          "symbol": "Lr"
+        },
+        "family": "supplied_fact",
+        "foil": "He",
+        "group": "lawrencium",
+        "id": "taylor:fact:lawrencium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for lawrencium is Lr.\nGive the element symbol of lawrencium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Lr"
+      },
+      {
+        "fact": {
+          "element": "lawrencium",
+          "symbol": "Lr"
+        },
+        "family": "recall",
+        "foil": "He",
+        "group": "lawrencium",
+        "id": "taylor:fact:lawrencium:1:recall",
+        "input": "Give the element symbol of lawrencium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Lr"
+      },
+      {
+        "family": "language_format",
+        "group": "format-015",
+        "id": "taylor:format-015",
+        "input": "Convert the supplied word to uppercase: item_015\nAnswer:",
+        "kind": "format",
+        "target": "ITEM_015"
+      },
+      {
+        "family": "language_format",
+        "group": "format-026",
+        "id": "taylor:format-026",
+        "input": "Complete this sentence using the supplied word 'item_026': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_026."
+      },
+      {
+        "family": "language_format",
+        "group": "format-040",
+        "id": "taylor:format-040",
+        "input": "Copy the supplied identifier exactly: item_040\nIdentifier:",
+        "kind": "format",
+        "target": "item_040"
+      },
+      {
+        "family": "language_format",
+        "group": "format-050",
+        "id": "taylor:format-050",
+        "input": "Complete this sentence using the supplied word 'item_050': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_050."
+      },
+      {
+        "family": "language_format",
+        "group": "format-090",
+        "id": "taylor:format-090",
+        "input": "Complete this sentence using the supplied word 'item_090': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_090."
+      },
+      {
+        "family": "language_format",
+        "group": "format-146",
+        "id": "taylor:format-146",
+        "input": "Complete this sentence using the supplied word 'item_146': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_146."
+      },
+      {
+        "family": "language_format",
+        "group": "format-157",
+        "id": "taylor:format-157",
+        "input": "Return only a JSON object whose key is code and value is item_157.\nJSON:",
+        "kind": "format",
+        "target": "{\"code\": \"item_157\"}"
+      },
+      {
+        "family": "language_format",
+        "group": "format-219",
+        "id": "taylor:format-219",
+        "input": "Convert the supplied word to uppercase: item_219\nAnswer:",
+        "kind": "format",
+        "target": "ITEM_219"
+      }
+    ],
+    "score": [
+      {
+        "family": "direct",
+        "group": "TG027",
+        "id": "taylor:TG027:direct",
+        "input": "Use only these directed relations.\nTG027N06 -> TG027N03\nTG027N10 -> TG027N04\nTG027N02 -> TG027N10\nTG027N09 -> TG027N05\nTG027N11 -> TG027N02\nTG027N05 -> TG027N00\nTG027N00 -> TG027N01\nTG027N07 -> TG027N11\nTG027N03 -> TG027N07\nTG027N04 -> TG027N09\nTG027N08 -> TG027N06\nTG027N01 -> TG027N08\n\nStarting at TG027N05, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG027N00"
+      },
+      {
+        "family": "two_step",
+        "group": "TG027",
+        "id": "taylor:TG027:two_step",
+        "input": "Use only these directed relations.\nTG027N06 -> TG027N03\nTG027N10 -> TG027N04\nTG027N02 -> TG027N10\nTG027N09 -> TG027N05\nTG027N11 -> TG027N02\nTG027N05 -> TG027N00\nTG027N00 -> TG027N01\nTG027N07 -> TG027N11\nTG027N03 -> TG027N07\nTG027N04 -> TG027N09\nTG027N08 -> TG027N06\nTG027N01 -> TG027N08\n\nStarting at TG027N05, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG027N01"
+      },
+      {
+        "family": "direct",
+        "group": "TG037",
+        "id": "taylor:TG037:direct",
+        "input": "Use only these directed relations.\nTG037N10 -> TG037N04\nTG037N03 -> TG037N09\nTG037N04 -> TG037N07\nTG037N00 -> TG037N05\nTG037N01 -> TG037N02\nTG037N11 -> TG037N03\nTG037N02 -> TG037N00\nTG037N09 -> TG037N01\nTG037N05 -> TG037N08\nTG037N06 -> TG037N10\nTG037N07 -> TG037N11\nTG037N08 -> TG037N06\n\nStarting at TG037N05, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG037N08"
+      },
+      {
+        "family": "two_step",
+        "group": "TG037",
+        "id": "taylor:TG037:two_step",
+        "input": "Use only these directed relations.\nTG037N10 -> TG037N04\nTG037N03 -> TG037N09\nTG037N04 -> TG037N07\nTG037N00 -> TG037N05\nTG037N01 -> TG037N02\nTG037N11 -> TG037N03\nTG037N02 -> TG037N00\nTG037N09 -> TG037N01\nTG037N05 -> TG037N08\nTG037N06 -> TG037N10\nTG037N07 -> TG037N11\nTG037N08 -> TG037N06\n\nStarting at TG037N05, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG037N06"
+      },
+      {
+        "family": "direct",
+        "group": "TG039",
+        "id": "taylor:TG039:direct",
+        "input": "Use only these directed relations.\nTG039N08 -> TG039N00\nTG039N01 -> TG039N03\nTG039N02 -> TG039N07\nTG039N09 -> TG039N04\nTG039N07 -> TG039N10\nTG039N03 -> TG039N09\nTG039N04 -> TG039N11\nTG039N00 -> TG039N01\nTG039N11 -> TG039N06\nTG039N05 -> TG039N02\nTG039N10 -> TG039N08\nTG039N06 -> TG039N05\n\nStarting at TG039N05, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG039N02"
+      },
+      {
+        "family": "two_step",
+        "group": "TG039",
+        "id": "taylor:TG039:two_step",
+        "input": "Use only these directed relations.\nTG039N08 -> TG039N00\nTG039N01 -> TG039N03\nTG039N02 -> TG039N07\nTG039N09 -> TG039N04\nTG039N07 -> TG039N10\nTG039N03 -> TG039N09\nTG039N04 -> TG039N11\nTG039N00 -> TG039N01\nTG039N11 -> TG039N06\nTG039N05 -> TG039N02\nTG039N10 -> TG039N08\nTG039N06 -> TG039N05\n\nStarting at TG039N05, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG039N07"
+      },
+      {
+        "family": "direct",
+        "group": "TG049",
+        "id": "taylor:TG049:direct",
+        "input": "Use only these directed relations.\nTG049N05 -> TG049N06\nTG049N03 -> TG049N00\nTG049N07 -> TG049N11\nTG049N06 -> TG049N09\nTG049N00 -> TG049N02\nTG049N09 -> TG049N03\nTG049N04 -> TG049N08\nTG049N02 -> TG049N04\nTG049N08 -> TG049N07\nTG049N10 -> TG049N05\nTG049N11 -> TG049N01\nTG049N01 -> TG049N10\n\nStarting at TG049N06, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG049N09"
+      },
+      {
+        "family": "two_step",
+        "group": "TG049",
+        "id": "taylor:TG049:two_step",
+        "input": "Use only these directed relations.\nTG049N05 -> TG049N06\nTG049N03 -> TG049N00\nTG049N07 -> TG049N11\nTG049N06 -> TG049N09\nTG049N00 -> TG049N02\nTG049N09 -> TG049N03\nTG049N04 -> TG049N08\nTG049N02 -> TG049N04\nTG049N08 -> TG049N07\nTG049N10 -> TG049N05\nTG049N11 -> TG049N01\nTG049N01 -> TG049N10\n\nStarting at TG049N06, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG049N03"
+      },
+      {
+        "family": "direct",
+        "group": "TG074",
+        "id": "taylor:TG074:direct",
+        "input": "Use only these directed relations.\nTG074N09 -> TG074N03\nTG074N11 -> TG074N01\nTG074N06 -> TG074N09\nTG074N05 -> TG074N10\nTG074N07 -> TG074N05\nTG074N04 -> TG074N00\nTG074N02 -> TG074N11\nTG074N08 -> TG074N06\nTG074N03 -> TG074N02\nTG074N10 -> TG074N08\nTG074N00 -> TG074N07\nTG074N01 -> TG074N04\n\nStarting at TG074N09, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG074N03"
+      },
+      {
+        "family": "two_step",
+        "group": "TG074",
+        "id": "taylor:TG074:two_step",
+        "input": "Use only these directed relations.\nTG074N09 -> TG074N03\nTG074N11 -> TG074N01\nTG074N06 -> TG074N09\nTG074N05 -> TG074N10\nTG074N07 -> TG074N05\nTG074N04 -> TG074N00\nTG074N02 -> TG074N11\nTG074N08 -> TG074N06\nTG074N03 -> TG074N02\nTG074N10 -> TG074N08\nTG074N00 -> TG074N07\nTG074N01 -> TG074N04\n\nStarting at TG074N09, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG074N02"
+      },
+      {
+        "family": "direct",
+        "group": "TG079",
+        "id": "taylor:TG079:direct",
+        "input": "Use only these directed relations.\nTG079N08 -> TG079N11\nTG079N04 -> TG079N05\nTG079N09 -> TG079N06\nTG079N05 -> TG079N08\nTG079N11 -> TG079N01\nTG079N06 -> TG079N02\nTG079N01 -> TG079N10\nTG079N02 -> TG079N03\nTG079N07 -> TG079N00\nTG079N10 -> TG079N09\nTG079N00 -> TG079N04\nTG079N03 -> TG079N07\n\nStarting at TG079N06, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG079N02"
+      },
+      {
+        "family": "two_step",
+        "group": "TG079",
+        "id": "taylor:TG079:two_step",
+        "input": "Use only these directed relations.\nTG079N08 -> TG079N11\nTG079N04 -> TG079N05\nTG079N09 -> TG079N06\nTG079N05 -> TG079N08\nTG079N11 -> TG079N01\nTG079N06 -> TG079N02\nTG079N01 -> TG079N10\nTG079N02 -> TG079N03\nTG079N07 -> TG079N00\nTG079N10 -> TG079N09\nTG079N00 -> TG079N04\nTG079N03 -> TG079N07\n\nStarting at TG079N06, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG079N03"
+      },
+      {
+        "family": "direct",
+        "group": "TG100",
+        "id": "taylor:TG100:direct",
+        "input": "Use only these directed relations.\nTG100N01 -> TG100N05\nTG100N03 -> TG100N01\nTG100N05 -> TG100N04\nTG100N10 -> TG100N06\nTG100N11 -> TG100N07\nTG100N06 -> TG100N03\nTG100N08 -> TG100N00\nTG100N07 -> TG100N02\nTG100N09 -> TG100N08\nTG100N04 -> TG100N09\nTG100N02 -> TG100N10\nTG100N00 -> TG100N11\n\nStarting at TG100N05, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG100N04"
+      },
+      {
+        "family": "two_step",
+        "group": "TG100",
+        "id": "taylor:TG100:two_step",
+        "input": "Use only these directed relations.\nTG100N01 -> TG100N05\nTG100N03 -> TG100N01\nTG100N05 -> TG100N04\nTG100N10 -> TG100N06\nTG100N11 -> TG100N07\nTG100N06 -> TG100N03\nTG100N08 -> TG100N00\nTG100N07 -> TG100N02\nTG100N09 -> TG100N08\nTG100N04 -> TG100N09\nTG100N02 -> TG100N10\nTG100N00 -> TG100N11\n\nStarting at TG100N05, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG100N09"
+      },
+      {
+        "family": "direct",
+        "group": "TG101",
+        "id": "taylor:TG101:direct",
+        "input": "Use only these directed relations.\nTG101N11 -> TG101N05\nTG101N07 -> TG101N02\nTG101N05 -> TG101N07\nTG101N10 -> TG101N03\nTG101N00 -> TG101N08\nTG101N04 -> TG101N00\nTG101N03 -> TG101N04\nTG101N09 -> TG101N10\nTG101N01 -> TG101N06\nTG101N08 -> TG101N01\nTG101N02 -> TG101N09\nTG101N06 -> TG101N11\n\nStarting at TG101N02, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG101N09"
+      },
+      {
+        "family": "two_step",
+        "group": "TG101",
+        "id": "taylor:TG101:two_step",
+        "input": "Use only these directed relations.\nTG101N11 -> TG101N05\nTG101N07 -> TG101N02\nTG101N05 -> TG101N07\nTG101N10 -> TG101N03\nTG101N00 -> TG101N08\nTG101N04 -> TG101N00\nTG101N03 -> TG101N04\nTG101N09 -> TG101N10\nTG101N01 -> TG101N06\nTG101N08 -> TG101N01\nTG101N02 -> TG101N09\nTG101N06 -> TG101N11\n\nStarting at TG101N02, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG101N10"
+      },
+      {
+        "family": "direct",
+        "group": "TG118",
+        "id": "taylor:TG118:direct",
+        "input": "Use only these directed relations.\nTG118N01 -> TG118N02\nTG118N10 -> TG118N11\nTG118N11 -> TG118N06\nTG118N04 -> TG118N08\nTG118N02 -> TG118N10\nTG118N09 -> TG118N07\nTG118N06 -> TG118N00\nTG118N07 -> TG118N01\nTG118N05 -> TG118N04\nTG118N03 -> TG118N09\nTG118N08 -> TG118N03\nTG118N00 -> TG118N05\n\nStarting at TG118N09, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG118N07"
+      },
+      {
+        "family": "two_step",
+        "group": "TG118",
+        "id": "taylor:TG118:two_step",
+        "input": "Use only these directed relations.\nTG118N01 -> TG118N02\nTG118N10 -> TG118N11\nTG118N11 -> TG118N06\nTG118N04 -> TG118N08\nTG118N02 -> TG118N10\nTG118N09 -> TG118N07\nTG118N06 -> TG118N00\nTG118N07 -> TG118N01\nTG118N05 -> TG118N04\nTG118N03 -> TG118N09\nTG118N08 -> TG118N03\nTG118N00 -> TG118N05\n\nStarting at TG118N09, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG118N01"
+      },
+      {
+        "family": "direct",
+        "group": "TG122",
+        "id": "taylor:TG122:direct",
+        "input": "Use only these directed relations.\nTG122N09 -> TG122N07\nTG122N00 -> TG122N02\nTG122N06 -> TG122N09\nTG122N05 -> TG122N10\nTG122N02 -> TG122N03\nTG122N01 -> TG122N04\nTG122N03 -> TG122N05\nTG122N11 -> TG122N00\nTG122N07 -> TG122N01\nTG122N04 -> TG122N08\nTG122N10 -> TG122N06\nTG122N08 -> TG122N11\n\nStarting at TG122N08, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG122N11"
+      },
+      {
+        "family": "two_step",
+        "group": "TG122",
+        "id": "taylor:TG122:two_step",
+        "input": "Use only these directed relations.\nTG122N09 -> TG122N07\nTG122N00 -> TG122N02\nTG122N06 -> TG122N09\nTG122N05 -> TG122N10\nTG122N02 -> TG122N03\nTG122N01 -> TG122N04\nTG122N03 -> TG122N05\nTG122N11 -> TG122N00\nTG122N07 -> TG122N01\nTG122N04 -> TG122N08\nTG122N10 -> TG122N06\nTG122N08 -> TG122N11\n\nStarting at TG122N08, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG122N00"
+      },
+      {
+        "family": "direct",
+        "group": "TG135",
+        "id": "taylor:TG135:direct",
+        "input": "Use only these directed relations.\nTG135N06 -> TG135N03\nTG135N07 -> TG135N11\nTG135N01 -> TG135N05\nTG135N11 -> TG135N04\nTG135N09 -> TG135N06\nTG135N04 -> TG135N01\nTG135N03 -> TG135N02\nTG135N05 -> TG135N10\nTG135N08 -> TG135N07\nTG135N02 -> TG135N00\nTG135N00 -> TG135N08\nTG135N10 -> TG135N09\n\nStarting at TG135N01, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG135N05"
+      },
+      {
+        "family": "two_step",
+        "group": "TG135",
+        "id": "taylor:TG135:two_step",
+        "input": "Use only these directed relations.\nTG135N06 -> TG135N03\nTG135N07 -> TG135N11\nTG135N01 -> TG135N05\nTG135N11 -> TG135N04\nTG135N09 -> TG135N06\nTG135N04 -> TG135N01\nTG135N03 -> TG135N02\nTG135N05 -> TG135N10\nTG135N08 -> TG135N07\nTG135N02 -> TG135N00\nTG135N00 -> TG135N08\nTG135N10 -> TG135N09\n\nStarting at TG135N01, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG135N10"
+      },
+      {
+        "family": "direct",
+        "group": "TG138",
+        "id": "taylor:TG138:direct",
+        "input": "Use only these directed relations.\nTG138N01 -> TG138N06\nTG138N08 -> TG138N05\nTG138N03 -> TG138N08\nTG138N06 -> TG138N03\nTG138N10 -> TG138N09\nTG138N04 -> TG138N02\nTG138N02 -> TG138N01\nTG138N09 -> TG138N11\nTG138N11 -> TG138N04\nTG138N00 -> TG138N07\nTG138N07 -> TG138N10\nTG138N05 -> TG138N00\n\nStarting at TG138N06, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG138N03"
+      },
+      {
+        "family": "two_step",
+        "group": "TG138",
+        "id": "taylor:TG138:two_step",
+        "input": "Use only these directed relations.\nTG138N01 -> TG138N06\nTG138N08 -> TG138N05\nTG138N03 -> TG138N08\nTG138N06 -> TG138N03\nTG138N10 -> TG138N09\nTG138N04 -> TG138N02\nTG138N02 -> TG138N01\nTG138N09 -> TG138N11\nTG138N11 -> TG138N04\nTG138N00 -> TG138N07\nTG138N07 -> TG138N10\nTG138N05 -> TG138N00\n\nStarting at TG138N06, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG138N08"
+      },
+      {
+        "family": "direct",
+        "group": "TG143",
+        "id": "taylor:TG143:direct",
+        "input": "Use only these directed relations.\nTG143N03 -> TG143N07\nTG143N04 -> TG143N11\nTG143N08 -> TG143N03\nTG143N01 -> TG143N00\nTG143N07 -> TG143N04\nTG143N05 -> TG143N02\nTG143N02 -> TG143N08\nTG143N06 -> TG143N09\nTG143N09 -> TG143N05\nTG143N10 -> TG143N01\nTG143N11 -> TG143N10\nTG143N00 -> TG143N06\n\nStarting at TG143N07, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG143N04"
+      },
+      {
+        "family": "two_step",
+        "group": "TG143",
+        "id": "taylor:TG143:two_step",
+        "input": "Use only these directed relations.\nTG143N03 -> TG143N07\nTG143N04 -> TG143N11\nTG143N08 -> TG143N03\nTG143N01 -> TG143N00\nTG143N07 -> TG143N04\nTG143N05 -> TG143N02\nTG143N02 -> TG143N08\nTG143N06 -> TG143N09\nTG143N09 -> TG143N05\nTG143N10 -> TG143N01\nTG143N11 -> TG143N10\nTG143N00 -> TG143N06\n\nStarting at TG143N07, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG143N11"
+      },
+      {
+        "family": "direct",
+        "group": "TG159",
+        "id": "taylor:TG159:direct",
+        "input": "Use only these directed relations.\nTG159N07 -> TG159N00\nTG159N01 -> TG159N09\nTG159N05 -> TG159N03\nTG159N09 -> TG159N05\nTG159N08 -> TG159N04\nTG159N02 -> TG159N01\nTG159N10 -> TG159N08\nTG159N06 -> TG159N07\nTG159N00 -> TG159N02\nTG159N11 -> TG159N10\nTG159N04 -> TG159N06\nTG159N03 -> TG159N11\n\nStarting at TG159N02, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG159N01"
+      },
+      {
+        "family": "two_step",
+        "group": "TG159",
+        "id": "taylor:TG159:two_step",
+        "input": "Use only these directed relations.\nTG159N07 -> TG159N00\nTG159N01 -> TG159N09\nTG159N05 -> TG159N03\nTG159N09 -> TG159N05\nTG159N08 -> TG159N04\nTG159N02 -> TG159N01\nTG159N10 -> TG159N08\nTG159N06 -> TG159N07\nTG159N00 -> TG159N02\nTG159N11 -> TG159N10\nTG159N04 -> TG159N06\nTG159N03 -> TG159N11\n\nStarting at TG159N02, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG159N09"
+      },
+      {
+        "family": "direct",
+        "group": "TG167",
+        "id": "taylor:TG167:direct",
+        "input": "Use only these directed relations.\nTG167N11 -> TG167N00\nTG167N03 -> TG167N11\nTG167N08 -> TG167N05\nTG167N04 -> TG167N07\nTG167N02 -> TG167N06\nTG167N00 -> TG167N09\nTG167N06 -> TG167N04\nTG167N07 -> TG167N01\nTG167N10 -> TG167N08\nTG167N09 -> TG167N10\nTG167N05 -> TG167N02\nTG167N01 -> TG167N03\n\nStarting at TG167N04, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG167N07"
+      },
+      {
+        "family": "two_step",
+        "group": "TG167",
+        "id": "taylor:TG167:two_step",
+        "input": "Use only these directed relations.\nTG167N11 -> TG167N00\nTG167N03 -> TG167N11\nTG167N08 -> TG167N05\nTG167N04 -> TG167N07\nTG167N02 -> TG167N06\nTG167N00 -> TG167N09\nTG167N06 -> TG167N04\nTG167N07 -> TG167N01\nTG167N10 -> TG167N08\nTG167N09 -> TG167N10\nTG167N05 -> TG167N02\nTG167N01 -> TG167N03\n\nStarting at TG167N04, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG167N01"
+      },
+      {
+        "family": "direct",
+        "group": "TG181",
+        "id": "taylor:TG181:direct",
+        "input": "Use only these directed relations.\nTG181N01 -> TG181N07\nTG181N09 -> TG181N06\nTG181N11 -> TG181N00\nTG181N10 -> TG181N01\nTG181N04 -> TG181N08\nTG181N00 -> TG181N03\nTG181N08 -> TG181N10\nTG181N06 -> TG181N02\nTG181N03 -> TG181N04\nTG181N05 -> TG181N09\nTG181N02 -> TG181N11\nTG181N07 -> TG181N05\n\nStarting at TG181N11, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG181N00"
+      },
+      {
+        "family": "two_step",
+        "group": "TG181",
+        "id": "taylor:TG181:two_step",
+        "input": "Use only these directed relations.\nTG181N01 -> TG181N07\nTG181N09 -> TG181N06\nTG181N11 -> TG181N00\nTG181N10 -> TG181N01\nTG181N04 -> TG181N08\nTG181N00 -> TG181N03\nTG181N08 -> TG181N10\nTG181N06 -> TG181N02\nTG181N03 -> TG181N04\nTG181N05 -> TG181N09\nTG181N02 -> TG181N11\nTG181N07 -> TG181N05\n\nStarting at TG181N11, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG181N03"
+      },
+      {
+        "family": "direct",
+        "group": "TG183",
+        "id": "taylor:TG183:direct",
+        "input": "Use only these directed relations.\nTG183N04 -> TG183N03\nTG183N10 -> TG183N09\nTG183N06 -> TG183N08\nTG183N09 -> TG183N02\nTG183N08 -> TG183N05\nTG183N02 -> TG183N11\nTG183N11 -> TG183N06\nTG183N05 -> TG183N07\nTG183N07 -> TG183N01\nTG183N03 -> TG183N10\nTG183N00 -> TG183N04\nTG183N01 -> TG183N00\n\nStarting at TG183N05, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG183N07"
+      },
+      {
+        "family": "two_step",
+        "group": "TG183",
+        "id": "taylor:TG183:two_step",
+        "input": "Use only these directed relations.\nTG183N04 -> TG183N03\nTG183N10 -> TG183N09\nTG183N06 -> TG183N08\nTG183N09 -> TG183N02\nTG183N08 -> TG183N05\nTG183N02 -> TG183N11\nTG183N11 -> TG183N06\nTG183N05 -> TG183N07\nTG183N07 -> TG183N01\nTG183N03 -> TG183N10\nTG183N00 -> TG183N04\nTG183N01 -> TG183N00\n\nStarting at TG183N05, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG183N01"
+      },
+      {
+        "family": "direct",
+        "group": "TG190",
+        "id": "taylor:TG190:direct",
+        "input": "Use only these directed relations.\nTG190N04 -> TG190N00\nTG190N10 -> TG190N01\nTG190N09 -> TG190N03\nTG190N02 -> TG190N11\nTG190N01 -> TG190N06\nTG190N07 -> TG190N08\nTG190N11 -> TG190N05\nTG190N03 -> TG190N02\nTG190N00 -> TG190N10\nTG190N05 -> TG190N04\nTG190N08 -> TG190N09\nTG190N06 -> TG190N07\n\nStarting at TG190N06, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG190N07"
+      },
+      {
+        "family": "two_step",
+        "group": "TG190",
+        "id": "taylor:TG190:two_step",
+        "input": "Use only these directed relations.\nTG190N04 -> TG190N00\nTG190N10 -> TG190N01\nTG190N09 -> TG190N03\nTG190N02 -> TG190N11\nTG190N01 -> TG190N06\nTG190N07 -> TG190N08\nTG190N11 -> TG190N05\nTG190N03 -> TG190N02\nTG190N00 -> TG190N10\nTG190N05 -> TG190N04\nTG190N08 -> TG190N09\nTG190N06 -> TG190N07\n\nStarting at TG190N06, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG190N08"
+      },
+      {
+        "family": "direct",
+        "group": "TG208",
+        "id": "taylor:TG208:direct",
+        "input": "Use only these directed relations.\nTG208N03 -> TG208N01\nTG208N06 -> TG208N11\nTG208N10 -> TG208N09\nTG208N07 -> TG208N08\nTG208N01 -> TG208N06\nTG208N11 -> TG208N00\nTG208N02 -> TG208N03\nTG208N04 -> TG208N05\nTG208N08 -> TG208N04\nTG208N00 -> TG208N07\nTG208N09 -> TG208N02\nTG208N05 -> TG208N10\n\nStarting at TG208N11, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG208N00"
+      },
+      {
+        "family": "two_step",
+        "group": "TG208",
+        "id": "taylor:TG208:two_step",
+        "input": "Use only these directed relations.\nTG208N03 -> TG208N01\nTG208N06 -> TG208N11\nTG208N10 -> TG208N09\nTG208N07 -> TG208N08\nTG208N01 -> TG208N06\nTG208N11 -> TG208N00\nTG208N02 -> TG208N03\nTG208N04 -> TG208N05\nTG208N08 -> TG208N04\nTG208N00 -> TG208N07\nTG208N09 -> TG208N02\nTG208N05 -> TG208N10\n\nStarting at TG208N11, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG208N07"
+      },
+      {
+        "family": "direct",
+        "group": "TG216",
+        "id": "taylor:TG216:direct",
+        "input": "Use only these directed relations.\nTG216N02 -> TG216N01\nTG216N09 -> TG216N06\nTG216N06 -> TG216N07\nTG216N05 -> TG216N08\nTG216N08 -> TG216N03\nTG216N00 -> TG216N09\nTG216N01 -> TG216N05\nTG216N07 -> TG216N04\nTG216N11 -> TG216N00\nTG216N04 -> TG216N02\nTG216N03 -> TG216N10\nTG216N10 -> TG216N11\n\nStarting at TG216N11, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG216N00"
+      },
+      {
+        "family": "two_step",
+        "group": "TG216",
+        "id": "taylor:TG216:two_step",
+        "input": "Use only these directed relations.\nTG216N02 -> TG216N01\nTG216N09 -> TG216N06\nTG216N06 -> TG216N07\nTG216N05 -> TG216N08\nTG216N08 -> TG216N03\nTG216N00 -> TG216N09\nTG216N01 -> TG216N05\nTG216N07 -> TG216N04\nTG216N11 -> TG216N00\nTG216N04 -> TG216N02\nTG216N03 -> TG216N10\nTG216N10 -> TG216N11\n\nStarting at TG216N11, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG216N09"
+      },
+      {
+        "family": "direct",
+        "group": "TG230",
+        "id": "taylor:TG230:direct",
+        "input": "Use only these directed relations.\nTG230N06 -> TG230N11\nTG230N02 -> TG230N10\nTG230N03 -> TG230N05\nTG230N11 -> TG230N03\nTG230N04 -> TG230N09\nTG230N08 -> TG230N01\nTG230N09 -> TG230N02\nTG230N10 -> TG230N06\nTG230N00 -> TG230N08\nTG230N05 -> TG230N07\nTG230N07 -> TG230N00\nTG230N01 -> TG230N04\n\nStarting at TG230N05, follow exactly 1 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG230N07"
+      },
+      {
+        "family": "two_step",
+        "group": "TG230",
+        "id": "taylor:TG230:two_step",
+        "input": "Use only these directed relations.\nTG230N06 -> TG230N11\nTG230N02 -> TG230N10\nTG230N03 -> TG230N05\nTG230N11 -> TG230N03\nTG230N04 -> TG230N09\nTG230N08 -> TG230N01\nTG230N09 -> TG230N02\nTG230N10 -> TG230N06\nTG230N00 -> TG230N08\nTG230N05 -> TG230N07\nTG230N07 -> TG230N00\nTG230N01 -> TG230N04\n\nStarting at TG230N05, follow exactly 2 relation(s). Return only the final label.\nAnswer:",
+        "kind": "graph",
+        "target": "TG230N00"
+      },
+      {
+        "fact": {
+          "element": "lithium",
+          "symbol": "Li"
+        },
+        "family": "supplied_fact",
+        "foil": "Ca",
+        "group": "lithium",
+        "id": "taylor:fact:lithium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for lithium is Li.\nWhat is the chemical symbol for lithium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Li"
+      },
+      {
+        "fact": {
+          "element": "lithium",
+          "symbol": "Li"
+        },
+        "family": "recall",
+        "foil": "Ca",
+        "group": "lithium",
+        "id": "taylor:fact:lithium:0:recall",
+        "input": "What is the chemical symbol for lithium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Li"
+      },
+      {
+        "fact": {
+          "element": "lithium",
+          "symbol": "Li"
+        },
+        "family": "supplied_fact",
+        "foil": "Ca",
+        "group": "lithium",
+        "id": "taylor:fact:lithium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for lithium is Li.\nGive the element symbol of lithium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Li"
+      },
+      {
+        "fact": {
+          "element": "lithium",
+          "symbol": "Li"
+        },
+        "family": "recall",
+        "foil": "Ca",
+        "group": "lithium",
+        "id": "taylor:fact:lithium:1:recall",
+        "input": "Give the element symbol of lithium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Li"
+      },
+      {
+        "fact": {
+          "element": "boron",
+          "symbol": "B"
+        },
+        "family": "supplied_fact",
+        "foil": "Ti",
+        "group": "boron",
+        "id": "taylor:fact:boron:0:context",
+        "input": "Use the supplied fact: the chemical symbol for boron is B.\nWhat is the chemical symbol for boron?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "B"
+      },
+      {
+        "fact": {
+          "element": "boron",
+          "symbol": "B"
+        },
+        "family": "recall",
+        "foil": "Ti",
+        "group": "boron",
+        "id": "taylor:fact:boron:0:recall",
+        "input": "What is the chemical symbol for boron?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "B"
+      },
+      {
+        "fact": {
+          "element": "boron",
+          "symbol": "B"
+        },
+        "family": "supplied_fact",
+        "foil": "Ti",
+        "group": "boron",
+        "id": "taylor:fact:boron:1:context",
+        "input": "Use the supplied fact: the chemical symbol for boron is B.\nGive the element symbol of boron.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "B"
+      },
+      {
+        "fact": {
+          "element": "boron",
+          "symbol": "B"
+        },
+        "family": "recall",
+        "foil": "Ti",
+        "group": "boron",
+        "id": "taylor:fact:boron:1:recall",
+        "input": "Give the element symbol of boron.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "B"
+      },
+      {
+        "fact": {
+          "element": "magnesium",
+          "symbol": "Mg"
+        },
+        "family": "supplied_fact",
+        "foil": "Cu",
+        "group": "magnesium",
+        "id": "taylor:fact:magnesium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for magnesium is Mg.\nWhat is the chemical symbol for magnesium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Mg"
+      },
+      {
+        "fact": {
+          "element": "magnesium",
+          "symbol": "Mg"
+        },
+        "family": "recall",
+        "foil": "Cu",
+        "group": "magnesium",
+        "id": "taylor:fact:magnesium:0:recall",
+        "input": "What is the chemical symbol for magnesium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Mg"
+      },
+      {
+        "fact": {
+          "element": "magnesium",
+          "symbol": "Mg"
+        },
+        "family": "supplied_fact",
+        "foil": "Cu",
+        "group": "magnesium",
+        "id": "taylor:fact:magnesium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for magnesium is Mg.\nGive the element symbol of magnesium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Mg"
+      },
+      {
+        "fact": {
+          "element": "magnesium",
+          "symbol": "Mg"
+        },
+        "family": "recall",
+        "foil": "Cu",
+        "group": "magnesium",
+        "id": "taylor:fact:magnesium:1:recall",
+        "input": "Give the element symbol of magnesium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Mg"
+      },
+      {
+        "fact": {
+          "element": "aluminium",
+          "symbol": "Al"
+        },
+        "family": "supplied_fact",
+        "foil": "Zn",
+        "group": "aluminium",
+        "id": "taylor:fact:aluminium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for aluminium is Al.\nWhat is the chemical symbol for aluminium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Al"
+      },
+      {
+        "fact": {
+          "element": "aluminium",
+          "symbol": "Al"
+        },
+        "family": "recall",
+        "foil": "Zn",
+        "group": "aluminium",
+        "id": "taylor:fact:aluminium:0:recall",
+        "input": "What is the chemical symbol for aluminium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Al"
+      },
+      {
+        "fact": {
+          "element": "aluminium",
+          "symbol": "Al"
+        },
+        "family": "supplied_fact",
+        "foil": "Zn",
+        "group": "aluminium",
+        "id": "taylor:fact:aluminium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for aluminium is Al.\nGive the element symbol of aluminium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Al"
+      },
+      {
+        "fact": {
+          "element": "aluminium",
+          "symbol": "Al"
+        },
+        "family": "recall",
+        "foil": "Zn",
+        "group": "aluminium",
+        "id": "taylor:fact:aluminium:1:recall",
+        "input": "Give the element symbol of aluminium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Al"
+      },
+      {
+        "fact": {
+          "element": "phosphorus",
+          "symbol": "P"
+        },
+        "family": "supplied_fact",
+        "foil": "Ge",
+        "group": "phosphorus",
+        "id": "taylor:fact:phosphorus:0:context",
+        "input": "Use the supplied fact: the chemical symbol for phosphorus is P.\nWhat is the chemical symbol for phosphorus?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "P"
+      },
+      {
+        "fact": {
+          "element": "phosphorus",
+          "symbol": "P"
+        },
+        "family": "recall",
+        "foil": "Ge",
+        "group": "phosphorus",
+        "id": "taylor:fact:phosphorus:0:recall",
+        "input": "What is the chemical symbol for phosphorus?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "P"
+      },
+      {
+        "fact": {
+          "element": "phosphorus",
+          "symbol": "P"
+        },
+        "family": "supplied_fact",
+        "foil": "Ge",
+        "group": "phosphorus",
+        "id": "taylor:fact:phosphorus:1:context",
+        "input": "Use the supplied fact: the chemical symbol for phosphorus is P.\nGive the element symbol of phosphorus.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "P"
+      },
+      {
+        "fact": {
+          "element": "phosphorus",
+          "symbol": "P"
+        },
+        "family": "recall",
+        "foil": "Ge",
+        "group": "phosphorus",
+        "id": "taylor:fact:phosphorus:1:recall",
+        "input": "Give the element symbol of phosphorus.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "P"
+      },
+      {
+        "fact": {
+          "element": "scandium",
+          "symbol": "Sc"
+        },
+        "family": "supplied_fact",
+        "foil": "Sr",
+        "group": "scandium",
+        "id": "taylor:fact:scandium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for scandium is Sc.\nWhat is the chemical symbol for scandium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sc"
+      },
+      {
+        "fact": {
+          "element": "scandium",
+          "symbol": "Sc"
+        },
+        "family": "recall",
+        "foil": "Sr",
+        "group": "scandium",
+        "id": "taylor:fact:scandium:0:recall",
+        "input": "What is the chemical symbol for scandium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sc"
+      },
+      {
+        "fact": {
+          "element": "scandium",
+          "symbol": "Sc"
+        },
+        "family": "supplied_fact",
+        "foil": "Sr",
+        "group": "scandium",
+        "id": "taylor:fact:scandium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for scandium is Sc.\nGive the element symbol of scandium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sc"
+      },
+      {
+        "fact": {
+          "element": "scandium",
+          "symbol": "Sc"
+        },
+        "family": "recall",
+        "foil": "Sr",
+        "group": "scandium",
+        "id": "taylor:fact:scandium:1:recall",
+        "input": "Give the element symbol of scandium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sc"
+      },
+      {
+        "fact": {
+          "element": "cadmium",
+          "symbol": "Cd"
+        },
+        "family": "supplied_fact",
+        "foil": "Tb",
+        "group": "cadmium",
+        "id": "taylor:fact:cadmium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for cadmium is Cd.\nWhat is the chemical symbol for cadmium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cd"
+      },
+      {
+        "fact": {
+          "element": "cadmium",
+          "symbol": "Cd"
+        },
+        "family": "recall",
+        "foil": "Tb",
+        "group": "cadmium",
+        "id": "taylor:fact:cadmium:0:recall",
+        "input": "What is the chemical symbol for cadmium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cd"
+      },
+      {
+        "fact": {
+          "element": "cadmium",
+          "symbol": "Cd"
+        },
+        "family": "supplied_fact",
+        "foil": "Tb",
+        "group": "cadmium",
+        "id": "taylor:fact:cadmium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for cadmium is Cd.\nGive the element symbol of cadmium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cd"
+      },
+      {
+        "fact": {
+          "element": "cadmium",
+          "symbol": "Cd"
+        },
+        "family": "recall",
+        "foil": "Tb",
+        "group": "cadmium",
+        "id": "taylor:fact:cadmium:1:recall",
+        "input": "Give the element symbol of cadmium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cd"
+      },
+      {
+        "fact": {
+          "element": "indium",
+          "symbol": "In"
+        },
+        "family": "supplied_fact",
+        "foil": "Dy",
+        "group": "indium",
+        "id": "taylor:fact:indium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for indium is In.\nWhat is the chemical symbol for indium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "In"
+      },
+      {
+        "fact": {
+          "element": "indium",
+          "symbol": "In"
+        },
+        "family": "recall",
+        "foil": "Dy",
+        "group": "indium",
+        "id": "taylor:fact:indium:0:recall",
+        "input": "What is the chemical symbol for indium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "In"
+      },
+      {
+        "fact": {
+          "element": "indium",
+          "symbol": "In"
+        },
+        "family": "supplied_fact",
+        "foil": "Dy",
+        "group": "indium",
+        "id": "taylor:fact:indium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for indium is In.\nGive the element symbol of indium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "In"
+      },
+      {
+        "fact": {
+          "element": "indium",
+          "symbol": "In"
+        },
+        "family": "recall",
+        "foil": "Dy",
+        "group": "indium",
+        "id": "taylor:fact:indium:1:recall",
+        "input": "Give the element symbol of indium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "In"
+      },
+      {
+        "fact": {
+          "element": "antimony",
+          "symbol": "Sb"
+        },
+        "family": "supplied_fact",
+        "foil": "Er",
+        "group": "antimony",
+        "id": "taylor:fact:antimony:0:context",
+        "input": "Use the supplied fact: the chemical symbol for antimony is Sb.\nWhat is the chemical symbol for antimony?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sb"
+      },
+      {
+        "fact": {
+          "element": "antimony",
+          "symbol": "Sb"
+        },
+        "family": "recall",
+        "foil": "Er",
+        "group": "antimony",
+        "id": "taylor:fact:antimony:0:recall",
+        "input": "What is the chemical symbol for antimony?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sb"
+      },
+      {
+        "fact": {
+          "element": "antimony",
+          "symbol": "Sb"
+        },
+        "family": "supplied_fact",
+        "foil": "Er",
+        "group": "antimony",
+        "id": "taylor:fact:antimony:1:context",
+        "input": "Use the supplied fact: the chemical symbol for antimony is Sb.\nGive the element symbol of antimony.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sb"
+      },
+      {
+        "fact": {
+          "element": "antimony",
+          "symbol": "Sb"
+        },
+        "family": "recall",
+        "foil": "Er",
+        "group": "antimony",
+        "id": "taylor:fact:antimony:1:recall",
+        "input": "Give the element symbol of antimony.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sb"
+      },
+      {
+        "fact": {
+          "element": "praseodymium",
+          "symbol": "Pr"
+        },
+        "family": "supplied_fact",
+        "foil": "Os",
+        "group": "praseodymium",
+        "id": "taylor:fact:praseodymium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for praseodymium is Pr.\nWhat is the chemical symbol for praseodymium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Pr"
+      },
+      {
+        "fact": {
+          "element": "praseodymium",
+          "symbol": "Pr"
+        },
+        "family": "recall",
+        "foil": "Os",
+        "group": "praseodymium",
+        "id": "taylor:fact:praseodymium:0:recall",
+        "input": "What is the chemical symbol for praseodymium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Pr"
+      },
+      {
+        "fact": {
+          "element": "praseodymium",
+          "symbol": "Pr"
+        },
+        "family": "supplied_fact",
+        "foil": "Os",
+        "group": "praseodymium",
+        "id": "taylor:fact:praseodymium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for praseodymium is Pr.\nGive the element symbol of praseodymium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Pr"
+      },
+      {
+        "fact": {
+          "element": "praseodymium",
+          "symbol": "Pr"
+        },
+        "family": "recall",
+        "foil": "Os",
+        "group": "praseodymium",
+        "id": "taylor:fact:praseodymium:1:recall",
+        "input": "Give the element symbol of praseodymium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Pr"
+      },
+      {
+        "fact": {
+          "element": "holmium",
+          "symbol": "Ho"
+        },
+        "family": "supplied_fact",
+        "foil": "Po",
+        "group": "holmium",
+        "id": "taylor:fact:holmium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for holmium is Ho.\nWhat is the chemical symbol for holmium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ho"
+      },
+      {
+        "fact": {
+          "element": "holmium",
+          "symbol": "Ho"
+        },
+        "family": "recall",
+        "foil": "Po",
+        "group": "holmium",
+        "id": "taylor:fact:holmium:0:recall",
+        "input": "What is the chemical symbol for holmium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ho"
+      },
+      {
+        "fact": {
+          "element": "holmium",
+          "symbol": "Ho"
+        },
+        "family": "supplied_fact",
+        "foil": "Po",
+        "group": "holmium",
+        "id": "taylor:fact:holmium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for holmium is Ho.\nGive the element symbol of holmium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ho"
+      },
+      {
+        "fact": {
+          "element": "holmium",
+          "symbol": "Ho"
+        },
+        "family": "recall",
+        "foil": "Po",
+        "group": "holmium",
+        "id": "taylor:fact:holmium:1:recall",
+        "input": "Give the element symbol of holmium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ho"
+      },
+      {
+        "fact": {
+          "element": "ytterbium",
+          "symbol": "Yb"
+        },
+        "family": "supplied_fact",
+        "foil": "Fr",
+        "group": "ytterbium",
+        "id": "taylor:fact:ytterbium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for ytterbium is Yb.\nWhat is the chemical symbol for ytterbium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Yb"
+      },
+      {
+        "fact": {
+          "element": "ytterbium",
+          "symbol": "Yb"
+        },
+        "family": "recall",
+        "foil": "Fr",
+        "group": "ytterbium",
+        "id": "taylor:fact:ytterbium:0:recall",
+        "input": "What is the chemical symbol for ytterbium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Yb"
+      },
+      {
+        "fact": {
+          "element": "ytterbium",
+          "symbol": "Yb"
+        },
+        "family": "supplied_fact",
+        "foil": "Fr",
+        "group": "ytterbium",
+        "id": "taylor:fact:ytterbium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for ytterbium is Yb.\nGive the element symbol of ytterbium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Yb"
+      },
+      {
+        "fact": {
+          "element": "ytterbium",
+          "symbol": "Yb"
+        },
+        "family": "recall",
+        "foil": "Fr",
+        "group": "ytterbium",
+        "id": "taylor:fact:ytterbium:1:recall",
+        "input": "Give the element symbol of ytterbium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Yb"
+      },
+      {
+        "fact": {
+          "element": "polonium",
+          "symbol": "Po"
+        },
+        "family": "supplied_fact",
+        "foil": "Md",
+        "group": "polonium",
+        "id": "taylor:fact:polonium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for polonium is Po.\nWhat is the chemical symbol for polonium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Po"
+      },
+      {
+        "fact": {
+          "element": "polonium",
+          "symbol": "Po"
+        },
+        "family": "recall",
+        "foil": "Md",
+        "group": "polonium",
+        "id": "taylor:fact:polonium:0:recall",
+        "input": "What is the chemical symbol for polonium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Po"
+      },
+      {
+        "fact": {
+          "element": "polonium",
+          "symbol": "Po"
+        },
+        "family": "supplied_fact",
+        "foil": "Md",
+        "group": "polonium",
+        "id": "taylor:fact:polonium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for polonium is Po.\nGive the element symbol of polonium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Po"
+      },
+      {
+        "fact": {
+          "element": "polonium",
+          "symbol": "Po"
+        },
+        "family": "recall",
+        "foil": "Md",
+        "group": "polonium",
+        "id": "taylor:fact:polonium:1:recall",
+        "input": "Give the element symbol of polonium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Po"
+      },
+      {
+        "fact": {
+          "element": "actinium",
+          "symbol": "Ac"
+        },
+        "family": "supplied_fact",
+        "foil": "Sg",
+        "group": "actinium",
+        "id": "taylor:fact:actinium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for actinium is Ac.\nWhat is the chemical symbol for actinium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ac"
+      },
+      {
+        "fact": {
+          "element": "actinium",
+          "symbol": "Ac"
+        },
+        "family": "recall",
+        "foil": "Sg",
+        "group": "actinium",
+        "id": "taylor:fact:actinium:0:recall",
+        "input": "What is the chemical symbol for actinium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ac"
+      },
+      {
+        "fact": {
+          "element": "actinium",
+          "symbol": "Ac"
+        },
+        "family": "supplied_fact",
+        "foil": "Sg",
+        "group": "actinium",
+        "id": "taylor:fact:actinium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for actinium is Ac.\nGive the element symbol of actinium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ac"
+      },
+      {
+        "fact": {
+          "element": "actinium",
+          "symbol": "Ac"
+        },
+        "family": "recall",
+        "foil": "Sg",
+        "group": "actinium",
+        "id": "taylor:fact:actinium:1:recall",
+        "input": "Give the element symbol of actinium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ac"
+      },
+      {
+        "fact": {
+          "element": "thorium",
+          "symbol": "Th"
+        },
+        "family": "supplied_fact",
+        "foil": "Bh",
+        "group": "thorium",
+        "id": "taylor:fact:thorium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for thorium is Th.\nWhat is the chemical symbol for thorium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Th"
+      },
+      {
+        "fact": {
+          "element": "thorium",
+          "symbol": "Th"
+        },
+        "family": "recall",
+        "foil": "Bh",
+        "group": "thorium",
+        "id": "taylor:fact:thorium:0:recall",
+        "input": "What is the chemical symbol for thorium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Th"
+      },
+      {
+        "fact": {
+          "element": "thorium",
+          "symbol": "Th"
+        },
+        "family": "supplied_fact",
+        "foil": "Bh",
+        "group": "thorium",
+        "id": "taylor:fact:thorium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for thorium is Th.\nGive the element symbol of thorium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Th"
+      },
+      {
+        "fact": {
+          "element": "thorium",
+          "symbol": "Th"
+        },
+        "family": "recall",
+        "foil": "Bh",
+        "group": "thorium",
+        "id": "taylor:fact:thorium:1:recall",
+        "input": "Give the element symbol of thorium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Th"
+      },
+      {
+        "fact": {
+          "element": "californium",
+          "symbol": "Cf"
+        },
+        "family": "supplied_fact",
+        "foil": "Mc",
+        "group": "californium",
+        "id": "taylor:fact:californium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for californium is Cf.\nWhat is the chemical symbol for californium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cf"
+      },
+      {
+        "fact": {
+          "element": "californium",
+          "symbol": "Cf"
+        },
+        "family": "recall",
+        "foil": "Mc",
+        "group": "californium",
+        "id": "taylor:fact:californium:0:recall",
+        "input": "What is the chemical symbol for californium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cf"
+      },
+      {
+        "fact": {
+          "element": "californium",
+          "symbol": "Cf"
+        },
+        "family": "supplied_fact",
+        "foil": "Mc",
+        "group": "californium",
+        "id": "taylor:fact:californium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for californium is Cf.\nGive the element symbol of californium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cf"
+      },
+      {
+        "fact": {
+          "element": "californium",
+          "symbol": "Cf"
+        },
+        "family": "recall",
+        "foil": "Mc",
+        "group": "californium",
+        "id": "taylor:fact:californium:1:recall",
+        "input": "Give the element symbol of californium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Cf"
+      },
+      {
+        "fact": {
+          "element": "nobelium",
+          "symbol": "No"
+        },
+        "family": "supplied_fact",
+        "foil": "H",
+        "group": "nobelium",
+        "id": "taylor:fact:nobelium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for nobelium is No.\nWhat is the chemical symbol for nobelium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "No"
+      },
+      {
+        "fact": {
+          "element": "nobelium",
+          "symbol": "No"
+        },
+        "family": "recall",
+        "foil": "H",
+        "group": "nobelium",
+        "id": "taylor:fact:nobelium:0:recall",
+        "input": "What is the chemical symbol for nobelium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "No"
+      },
+      {
+        "fact": {
+          "element": "nobelium",
+          "symbol": "No"
+        },
+        "family": "supplied_fact",
+        "foil": "H",
+        "group": "nobelium",
+        "id": "taylor:fact:nobelium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for nobelium is No.\nGive the element symbol of nobelium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "No"
+      },
+      {
+        "fact": {
+          "element": "nobelium",
+          "symbol": "No"
+        },
+        "family": "recall",
+        "foil": "H",
+        "group": "nobelium",
+        "id": "taylor:fact:nobelium:1:recall",
+        "input": "Give the element symbol of nobelium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "No"
+      },
+      {
+        "fact": {
+          "element": "seaborgium",
+          "symbol": "Sg"
+        },
+        "family": "supplied_fact",
+        "foil": "B",
+        "group": "seaborgium",
+        "id": "taylor:fact:seaborgium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for seaborgium is Sg.\nWhat is the chemical symbol for seaborgium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sg"
+      },
+      {
+        "fact": {
+          "element": "seaborgium",
+          "symbol": "Sg"
+        },
+        "family": "recall",
+        "foil": "B",
+        "group": "seaborgium",
+        "id": "taylor:fact:seaborgium:0:recall",
+        "input": "What is the chemical symbol for seaborgium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sg"
+      },
+      {
+        "fact": {
+          "element": "seaborgium",
+          "symbol": "Sg"
+        },
+        "family": "supplied_fact",
+        "foil": "B",
+        "group": "seaborgium",
+        "id": "taylor:fact:seaborgium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for seaborgium is Sg.\nGive the element symbol of seaborgium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sg"
+      },
+      {
+        "fact": {
+          "element": "seaborgium",
+          "symbol": "Sg"
+        },
+        "family": "recall",
+        "foil": "B",
+        "group": "seaborgium",
+        "id": "taylor:fact:seaborgium:1:recall",
+        "input": "Give the element symbol of seaborgium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Sg"
+      },
+      {
+        "fact": {
+          "element": "bohrium",
+          "symbol": "Bh"
+        },
+        "family": "supplied_fact",
+        "foil": "C",
+        "group": "bohrium",
+        "id": "taylor:fact:bohrium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for bohrium is Bh.\nWhat is the chemical symbol for bohrium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Bh"
+      },
+      {
+        "fact": {
+          "element": "bohrium",
+          "symbol": "Bh"
+        },
+        "family": "recall",
+        "foil": "C",
+        "group": "bohrium",
+        "id": "taylor:fact:bohrium:0:recall",
+        "input": "What is the chemical symbol for bohrium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Bh"
+      },
+      {
+        "fact": {
+          "element": "bohrium",
+          "symbol": "Bh"
+        },
+        "family": "supplied_fact",
+        "foil": "C",
+        "group": "bohrium",
+        "id": "taylor:fact:bohrium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for bohrium is Bh.\nGive the element symbol of bohrium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Bh"
+      },
+      {
+        "fact": {
+          "element": "bohrium",
+          "symbol": "Bh"
+        },
+        "family": "recall",
+        "foil": "C",
+        "group": "bohrium",
+        "id": "taylor:fact:bohrium:1:recall",
+        "input": "Give the element symbol of bohrium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Bh"
+      },
+      {
+        "fact": {
+          "element": "roentgenium",
+          "symbol": "Rg"
+        },
+        "family": "supplied_fact",
+        "foil": "Ne",
+        "group": "roentgenium",
+        "id": "taylor:fact:roentgenium:0:context",
+        "input": "Use the supplied fact: the chemical symbol for roentgenium is Rg.\nWhat is the chemical symbol for roentgenium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rg"
+      },
+      {
+        "fact": {
+          "element": "roentgenium",
+          "symbol": "Rg"
+        },
+        "family": "recall",
+        "foil": "Ne",
+        "group": "roentgenium",
+        "id": "taylor:fact:roentgenium:0:recall",
+        "input": "What is the chemical symbol for roentgenium?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rg"
+      },
+      {
+        "fact": {
+          "element": "roentgenium",
+          "symbol": "Rg"
+        },
+        "family": "supplied_fact",
+        "foil": "Ne",
+        "group": "roentgenium",
+        "id": "taylor:fact:roentgenium:1:context",
+        "input": "Use the supplied fact: the chemical symbol for roentgenium is Rg.\nGive the element symbol of roentgenium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rg"
+      },
+      {
+        "fact": {
+          "element": "roentgenium",
+          "symbol": "Rg"
+        },
+        "family": "recall",
+        "foil": "Ne",
+        "group": "roentgenium",
+        "id": "taylor:fact:roentgenium:1:recall",
+        "input": "Give the element symbol of roentgenium.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Rg"
+      },
+      {
+        "fact": {
+          "element": "tennessine",
+          "symbol": "Ts"
+        },
+        "family": "supplied_fact",
+        "foil": "S",
+        "group": "tennessine",
+        "id": "taylor:fact:tennessine:0:context",
+        "input": "Use the supplied fact: the chemical symbol for tennessine is Ts.\nWhat is the chemical symbol for tennessine?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ts"
+      },
+      {
+        "fact": {
+          "element": "tennessine",
+          "symbol": "Ts"
+        },
+        "family": "recall",
+        "foil": "S",
+        "group": "tennessine",
+        "id": "taylor:fact:tennessine:0:recall",
+        "input": "What is the chemical symbol for tennessine?\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ts"
+      },
+      {
+        "fact": {
+          "element": "tennessine",
+          "symbol": "Ts"
+        },
+        "family": "supplied_fact",
+        "foil": "S",
+        "group": "tennessine",
+        "id": "taylor:fact:tennessine:1:context",
+        "input": "Use the supplied fact: the chemical symbol for tennessine is Ts.\nGive the element symbol of tennessine.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ts"
+      },
+      {
+        "fact": {
+          "element": "tennessine",
+          "symbol": "Ts"
+        },
+        "family": "recall",
+        "foil": "S",
+        "group": "tennessine",
+        "id": "taylor:fact:tennessine:1:recall",
+        "input": "Give the element symbol of tennessine.\nReturn only the symbol.\nAnswer:",
+        "kind": "fact",
+        "target": "Ts"
+      },
+      {
+        "family": "language_format",
+        "group": "format-010",
+        "id": "taylor:format-010",
+        "input": "Complete this sentence using the supplied word 'item_010': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_010."
+      },
+      {
+        "family": "language_format",
+        "group": "format-067",
+        "id": "taylor:format-067",
+        "input": "Convert the supplied word to uppercase: item_067\nAnswer:",
+        "kind": "format",
+        "target": "ITEM_067"
+      },
+      {
+        "family": "language_format",
+        "group": "format-070",
+        "id": "taylor:format-070",
+        "input": "Complete this sentence using the supplied word 'item_070': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_070."
+      },
+      {
+        "family": "language_format",
+        "group": "format-080",
+        "id": "taylor:format-080",
+        "input": "Copy the supplied identifier exactly: item_080\nIdentifier:",
+        "kind": "format",
+        "target": "item_080"
+      },
+      {
+        "family": "language_format",
+        "group": "format-092",
+        "id": "taylor:format-092",
+        "input": "Copy the supplied identifier exactly: item_092\nIdentifier:",
+        "kind": "format",
+        "target": "item_092"
+      },
+      {
+        "family": "language_format",
+        "group": "format-093",
+        "id": "taylor:format-093",
+        "input": "Return only a JSON object whose key is code and value is item_093.\nJSON:",
+        "kind": "format",
+        "target": "{\"code\": \"item_093\"}"
+      },
+      {
+        "family": "language_format",
+        "group": "format-094",
+        "id": "taylor:format-094",
+        "input": "Complete this sentence using the supplied word 'item_094': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_094."
+      },
+      {
+        "family": "language_format",
+        "group": "format-096",
+        "id": "taylor:format-096",
+        "input": "Copy the supplied identifier exactly: item_096\nIdentifier:",
+        "kind": "format",
+        "target": "item_096"
+      },
+      {
+        "family": "language_format",
+        "group": "format-124",
+        "id": "taylor:format-124",
+        "input": "Copy the supplied identifier exactly: item_124\nIdentifier:",
+        "kind": "format",
+        "target": "item_124"
+      },
+      {
+        "family": "language_format",
+        "group": "format-131",
+        "id": "taylor:format-131",
+        "input": "Convert the supplied word to uppercase: item_131\nAnswer:",
+        "kind": "format",
+        "target": "ITEM_131"
+      },
+      {
+        "family": "language_format",
+        "group": "format-134",
+        "id": "taylor:format-134",
+        "input": "Complete this sentence using the supplied word 'item_134': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_134."
+      },
+      {
+        "family": "language_format",
+        "group": "format-135",
+        "id": "taylor:format-135",
+        "input": "Convert the supplied word to uppercase: item_135\nAnswer:",
+        "kind": "format",
+        "target": "ITEM_135"
+      },
+      {
+        "family": "language_format",
+        "group": "format-148",
+        "id": "taylor:format-148",
+        "input": "Copy the supplied identifier exactly: item_148\nIdentifier:",
+        "kind": "format",
+        "target": "item_148"
+      },
+      {
+        "family": "language_format",
+        "group": "format-160",
+        "id": "taylor:format-160",
+        "input": "Copy the supplied identifier exactly: item_160\nIdentifier:",
+        "kind": "format",
+        "target": "item_160"
+      },
+      {
+        "family": "language_format",
+        "group": "format-174",
+        "id": "taylor:format-174",
+        "input": "Complete this sentence using the supplied word 'item_174': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_174."
+      },
+      {
+        "family": "language_format",
+        "group": "format-181",
+        "id": "taylor:format-181",
+        "input": "Return only a JSON object whose key is code and value is item_181.\nJSON:",
+        "kind": "format",
+        "target": "{\"code\": \"item_181\"}"
+      },
+      {
+        "family": "language_format",
+        "group": "format-210",
+        "id": "taylor:format-210",
+        "input": "Complete this sentence using the supplied word 'item_210': The identifier is\nCompletion:",
+        "kind": "format",
+        "target": "The identifier is item_210."
+      },
+      {
+        "family": "language_format",
+        "group": "format-224",
+        "id": "taylor:format-224",
+        "input": "Copy the supplied identifier exactly: item_224\nIdentifier:",
+        "kind": "format",
+        "target": "item_224"
+      },
+      {
+        "family": "language_format",
+        "group": "format-227",
+        "id": "taylor:format-227",
+        "input": "Convert the supplied word to uppercase: item_227\nAnswer:",
+        "kind": "format",
+        "target": "ITEM_227"
+      },
+      {
+        "family": "language_format",
+        "group": "format-235",
+        "id": "taylor:format-235",
+        "input": "Convert the supplied word to uppercase: item_235\nAnswer:",
+        "kind": "format",
+        "target": "ITEM_235"
+      },
+      {
+        "family": "language_format",
+        "group": "format-236",
+        "id": "taylor:format-236",
+        "input": "Copy the supplied identifier exactly: item_236\nIdentifier:",
+        "kind": "format",
+        "target": "item_236"
+      }
+    ]
+  }
+}

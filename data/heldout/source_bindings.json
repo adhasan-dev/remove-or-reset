@@ -1,0 +1,313 @@
+{
+  "format": "remove-reset-heldout-citations-v1",
+  "source_provenance": {
+    "source_artifact_relative_path": "runs/hb-20261028T0310Z-9f2a/panel/candidate-v2/source_bindings.json",
+    "source_sha256": "3563daa576dfe4905a8d6ec15f8f987395a6d5d96b56709a0faf0b313bad8adf",
+    "kept_top_level_fields": [
+      "retrieved_utc_date",
+      "sources"
+    ],
+    "dropped_top_level_fields": [
+      "format",
+      "hash_scope",
+      "reference_reviews",
+      "retrieval_method",
+      "review_limitations"
+    ],
+    "kept_source_fields": [
+      "source_id",
+      "publisher",
+      "title",
+      "url",
+      "retrieved_utc_date",
+      "locator",
+      "support_summary",
+      "case_ids"
+    ],
+    "dropped_source_fields": [
+      "requested_url"
+    ],
+    "projection_note": "Citation metadata and original short support summaries only; no webpage payloads or review results."
+  },
+  "retrieved_utc_date": "2026-10-28",
+  "sources": [
+    {
+      "source_id": "openstax-ohm",
+      "publisher": "OpenStax, Rice University",
+      "title": "College Physics 2e, 20.2 Ohm's Law: Resistance and Simple Circuits",
+      "url": "https://openstax.org/books/college-physics-2e/pages/20-2-ohms-law-resistance-and-simple-circuits",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Ohm's Law; equation 20.14",
+      "support_summary": "For an ohmic resistor, current equals applied voltage divided by resistance. Ohm's law is not asserted for every possible material.",
+      "case_ids": [
+        "hb120-sc01",
+        "hb120-sc12"
+      ]
+    },
+    {
+      "source_id": "nhgri-dna",
+      "publisher": "US National Human Genome Research Institute",
+      "title": "Deoxyribonucleic Acid (DNA) Fact Sheet",
+      "url": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "What is DNA made of?; What is the DNA double helix?",
+      "support_summary": "The bases A and T are adenine and thymine; standard DNA complementary pairing joins A with T and C with G.",
+      "case_ids": [
+        "hb120-sc02"
+      ]
+    },
+    {
+      "source_id": "usno-calendars",
+      "publisher": "US Naval Observatory",
+      "title": "Introduction to Calendars",
+      "url": "https://aa.usno.navy.mil/faq/calendars",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Introduction; Principal Solar Calendars",
+      "support_summary": "The day tracks Earth's axial rotation, whereas the year tracks its solar revolution. Gregorian century years are leap years only when divisible by 400; 1900 is not and 2000 is.",
+      "case_ids": [
+        "hb120-sc03",
+        "hb120-fk08"
+      ]
+    },
+    {
+      "source_id": "openstax-ph",
+      "publisher": "OpenStax, Rice University",
+      "title": "Chemistry 2e, 14.2 pH and pOH",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "p-function and hydronium molarity equations near the section opening",
+      "support_summary": "In the text's ideal concentration treatment, hydronium molarity is 10 raised to minus pH; concentration ratios therefore change by powers of ten.",
+      "case_ids": [
+        "hb120-sc04"
+      ]
+    },
+    {
+      "source_id": "openstax-sound",
+      "publisher": "OpenStax, Rice University",
+      "title": "Physics, 14.1 Speed of Sound, Frequency, and Wavelength",
+      "url": "https://openstax.org/books/physics/pages/14-1-speed-of-sound-frequency-and-wavelength",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "The Relationship Between the Speed of Sound and the Frequency and Wavelength of a Sound Wave; equation 14.1",
+      "support_summary": "Wave speed is frequency times wavelength; a change of medium changes speed and wavelength while the driving frequency remains the same under the stated stationary conditions.",
+      "case_ids": [
+        "hb120-sc05"
+      ]
+    },
+    {
+      "source_id": "openstax-torque",
+      "publisher": "OpenStax, Rice University",
+      "title": "College Physics 2e, 9.2 The Second Condition for Equilibrium",
+      "url": "https://openstax.org/books/college-physics-2e/pages/9-2-the-second-condition-for-equilibrium",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Torque; equations 9.3-9.5",
+      "support_summary": "Torque magnitude equals force times perpendicular lever arm; rotational equilibrium requires opposing torques to balance.",
+      "case_ids": [
+        "hb120-sc06"
+      ]
+    },
+    {
+      "source_id": "openstax-osmosis",
+      "publisher": "OpenStax, Rice University",
+      "title": "Biology 2e, 5.2 Passive Transport",
+      "url": "https://openstax.org/books/biology-2e/pages/5-2-passive-transport",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Osmosis; Mechanism; Tonicity",
+      "support_summary": "When only water can cross, water initially moves toward the side with higher concentration of nonpermeating solute, absent a counterbalancing hydrostatic pressure.",
+      "case_ids": [
+        "hb120-sc07"
+      ]
+    },
+    {
+      "source_id": "openstax-energy-flow",
+      "publisher": "OpenStax, Rice University",
+      "title": "Biology 2e, 46.2 Energy Flow through Ecosystems",
+      "url": "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Learning objectives; Productivity within Trophic Levels",
+      "support_summary": "Food chains transfer energy across trophic levels with less than complete transfer. The panel's exact 10% at each link is a supplied hypothetical efficiency, not claimed as a universal value from this source.",
+      "case_ids": [
+        "hb120-sc08"
+      ]
+    },
+    {
+      "source_id": "openstax-mendel",
+      "publisher": "OpenStax, Rice University",
+      "title": "Biology 2e, 12.2 Characteristics and Traits",
+      "url": "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Phenotypes and Genotypes; Dominant and Recessive Alleles",
+      "support_summary": "Under complete dominance, a recessive phenotype requires the homozygous recessive genotype; monohybrid Punnett-square probabilities follow allele transmission.",
+      "case_ids": [
+        "hb120-sc09"
+      ]
+    },
+    {
+      "source_id": "openstax-decay",
+      "publisher": "OpenStax, Rice University",
+      "title": "University Physics Volume 3, 10.3 Radioactive Decay",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/10-3-radioactive-decay",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Radioactive Decay Law; equations 10.12 and 10.18",
+      "support_summary": "Each half-life halves remaining nuclei and activity. A quarter of the starting sample activity corresponds to two half-lives; the detector's additive background is supplied in the question.",
+      "case_ids": [
+        "hb120-sc10"
+      ]
+    },
+    {
+      "source_id": "openstax-ideal-gas",
+      "publisher": "OpenStax, Rice University",
+      "title": "University Physics Volume 2, 2.1 Molecular Model of an Ideal Gas",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Ideal Gas Law, equation 2.1 and following fixed-number discussion",
+      "support_summary": "For a fixed number of ideal-gas molecules, absolute pressure times volume divided by absolute temperature is constant.",
+      "case_ids": [
+        "hb120-sc11"
+      ]
+    },
+    {
+      "source_id": "openstax-series-parallel",
+      "publisher": "OpenStax, Rice University",
+      "title": "University Physics Volume 2, 10.2 Resistors in Series and Parallel",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Opening series/parallel definitions; series equation 10.2; parallel common-voltage definition",
+      "support_summary": "Series resistors share current and their resistances add. Parallel branches share potential difference and their currents sum, yielding reciprocal addition of conductances.",
+      "case_ids": [
+        "hb120-sc12"
+      ]
+    },
+    {
+      "source_id": "nasa-jupiter",
+      "publisher": "US National Aeronautics and Space Administration",
+      "title": "Jupiter Facts",
+      "url": "https://science.nasa.gov/jupiter/jupiter-facts/",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Opening description; Size and Distance",
+      "support_summary": "Jupiter is the largest planet in the Solar System; its quoted size exceeds the other planets. Changing moon counts on the page are not used.",
+      "case_ids": [
+        "hb120-fk01"
+      ]
+    },
+    {
+      "source_id": "loc-sleepy-hollow",
+      "publisher": "US Library of Congress",
+      "title": "Books That Shaped America: 1800 to 1850",
+      "url": "https://www.loc.gov/exhibits/books-that-shaped-america/1800-to-1850.html",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Washington Irving, The Legend of Sleepy Hollow (1820)",
+      "support_summary": "The entry names Washington Irving as author and identifies the story's first publication in 1820.",
+      "case_ids": [
+        "hb120-fk02"
+      ]
+    },
+    {
+      "source_id": "boj-notes",
+      "publisher": "Bank of Japan",
+      "title": "Bank of Japan Notes and Coins Currently Issued",
+      "url": "https://www.boj.or.jp/en/note_tfjgs/note/valid/issue.htm",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Denomination headings",
+      "support_summary": "The official notes are denominated in yen. The item asks the monetary unit, not a changing exchange rate or note design.",
+      "case_ids": [
+        "hb120-fk03"
+      ]
+    },
+    {
+      "source_id": "nara-magna-carta",
+      "publisher": "US National Archives",
+      "title": "Magna Carta",
+      "url": "https://www.archives.gov/exhibits/featured-documents/magna-carta",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Opening historical paragraph and following reissue paragraph",
+      "support_summary": "King John sealed Magna Carta at Runnymede on June 15, 1215; the 1297 exhibit version is a later reissue.",
+      "case_ids": [
+        "hb120-fk04"
+      ]
+    },
+    {
+      "source_id": "icj-court",
+      "publisher": "International Court of Justice",
+      "title": "The Court",
+      "url": "https://www.icj-cij.org/court",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Seat-of-the-Court paragraph",
+      "support_summary": "The Court identifies the Peace Palace in The Hague, Netherlands, as its seat.",
+      "case_ids": [
+        "hb120-fk05"
+      ]
+    },
+    {
+      "source_id": "un-braille",
+      "publisher": "United Nations",
+      "title": "World Braille Day",
+      "url": "https://www.un.org/en/observances/braille-day",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "What is Braille?",
+      "support_summary": "The page identifies the six-dot tactile system and its nineteenth-century French inventor Louis Braille.",
+      "case_ids": [
+        "hb120-fk06"
+      ]
+    },
+    {
+      "source_id": "philharmonia-oboe",
+      "publisher": "Philharmonia Orchestra",
+      "title": "Instruments: Oboe",
+      "url": "https://philharmonia.co.uk/resources/instruments/oboe/",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "About; orchestral register and section paragraph",
+      "support_summary": "The orchestra's guide identifies the oboe as a wooden double-reed instrument in the woodwind section.",
+      "case_ids": [
+        "hb120-fk07"
+      ]
+    },
+    {
+      "source_id": "unesco-machu-picchu",
+      "publisher": "UNESCO World Heritage Centre",
+      "title": "Historic Sanctuary of Machu Picchu",
+      "url": "https://whc.unesco.org/en/list/274/",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Brief Synthesis opening",
+      "support_summary": "The sanctuary is in the Peruvian Andes/Amazon transition, supporting Peru as the country.",
+      "case_ids": [
+        "hb120-fk09"
+      ]
+    },
+    {
+      "source_id": "rfc8200",
+      "publisher": "Internet Engineering Task Force / RFC Editor",
+      "title": "RFC 8200: Internet Protocol, Version 6 (IPv6) Specification",
+      "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Section 1, Expanded Addressing Capabilities",
+      "support_summary": "IPv6 expands IP address size from IPv4's 32 bits to 128 bits.",
+      "case_ids": [
+        "hb120-fk10"
+      ]
+    },
+    {
+      "source_id": "nist-prefixes",
+      "publisher": "US National Institute of Standards and Technology",
+      "title": "Metric (SI) Prefixes",
+      "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Prefixes table, femto row",
+      "support_summary": "Femto, lowercase symbol f, denotes a factor of 10^-15.",
+      "case_ids": [
+        "hb120-fk11"
+      ]
+    },
+    {
+      "source_id": "unep-montreal",
+      "publisher": "UN Environment Programme, Ozone Secretariat",
+      "title": "The Montreal Protocol",
+      "url": "https://ozone.unep.org/treaties/montreal-protocol",
+      "retrieved_utc_date": "2026-10-28",
+      "locator": "Opening paragraph",
+      "support_summary": "The Montreal Protocol targets ozone-depleting chemicals and was signed in 1987, entering into force in 1989.",
+      "case_ids": [
+        "hb120-fk12"
+      ]
+    }
+  ]
+}

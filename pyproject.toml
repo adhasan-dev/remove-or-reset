@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "remove-or-reset"
+version = "0.1.0"
+description = "Local, frozen-mask remove-or-reset reproduction source; no weights or results"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.optional-dependencies]
+compute = [
+  "numpy==2.4.6",
+  "safetensors==0.8.0",
+  "torch==2.14.1",
+  "transformers==4.57.6",
+  "tokenizers==0.22.2",
+  "peft==0.18.0",
+  "accelerate==1.15.0",
+  "huggingface-hub==0.36.2",
+  "sqlglot==27.29.0",
+]
+
+[project.scripts]
+remove-reset = "remove_reset.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+

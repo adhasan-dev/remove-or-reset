@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the companion paper when available and this source package for the implementation."
+type: software
+title: "Remove or Reset: frozen-mask reproduction source"
+authors:
+  - name: "Remove or Reset contributors"
+version: 0.1.0
+license: MIT
+abstract: "Offline training and evaluation source with frozen intervention masks. Original datasets have separate CC BY 4.0 terms; see LICENSING.md."

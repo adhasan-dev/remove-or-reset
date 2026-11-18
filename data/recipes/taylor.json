@@ -1,0 +1,1901 @@
+{
+  "expected_sql_entries_sha256": "c6ba71290ba9100127898a0df09d820106a867982f6d644dfdc31dccb253db8a",
+  "metadata": {
+    "auxiliary_groups_per_family": 21,
+    "fact_partition_counts": {
+      "audit": 21,
+      "pilot": 28,
+      "score": 69
+    },
+    "families": [
+      "sql",
+      "direct",
+      "two_step",
+      "supplied_fact",
+      "language_format"
+    ],
+    "limitations": [
+      "Chemistry symbol facts are a narrow authored recall assay, not general factual knowledge.",
+      "Language/format probes are synthetic copying, formatting and short completion, not a natural-language preservation benchmark.",
+      "Final benchmark panels were previously inspected; audit groups are selection-only."
+    ],
+    "namespace": "remove-or-reset-rq1-v1",
+    "size_decision": "Freeze before model scoring. Up to 32 groups; reduce all auxiliary families together if the disjoint 118-element fact pool cannot supply 32.",
+    "sql_cache": {
+      "bytes": 8025911,
+      "cache_hit": true,
+      "encoding_policy": {
+        "encoder": "protocol.encode_record",
+        "newline": "\n",
+        "prompt": "[BOS] + encode(input, add_special_tokens=False)",
+        "prompt_and_target_encoded_separately": true,
+        "target": "encode(newline + target, add_special_tokens=False) + [EOS]",
+        "untruncated": true,
+        "version": 1
+      },
+      "ids_sha256": "a973f94f722071fa3a7863ade2d78a62c7751cdacf70ce7cd1d9213dc346f127",
+      "key": "24255ad94244bcd2600bb2ababb278d0c4af123934b32d9535769c341c9519e5",
+      "manifest_sha256": "faecb77663167e6dd850cc6569a6fdf0101c4d54ff3ec82cceabdb9cf0e53ccf",
+      "prompt_tokens": 857144,
+      "records": 8389,
+      "records_sha256": "412757bcdc4fe8891c989715d51b00e94a567ecd388a8ca1c919a7491d4d4f48",
+      "target_tokens": 281331
+    }
+  },
+  "panels": {
+    "audit": [
+      {
+        "family": "sql",
+        "group": "spider:train:006374",
+        "id": "spider:train:006374",
+        "kind": "schema",
+        "schema_id": "dab0c416dcf013ec23075233f460b7ac973329e2365a17b6d585212e746cfaad"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:024861",
+        "id": "gretel:train:024861",
+        "kind": "schema",
+        "schema_id": "6dbbd18adbd6b943b1355b7ff7c45ebdf3e5c64a67170ab867294d4d0d5e8c3d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:041409",
+        "id": "gretel:train:041409",
+        "kind": "schema",
+        "schema_id": "87febea92329cefad96a7cea8ed0e299090d62000ed0f93e52e8dca2a3533834"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:005757",
+        "id": "gretel:train:005757",
+        "kind": "schema",
+        "schema_id": "a63f242ffaf0da389ade2f5bb693e30cb2282657b86a162759ae8112fa38e6f8"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:061863",
+        "id": "gretel:train:061863",
+        "kind": "schema",
+        "schema_id": "4f7ca65763ab56096152e2bb5b5a1abcc72bcde87270c0307a987ef85df2bead"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:008936",
+        "id": "gretel:train:008936",
+        "kind": "schema",
+        "schema_id": "d9db6fef16c0e73cd3c15df9109eb59e147031686ff37d76d286f48e8e1471ca"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:090106",
+        "id": "gretel:train:090106",
+        "kind": "schema",
+        "schema_id": "0a62ca6a07d54519fd6bbc0ce6a3f06d09f665fcf817bd83f9e70ae53e0ed732"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:005991",
+        "id": "spider:train:005991",
+        "kind": "schema",
+        "schema_id": "c96ca43db30eb7949d390f19b5947ef42ef31c1fce307a9c64b824c5aa39f956"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:085416",
+        "id": "gretel:train:085416",
+        "kind": "schema",
+        "schema_id": "da2a81dd7ca2895df186b3615fbd0716d07d692e0edcf0fe6762daa43b508868"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:001317",
+        "id": "gretel:train:001317",
+        "kind": "schema",
+        "schema_id": "67ed760285aff3487f6306dbc6eb4859223840f95a95a9fba358eaa395c74f2e"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006007",
+        "id": "spider:train:006007",
+        "kind": "schema",
+        "schema_id": "c96ca43db30eb7949d390f19b5947ef42ef31c1fce307a9c64b824c5aa39f956"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:033203",
+        "id": "gretel:train:033203",
+        "kind": "schema",
+        "schema_id": "3dfe7825b759c3571c63d8fb3d8bad9ea1d40aa4908c0b79fc956e9cfd585a7f"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:045453",
+        "id": "gretel:train:045453",
+        "kind": "schema",
+        "schema_id": "cb7277c06b41e6dd010a05b2e8f6bd155bd560417daa582e88ecf74378cfa744"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:039679",
+        "id": "gretel:train:039679",
+        "kind": "schema",
+        "schema_id": "c8580d31976b6c65a49e3ff67c85cb2b9afc7297e2eba785e5226d3e67584a77"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:088846",
+        "id": "gretel:train:088846",
+        "kind": "schema",
+        "schema_id": "64e9b691212f1d1cc0a6a84bd0a0d14f3d37da3f60babacfa34444189a7327cd"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:047962",
+        "id": "gretel:train:047962",
+        "kind": "schema",
+        "schema_id": "9f0e79aef0a78e7a082838f4e6a5b06459786da1362296286906d110b419e2a6"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:077311",
+        "id": "gretel:train:077311",
+        "kind": "schema",
+        "schema_id": "5ec5f25ef73bbe63c1b35fecd3fd71c66f629c1a804c223c5fbab0247e8a3bec"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:070601",
+        "id": "gretel:train:070601",
+        "kind": "schema",
+        "schema_id": "f4e3a34923201d749c39c65f66ae48d9d9386f8ba1800b9f73e0ecdf37056bc8"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:045253",
+        "id": "gretel:train:045253",
+        "kind": "schema",
+        "schema_id": "e6f63368768eed7cd011259d372c1cb6f346d40ecfe12ae5ff67abcc6348939e"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:090605",
+        "id": "gretel:train:090605",
+        "kind": "schema",
+        "schema_id": "0ce28acb19cace91b83631255dbdbe8a855def58edda034831b06d6294c2c441"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:020675",
+        "id": "gretel:train:020675",
+        "kind": "schema",
+        "schema_id": "e2651e77dcda8210e52c72ee7c9a89c7932e6a2f93d5d236b0eba115c28902f6"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:027595",
+        "id": "gretel:train:027595",
+        "kind": "schema",
+        "schema_id": "f0a5b0f68daee5dd9bf7580b251b3138c80366edda71ff1b17d75cff75754741"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:010028",
+        "id": "gretel:train:010028",
+        "kind": "schema",
+        "schema_id": "9aa59ae75b440eef15489e9a85d05ed0135258f7a833ce8b7fdff1de656a8ede"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:073260",
+        "id": "gretel:train:073260",
+        "kind": "schema",
+        "schema_id": "fe085341dbcc6aa2eb74ee4d32db16c4aa747f225b22588e8cccab2eda6d1ed4"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:063089",
+        "id": "gretel:train:063089",
+        "kind": "schema",
+        "schema_id": "163b986fc1acfd71aafe45b3ec4edf6ac349ffa891682bdf708f62a90aacd003"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:test:004305",
+        "id": "gretel:test:004305",
+        "kind": "schema",
+        "schema_id": "b82d91bf50d6adfeacbf892ff0837f689ca2f2e2d60b32e30728bf28c1e30ab5"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:test:003999",
+        "id": "gretel:test:003999",
+        "kind": "schema",
+        "schema_id": "cd6fea0de8097eea9f8cb3dd7183c4e53e92b56c06a02d85427d58a2188c88f7"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:042919",
+        "id": "gretel:train:042919",
+        "kind": "schema",
+        "schema_id": "48e3c301f1e40b3e204a1e617eec13792e0872cf10f2a7a30ff0f2b202a5e13d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:073340",
+        "id": "gretel:train:073340",
+        "kind": "schema",
+        "schema_id": "cb4f4f743aad50e32382698d7474e9a8f328d62e0c24787404b260b16afd6398"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:038501",
+        "id": "gretel:train:038501",
+        "kind": "schema",
+        "schema_id": "8bb061b9dbdfad98f5b551f9601cd743b1ab613c1638990bdaea45309ad4512d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:085919",
+        "id": "gretel:train:085919",
+        "kind": "schema",
+        "schema_id": "0b825c1c7cef5c2f8a8931ffc46c865578cf306bf7b5ed16cc0bdff00f54cbb1"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:060018",
+        "id": "gretel:train:060018",
+        "kind": "schema",
+        "schema_id": "2a8c8eb60dd8dd3641b0e7f5312ba8cf2e713ef3d8ad452469b7046366d107ab"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:018919",
+        "id": "gretel:train:018919",
+        "kind": "schema",
+        "schema_id": "80302af09063aa13290725192901b1fecf70ddc30cdd08f778d1d5f082814d0c"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:052683",
+        "id": "gretel:train:052683",
+        "kind": "schema",
+        "schema_id": "6be25283911282ef534d607984c8c217c679771c5620481ec92855cca79c6247"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:068561",
+        "id": "gretel:train:068561",
+        "kind": "schema",
+        "schema_id": "0f66cf293647fc71c63cbe6ee0115c19ff3bdea541d896bf89001d888a60d4e8"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:067970",
+        "id": "gretel:train:067970",
+        "kind": "schema",
+        "schema_id": "45edf2366f29c66ab91d0a5856d5a719edecccb1ca6c2299ee3aaad7c152686a"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:081255",
+        "id": "gretel:train:081255",
+        "kind": "schema",
+        "schema_id": "05340845fa893937abe3fee49f454768eb5bffe0983fb39e30d2c6ef606b4487"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:024138",
+        "id": "gretel:train:024138",
+        "kind": "schema",
+        "schema_id": "e665bef9d33bb67215919c25899010ad243c0a31fa60fe1f9757ae14170bfb7a"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:068110",
+        "id": "gretel:train:068110",
+        "kind": "schema",
+        "schema_id": "2ae3a221f9b17be155a0692c8e92b836c9d6ec47bc6d6248c0c68d965cccc32a"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:090497",
+        "id": "gretel:train:090497",
+        "kind": "schema",
+        "schema_id": "699a5361aab4cb4bfe68c3a7d98156063bc5163a4942c1f7780c07305848021d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:057659",
+        "id": "gretel:train:057659",
+        "kind": "schema",
+        "schema_id": "55e53cc756a548ddbc143681c0a19c7f2e87aa895be318d1fbea92fd6c649df0"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:043156",
+        "id": "gretel:train:043156",
+        "kind": "schema",
+        "schema_id": "258e0ddb431f9440d1a7645d5cee5b940502f6738fcb1ff677fddfcfc236c520"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:097204",
+        "id": "gretel:train:097204",
+        "kind": "schema",
+        "schema_id": "8862483e9c2f14d6e4495f07d2ed8cb261c025634b20c988e6caaeed6fd5d49c"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:014670",
+        "id": "gretel:train:014670",
+        "kind": "schema",
+        "schema_id": "74f01c884c30ebae1ea766766e03788f461b5e41bf0321e90f6a6ee6eef94d35"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:064929",
+        "id": "gretel:train:064929",
+        "kind": "schema",
+        "schema_id": "65bdbbfa2d8d517ad8b5c957765e71a01a6ca2506b13423365af5ae133363050"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:076850",
+        "id": "gretel:train:076850",
+        "kind": "schema",
+        "schema_id": "bf652949b628b71e180b07521c3634ccf2b196efeeea554606fb221997f6e60c"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:030286",
+        "id": "gretel:train:030286",
+        "kind": "schema",
+        "schema_id": "158c44578cdbad7856ee61c1581d7cf38282127e75d90bd99e97072f7428cf13"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:014413",
+        "id": "gretel:train:014413",
+        "kind": "schema",
+        "schema_id": "171ae102957b7b9b3f106d73234a042b6039daecd151957f9c696a56620bf785"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:test:005285",
+        "id": "gretel:test:005285",
+        "kind": "schema",
+        "schema_id": "d272d73f62b94d2cb2544500af7aaa755d1765ed869c2fdf6b0efc70cb6ce474"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:000649",
+        "id": "spider:train:000649",
+        "kind": "schema",
+        "schema_id": "5774251135bb3fbb4437bb315b39d9497e3c0fafee316719d95372c2d58e9486"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:003983",
+        "id": "gretel:train:003983",
+        "kind": "schema",
+        "schema_id": "32e6fe53ed31f915280a9b3cc6d714b6601fdf29566e1e4ee1c83779e91b8c0f"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:046009",
+        "id": "gretel:train:046009",
+        "kind": "schema",
+        "schema_id": "b6f1ff042ce9722dca80d97c64c37a699a12e8ee4d99f18346de36f9fac955f8"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:067930",
+        "id": "gretel:train:067930",
+        "kind": "schema",
+        "schema_id": "4a0206f7abab484500dc9e2ca4a76dfa85e4d5640666e1d86ca0f12fee62f159"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:060458",
+        "id": "gretel:train:060458",
+        "kind": "schema",
+        "schema_id": "0ed14df630db994cccb39af00992b2353a7b151ed8f2f9812b75394a058104b7"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:073704",
+        "id": "gretel:train:073704",
+        "kind": "schema",
+        "schema_id": "e742f34756cabe905acdf95d96ca8847a74f712d15b4aca88a5793defa5d3afa"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:053380",
+        "id": "gretel:train:053380",
+        "kind": "schema",
+        "schema_id": "9c559cc1c379d6c7900bfdc05734cb07c7fd2edfb58712f48ce2081fdbc1bc66"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:test:000259",
+        "id": "gretel:test:000259",
+        "kind": "schema",
+        "schema_id": "55e53cc756a548ddbc143681c0a19c7f2e87aa895be318d1fbea92fd6c649df0"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:081722",
+        "id": "gretel:train:081722",
+        "kind": "schema",
+        "schema_id": "55e6bd964e3bae055b4c45bcc8de4f27341c9ab575c17a6aaa7a948620b96ab8"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:040763",
+        "id": "gretel:train:040763",
+        "kind": "schema",
+        "schema_id": "e0106473de813dfb6179bc5135d0379c311db86e8ae9a764b5fe0b91476eff74"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:096911",
+        "id": "gretel:train:096911",
+        "kind": "schema",
+        "schema_id": "1f70e2cd6f9056fba7ecc3510608d3914e2b6c16d8eb324842385940d178abaf"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:015004",
+        "id": "gretel:train:015004",
+        "kind": "schema",
+        "schema_id": "3ce0b3840e9dff50ea8fddfb4fe6bfba3f1371166ba763e028ac72a31399eb70"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:062805",
+        "id": "gretel:train:062805",
+        "kind": "schema",
+        "schema_id": "beb5293ed88d55bb9913c4180cad297f28f509f368f3f2d75d11a126ee52662d"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006348",
+        "id": "spider:train:006348",
+        "kind": "schema",
+        "schema_id": "73160dd86421211f1f455783ed487577605e10ec59f5c5df10f846977cefcbdc"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006050",
+        "id": "spider:train:006050",
+        "kind": "schema",
+        "schema_id": "c96ca43db30eb7949d390f19b5947ef42ef31c1fce307a9c64b824c5aa39f956"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:055326",
+        "id": "gretel:train:055326",
+        "kind": "schema",
+        "schema_id": "f84cac48bee1013b99af33afaa4c4967f413a646a62ccd5a16d2b548c928bfb2"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:030832",
+        "id": "gretel:train:030832",
+        "kind": "schema",
+        "schema_id": "867929e84b10f397769ad0dd0d9acd6baae7397e5094de566b108312bebee4b5"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:097766",
+        "id": "gretel:train:097766",
+        "kind": "schema",
+        "schema_id": "ce9e8acd55ed877bae4de63ef32bb9054e5a0c94d585405f4851906c1c127b38"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006366",
+        "id": "spider:train:006366",
+        "kind": "schema",
+        "schema_id": "dab0c416dcf013ec23075233f460b7ac973329e2365a17b6d585212e746cfaad"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:083526",
+        "id": "gretel:train:083526",
+        "kind": "schema",
+        "schema_id": "f1d124c3cec301f81d7b1dd6c70d9238d8d5282c6e3511bb89b17ce6f7b78c20"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:005981",
+        "id": "spider:train:005981",
+        "kind": "schema",
+        "schema_id": "c96ca43db30eb7949d390f19b5947ef42ef31c1fce307a9c64b824c5aa39f956"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:042819",
+        "id": "gretel:train:042819",
+        "kind": "schema",
+        "schema_id": "1257cba2c46f32a0f20fedd7810fa1af44dd6a97f0a84b4db5c85e6a917b6521"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:028840",
+        "id": "gretel:train:028840",
+        "kind": "schema",
+        "schema_id": "ff3040d539d05dae3fee3faac46dc69e93e107c9c926adac4c5ceda155cd77de"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:063227",
+        "id": "gretel:train:063227",
+        "kind": "schema",
+        "schema_id": "a971c6836e57a01cbb948c46d842a08dd95f4058faac530558b65eb130c68cdf"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:056536",
+        "id": "gretel:train:056536",
+        "kind": "schema",
+        "schema_id": "379e72925e3e3711e348ddb665a87181cf51d54b3965933c4cf4696f13831cc7"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:020862",
+        "id": "gretel:train:020862",
+        "kind": "schema",
+        "schema_id": "2a6ca654d086caaef2336c51780bd121f39153369b241f9b2799e21f3036878d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:067631",
+        "id": "gretel:train:067631",
+        "kind": "schema",
+        "schema_id": "a5c7b16407cc5d6bd944a5038cbbb5afa02c2cb9cc75c9112f7b07694cc56236"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006009",
+        "id": "spider:train:006009",
+        "kind": "schema",
+        "schema_id": "c96ca43db30eb7949d390f19b5947ef42ef31c1fce307a9c64b824c5aa39f956"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:051047",
+        "id": "gretel:train:051047",
+        "kind": "schema",
+        "schema_id": "77660d93819b33938f085d466e0369ae5d2cee62962235b89dd7e9058333005e"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006349",
+        "id": "spider:train:006349",
+        "kind": "schema",
+        "schema_id": "73160dd86421211f1f455783ed487577605e10ec59f5c5df10f846977cefcbdc"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:038264",
+        "id": "gretel:train:038264",
+        "kind": "schema",
+        "schema_id": "cd6fea0de8097eea9f8cb3dd7183c4e53e92b56c06a02d85427d58a2188c88f7"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:094159",
+        "id": "gretel:train:094159",
+        "kind": "schema",
+        "schema_id": "f2e4fb2a7585bfaae3b5b9dae9538c956c4d68547c8f1139d4f51783d358be5a"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:077359",
+        "id": "gretel:train:077359",
+        "kind": "schema",
+        "schema_id": "7e4011f5715b65524e2210ae32b26a538fb64fcdaae6347ade7cdab4b7f228fa"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:000653",
+        "id": "spider:train:000653",
+        "kind": "schema",
+        "schema_id": "5774251135bb3fbb4437bb315b39d9497e3c0fafee316719d95372c2d58e9486"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:093294",
+        "id": "gretel:train:093294",
+        "kind": "schema",
+        "schema_id": "c67d7db9941e7f8394ce9ff01448767d9834cfc387c43e7dbf836f8d60d6e35d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:093308",
+        "id": "gretel:train:093308",
+        "kind": "schema",
+        "schema_id": "a6a68deb71ca84519ff4ad4fcd1544e3c15ffd33ce5a33cd29ff6549aa6ff9e0"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:010104",
+        "id": "gretel:train:010104",
+        "kind": "schema",
+        "schema_id": "3d946b2ebf2f9373699fb5780255a154658b7f456c7485c3b2c5d922872353b9"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:094823",
+        "id": "gretel:train:094823",
+        "kind": "schema",
+        "schema_id": "bde458e4a4115999dbae82e6376c010c65040d08fb86ec7c5105b49f3c8e4aa7"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:056626",
+        "id": "gretel:train:056626",
+        "kind": "schema",
+        "schema_id": "bf347daa516d9e06e15c508f4804ae9cbaa8f202e0d563784d260889f9ac63ca"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:069651",
+        "id": "gretel:train:069651",
+        "kind": "schema",
+        "schema_id": "175b63c4e3dc6a822c6449d643f9c7922e83b3f8a238839195091f99be06fd58"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:091826",
+        "id": "gretel:train:091826",
+        "kind": "schema",
+        "schema_id": "b38a86f8621ab67deb3a1fbcc65f7abe6497ced552ce88cc3bfa6bd25eed11e5"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:060252",
+        "id": "gretel:train:060252",
+        "kind": "schema",
+        "schema_id": "126270e57803a20b8542edb8abfe4214068e8258fe38cbc4555cd6426820b453"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:008873",
+        "id": "gretel:train:008873",
+        "kind": "schema",
+        "schema_id": "74a39f06f51805d6d015ccaa43e1e9ed70cf9c9d046bd1d23381d1091feedd65"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:080596",
+        "id": "gretel:train:080596",
+        "kind": "schema",
+        "schema_id": "6677d6d6571d2287243a02c5b354e962bae8ce953b32c8a3b1d5fc720d746322"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:075968",
+        "id": "gretel:train:075968",
+        "kind": "schema",
+        "schema_id": "9456465b5ee19e4da6c791f2564d8a0cbf5c4f56b293b53d7bbc2a82c9941299"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:059656",
+        "id": "gretel:train:059656",
+        "kind": "schema",
+        "schema_id": "9ba0146469b4178695a42d5d4dc17436ceb7650d3b46ee53ed25298e73c6f5b5"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:030532",
+        "id": "gretel:train:030532",
+        "kind": "schema",
+        "schema_id": "699a5361aab4cb4bfe68c3a7d98156063bc5163a4942c1f7780c07305848021d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:032119",
+        "id": "gretel:train:032119",
+        "kind": "schema",
+        "schema_id": "3be45197a9f1fac52f53e77e3b8419314f5693be757d803d0a21d17037082d7a"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:055527",
+        "id": "gretel:train:055527",
+        "kind": "schema",
+        "schema_id": "1db1292e7054290007512a6456f78057194bf9d4dfcb579307f33ff00de7cd15"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:067095",
+        "id": "gretel:train:067095",
+        "kind": "schema",
+        "schema_id": "e94b4955c635d62e7bf78fe5fe31ae5eceada1437fb8862022492c5b7eff8cf2"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:078002",
+        "id": "gretel:train:078002",
+        "kind": "schema",
+        "schema_id": "0f270af613f6e25e62bb4c64072e8cd17f9f7cca9ec9766e076cd73afdc3b1db"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:081379",
+        "id": "gretel:train:081379",
+        "kind": "schema",
+        "schema_id": "49ceaed38b897509669fdb7ae68efe50b639ae28007d33b72a6b7a96a67b086b"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:034717",
+        "id": "gretel:train:034717",
+        "kind": "schema",
+        "schema_id": "b949677072f2e99aa29ce9b8865d2aee7eadb16c383e73fb3c8fbb090ee972bb"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:018716",
+        "id": "gretel:train:018716",
+        "kind": "schema",
+        "schema_id": "8aa455b55dac33e072cb485873a21c61d76b38056ca5ca780d5336acba9e39c1"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:063758",
+        "id": "gretel:train:063758",
+        "kind": "schema",
+        "schema_id": "42e9f09ff8c20c8a767dabe9b6582205484d8f4c0bd60047facd84df1188cf24"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:test:000353",
+        "id": "gretel:test:000353",
+        "kind": "schema",
+        "schema_id": "2ae3a221f9b17be155a0692c8e92b836c9d6ec47bc6d6248c0c68d965cccc32a"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:018818",
+        "id": "gretel:train:018818",
+        "kind": "schema",
+        "schema_id": "2f4a15e01435e8aacbd6e34021066f9e526c696e04f5afc72f25016d84648b84"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:092985",
+        "id": "gretel:train:092985",
+        "kind": "schema",
+        "schema_id": "2ed5c3b1335d920db04bf93c058c6fcef6d04a30ed43f0ad13e077438ff4ec29"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:065830",
+        "id": "gretel:train:065830",
+        "kind": "schema",
+        "schema_id": "d8c89d8e206b6ef78fc656c75bc9f383e3b1198a9ae49107966173518b34e629"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:075616",
+        "id": "gretel:train:075616",
+        "kind": "schema",
+        "schema_id": "26820e723efd222b371437fe12e8f568d0cb6d4f5c73b3b69896f6097298fc5a"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:013031",
+        "id": "gretel:train:013031",
+        "kind": "schema",
+        "schema_id": "3cd6d4b43c6e80b45aaa85ec7ce59162f764111cac51e474d13437313c21578d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:092451",
+        "id": "gretel:train:092451",
+        "kind": "schema",
+        "schema_id": "9f0e79aef0a78e7a082838f4e6a5b06459786da1362296286906d110b419e2a6"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:030747",
+        "id": "gretel:train:030747",
+        "kind": "schema",
+        "schema_id": "32050eb373df6f7ccfd98e4f95cdac81238c85287e8bde0d48f5bdf8725b9bec"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:071357",
+        "id": "gretel:train:071357",
+        "kind": "schema",
+        "schema_id": "626c4d4be36059d248bbb433ede37f3b8c4980cfd7583b5f250cd57a6c347678"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:test:000409",
+        "id": "gretel:test:000409",
+        "kind": "schema",
+        "schema_id": "b46095f70d5727cf526083649e287a3feb38da971efa8667efd114bc5d5ace80"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:033192",
+        "id": "gretel:train:033192",
+        "kind": "schema",
+        "schema_id": "f7e43335088becf7fc59e3dc3e861c86db6e0c94c023c49ce370d76de1e4af74"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:020818",
+        "id": "gretel:train:020818",
+        "kind": "schema",
+        "schema_id": "889d8ef8a8a80a30d183170b4b767d0c78133fa4d4f2695ebc2e4745a067896f"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:069726",
+        "id": "gretel:train:069726",
+        "kind": "schema",
+        "schema_id": "cf9c1b78df024fdadaaf569472d3f8436c475cd81b2aa4b863a0d484d36c4f2b"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:040686",
+        "id": "gretel:train:040686",
+        "kind": "schema",
+        "schema_id": "5b71dd1cc97f180ba5cfbc1068c8eee901d2549abe63ea0c975070284033c141"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:007898",
+        "id": "gretel:train:007898",
+        "kind": "schema",
+        "schema_id": "6bf6042780632b0b9f931c8c1efd5d252a204b9ee3cd4965b754df8c902aab1d"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:000666",
+        "id": "spider:train:000666",
+        "kind": "schema",
+        "schema_id": "5774251135bb3fbb4437bb315b39d9497e3c0fafee316719d95372c2d58e9486"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:005970",
+        "id": "spider:train:005970",
+        "kind": "schema",
+        "schema_id": "c96ca43db30eb7949d390f19b5947ef42ef31c1fce307a9c64b824c5aa39f956"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:test:002260",
+        "id": "gretel:test:002260",
+        "kind": "schema",
+        "schema_id": "eaba16f07f7bf48a9f707d4462ad565b809f83f1f44856ee15d7d713bcd388ee"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:090900",
+        "id": "gretel:train:090900",
+        "kind": "schema",
+        "schema_id": "90a38930e9881d3b363ca6c0452fc9e722dc5498fd7cbbf25d8bb5925daea6de"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:035491",
+        "id": "gretel:train:035491",
+        "kind": "schema",
+        "schema_id": "fba31e11496f40e7d2b043acaf3787eb3f0acbbd3c79b074f5c33ebf64810b9d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:086558",
+        "id": "gretel:train:086558",
+        "kind": "schema",
+        "schema_id": "f3397c4bbed8e9805f04e687f27c3b44e7079bb884a39a963e502ebe86f7eb11"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:011143",
+        "id": "gretel:train:011143",
+        "kind": "schema",
+        "schema_id": "802921dc728077ae00d7c6997f998413c8e91810fed2484b558ce743cc546281"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:091818",
+        "id": "gretel:train:091818",
+        "kind": "schema",
+        "schema_id": "3b855da3aa34e4a7776b2a63d1262f34b614fac0c4f7544e3799fb3551c20d69"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:091108",
+        "id": "gretel:train:091108",
+        "kind": "schema",
+        "schema_id": "e751b8c2a49739bf1d1fddd869697c108581259dc610f35268dce1b472cc81c7"
+      }
+    ],
+    "pilot": [
+      {
+        "family": "sql",
+        "group": "gretel:train:074090",
+        "id": "gretel:train:074090",
+        "kind": "schema",
+        "schema_id": "b33a3229f053cfdef6b9596a0fb12783643e899da07e0d4175a42f4d9b0c556d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:032448",
+        "id": "gretel:train:032448",
+        "kind": "schema",
+        "schema_id": "13ab6274d87ab2ce6cc3b5377b1d1bcc6244499d661fdeb69d6927bf5966618d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:053455",
+        "id": "gretel:train:053455",
+        "kind": "schema",
+        "schema_id": "f6ba1803127e1746b587356cb06ca8ae23c3b7d921f164b48764240a40779ad1"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:033011",
+        "id": "gretel:train:033011",
+        "kind": "schema",
+        "schema_id": "3be4cc95316135021d6239931662ee285348465d38c51ae3041859e4bfa120e5"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:004357",
+        "id": "gretel:train:004357",
+        "kind": "schema",
+        "schema_id": "0b48a683edc3b32316529e9c7af4d77973555dca707e0d5bee086efe1d463018"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:031271",
+        "id": "gretel:train:031271",
+        "kind": "schema",
+        "schema_id": "a4aab68db496013fe94a31b6da78ca6e21fb5f800e3c6f83c797c122748a1591"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006059",
+        "id": "spider:train:006059",
+        "kind": "schema",
+        "schema_id": "e60858dee8da254dfc0668a6c559ca2f74f2d71c69d76566839f50a8cd3b4431"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:095682",
+        "id": "gretel:train:095682",
+        "kind": "schema",
+        "schema_id": "67a8f1d7d171829264aaf5b4495f9a4e99ca12e942ec5dda903e3e6523c3b2a7"
+      }
+    ],
+    "score": [
+      {
+        "family": "sql",
+        "group": "gretel:train:057851",
+        "id": "gretel:train:057851",
+        "kind": "schema",
+        "schema_id": "2053ca9b610136386f8e8112f8bf2e0f845c03817d652e2422c038c591f632f5"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:071882",
+        "id": "gretel:train:071882",
+        "kind": "schema",
+        "schema_id": "5546d781a6ed061fc3abcea2c3edfc7ec3e5ac71f09b8f76223b44275bc01998"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:055063",
+        "id": "gretel:train:055063",
+        "kind": "schema",
+        "schema_id": "cb3a21acc04910576e026078e1b3250de1c575a71b2f3fd54564dff7b5a3bbe2"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:050882",
+        "id": "gretel:train:050882",
+        "kind": "schema",
+        "schema_id": "407d1db1f0eee478109ba8f838da134ed229a3e0be8a9bcf38a314f2deeea730"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:077914",
+        "id": "gretel:train:077914",
+        "kind": "schema",
+        "schema_id": "6b0a175255e2ecb52d04b45b8f291770a3f3367dc1aed23fa9f1f596c72d3daa"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:089722",
+        "id": "gretel:train:089722",
+        "kind": "schema",
+        "schema_id": "6e10130fe4cfab222986bdc51a049b30db0e6842d960fbc8e8b27571b2516687"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:086090",
+        "id": "gretel:train:086090",
+        "kind": "schema",
+        "schema_id": "efa4aee2e0ff301cd095b39049ee352d03f65dcf8750c9bdb9235e02e83a6615"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006869",
+        "id": "spider:train:006869",
+        "kind": "schema",
+        "schema_id": "f1214f7b140c12104f21d5da2a5de69e0cf98aa24056ff42683412e5e885c9ea"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:045603",
+        "id": "gretel:train:045603",
+        "kind": "schema",
+        "schema_id": "14028af00f5d65173b3afb3bceab7756cdc1dcdc338f33190741ea88328a07d2"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:072876",
+        "id": "gretel:train:072876",
+        "kind": "schema",
+        "schema_id": "b1f333974e6332f2b04f08ef907b7320e7fe28b93fd45ee7abb047bec8d8e345"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:test:002547",
+        "id": "gretel:test:002547",
+        "kind": "schema",
+        "schema_id": "35449df49002e9b82bc90282be15a00d13f01c459e72a984a7040b29b11733a0"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:059377",
+        "id": "gretel:train:059377",
+        "kind": "schema",
+        "schema_id": "7199601beb86bab287542c71ce808b186cdd5e2892dd78b9219a29ad1a380115"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:004715",
+        "id": "gretel:train:004715",
+        "kind": "schema",
+        "schema_id": "99128fd6e2112b703e71fbfcfbe9a33f5cccec3b2d0cc71d157d0f490fd1dd8d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:044316",
+        "id": "gretel:train:044316",
+        "kind": "schema",
+        "schema_id": "cd14eed118688bcbed9f207c5caa57c3f781e256bcd0b04dad7f6bd8cb033684"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:066333",
+        "id": "gretel:train:066333",
+        "kind": "schema",
+        "schema_id": "30e62613aa5ddb2ccf2eb77385973cbf4708e16add8dc386bc2d4e5ffa9ced80"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006849",
+        "id": "spider:train:006849",
+        "kind": "schema",
+        "schema_id": "f1214f7b140c12104f21d5da2a5de69e0cf98aa24056ff42683412e5e885c9ea"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:test:000333",
+        "id": "gretel:test:000333",
+        "kind": "schema",
+        "schema_id": "df7c88f79ac08659e9ddbec48ecdc6dea336eb84088e98f06e1fba649cbcd517"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:039124",
+        "id": "gretel:train:039124",
+        "kind": "schema",
+        "schema_id": "8063785c5efb4035e9e79aa7c8247c89e2ff62fc9f5da68078342b76199653ef"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:025664",
+        "id": "gretel:train:025664",
+        "kind": "schema",
+        "schema_id": "c20ebb0e297443eeb27385530adf8319ecf3f06b6bc106ffe255735b533840b2"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:093505",
+        "id": "gretel:train:093505",
+        "kind": "schema",
+        "schema_id": "d32f7b4e1fd3e17fa44587692383a0970b19c5e707cdc5477417f04edb6bbaa8"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:033482",
+        "id": "gretel:train:033482",
+        "kind": "schema",
+        "schema_id": "f2d7dd3b4466693bd6a31097ba166e9de6d468fd70c970da81e3ae99ef4366ef"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:062987",
+        "id": "gretel:train:062987",
+        "kind": "schema",
+        "schema_id": "d67612f85171a79685c8f77b60bc0c62e49404cbb8a9c6559adc7cc19d1e471b"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:044200",
+        "id": "gretel:train:044200",
+        "kind": "schema",
+        "schema_id": "478ebcede500d65834caf02b75857bcaa67c3f7330e7150fc23efddf0bc20f39"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:046047",
+        "id": "gretel:train:046047",
+        "kind": "schema",
+        "schema_id": "6e59d7d9c6a45e42fe5a4c1ec3101c650a9545bbca399822e71bdfa6c22d1a77"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:078274",
+        "id": "gretel:train:078274",
+        "kind": "schema",
+        "schema_id": "a9a46700ef1449c1ee626433781d538c630ddf6953765e859917526c2a7a628e"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:068631",
+        "id": "gretel:train:068631",
+        "kind": "schema",
+        "schema_id": "4ee845fdedc340d98b1a5a6f352e26c8c31380cab5e6e95991ebd085e6788822"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:075972",
+        "id": "gretel:train:075972",
+        "kind": "schema",
+        "schema_id": "99128fd6e2112b703e71fbfcfbe9a33f5cccec3b2d0cc71d157d0f490fd1dd8d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:025824",
+        "id": "gretel:train:025824",
+        "kind": "schema",
+        "schema_id": "26a1c602f254cb41ca8ac6f252624d0ea70d92cb0916fb0560e3a977d49c2e03"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:096025",
+        "id": "gretel:train:096025",
+        "kind": "schema",
+        "schema_id": "535a9e6551c52217ba972d0a77f8edc262cfee1347eb407a0acef7980f5cd16e"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006684",
+        "id": "spider:train:006684",
+        "kind": "schema",
+        "schema_id": "cf8e551fccd62431cd5be83345cd8f1667662cd8374bde499d5d677194571762"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:007032",
+        "id": "gretel:train:007032",
+        "kind": "schema",
+        "schema_id": "50d603cbe26105479a27716871eb32a21b486beb5a5ca0ea1d47a94d4c1c4f33"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:093571",
+        "id": "gretel:train:093571",
+        "kind": "schema",
+        "schema_id": "73343596b57aba7d075d23744358454a0451e212d7f7d6973131730d51af9fd1"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:008752",
+        "id": "gretel:train:008752",
+        "kind": "schema",
+        "schema_id": "f69ce2dbc2227833f017cb0524cd1cb7ba40a79c5f5cb6e3a36ade83b8742757"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:099779",
+        "id": "gretel:train:099779",
+        "kind": "schema",
+        "schema_id": "e071dbcd1a95a6b40d78faebddb016c86f812cd23e1145da4da13c695012d9ba"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:070330",
+        "id": "gretel:train:070330",
+        "kind": "schema",
+        "schema_id": "b000f54214a8bddcdfa31191bf6e11bae3c643f60f0c761d732497b279ce748e"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:064760",
+        "id": "gretel:train:064760",
+        "kind": "schema",
+        "schema_id": "ad6c3221a1fbc41017cafd8c562149bda7f66e9983249629c35c175a2802cb34"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:025813",
+        "id": "gretel:train:025813",
+        "kind": "schema",
+        "schema_id": "744b97d1392ae6ecb001cf518030a275e515023df2c9e926febe3141fc7ba097"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:095022",
+        "id": "gretel:train:095022",
+        "kind": "schema",
+        "schema_id": "653788eed742432cb3552090d4ad26b9c5d32793db132a94c25c4f00d1b3bbe6"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:082902",
+        "id": "gretel:train:082902",
+        "kind": "schema",
+        "schema_id": "9bbe230df23eb1a15a2c124a256c4c2b53946df3ca18486c5807bb0be079b189"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:046884",
+        "id": "gretel:train:046884",
+        "kind": "schema",
+        "schema_id": "33091743606f9c1e5a4774d0a14e99b7d0dffae2a0b865b7f63a06cf064fbcc8"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:023053",
+        "id": "gretel:train:023053",
+        "kind": "schema",
+        "schema_id": "363c2b6c8de6407add54885de34fa2f02a72d9dde2f0fe15dfa5c389ef67720a"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:003137",
+        "id": "spider:train:003137",
+        "kind": "schema",
+        "schema_id": "66d962ebb50d761f899502af57dddb3c3db54f2cabc1ae64a5af25a30451bd55"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:030098",
+        "id": "gretel:train:030098",
+        "kind": "schema",
+        "schema_id": "e6d43cc73c9f86b310b540d25687ef1c1ec7e85601d9f844d122c9a3c769fba5"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:059772",
+        "id": "gretel:train:059772",
+        "kind": "schema",
+        "schema_id": "e103ea749cf201f496ef86caf3a7bd438c70a25e6f8b41a7607b282becc98af3"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:025015",
+        "id": "gretel:train:025015",
+        "kind": "schema",
+        "schema_id": "c27c4688c9369e69e6800bbff87bfebfd00c681a20c6311e048017fcede151a3"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:003308",
+        "id": "spider:train:003308",
+        "kind": "schema",
+        "schema_id": "21f45c8f9738d0550c02fdc0ba1930de6d0c8993e48b9960cc9c73f1fe9795c7"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:077668",
+        "id": "gretel:train:077668",
+        "kind": "schema",
+        "schema_id": "06aec700f99272fd4c0e35af44ff23ccfec3d829a6bfc87bf7ce11852d030128"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:071124",
+        "id": "gretel:train:071124",
+        "kind": "schema",
+        "schema_id": "4bd32bec1b717f6fe71e8e001c41cdf3b722d1c6ca998644958224c60e9a41c1"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:034900",
+        "id": "gretel:train:034900",
+        "kind": "schema",
+        "schema_id": "8b983b997d45e95d98a007e02db0edf3d27bce69380ee088be1fc922b66f78a1"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:073369",
+        "id": "gretel:train:073369",
+        "kind": "schema",
+        "schema_id": "d95b6cde0a3486b84075268371ba5f20b1c8f1d4b2ac1bd09f8d142744035c32"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:058527",
+        "id": "gretel:train:058527",
+        "kind": "schema",
+        "schema_id": "abaa4b005ab7be9407d34e55e7161dd52b9e733bdebcc466c8392f02849d2a84"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:010420",
+        "id": "gretel:train:010420",
+        "kind": "schema",
+        "schema_id": "2a0297a3ce09eba90d76ca5bb71bdb6e6e5f20f695a427f860f68c184142194f"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:051865",
+        "id": "gretel:train:051865",
+        "kind": "schema",
+        "schema_id": "43a414abf8d52bfa3ec1dccdc07eb5f5f343b1cde95f0f4c2e28bc551672c658"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:057442",
+        "id": "gretel:train:057442",
+        "kind": "schema",
+        "schema_id": "7ad7170e4acf5454052f95ad5517f636888768ff0025fb37352bd778ed6d600f"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:070311",
+        "id": "gretel:train:070311",
+        "kind": "schema",
+        "schema_id": "5e364a4ad2ac478c949759b52dc139a12c21a11872be9a5d028ecd16a7c8f732"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:005838",
+        "id": "gretel:train:005838",
+        "kind": "schema",
+        "schema_id": "490cc5dc77ae3780ee2f14517937714d638e27ea903281bfdb90e62251886a1e"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:test:000000",
+        "id": "gretel:test:000000",
+        "kind": "schema",
+        "schema_id": "e66f97e6c67a28b5d776ff75a09dd47b134b705233c9831be57377b548722a12"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:000752",
+        "id": "gretel:train:000752",
+        "kind": "schema",
+        "schema_id": "524538ccb5e6aff58a7383901e7c5d57742f81596c20eb015f4369e0185fa7e4"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:023716",
+        "id": "gretel:train:023716",
+        "kind": "schema",
+        "schema_id": "838de304d5ef2367a1805ddc41c84aecf0cdae5a92dccb9cdf5ea8936f5b2d49"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:087407",
+        "id": "gretel:train:087407",
+        "kind": "schema",
+        "schema_id": "02199608954cd495c2f7bc9cc4248d29e0933e03df5d093aee0df5462c5c1918"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:028090",
+        "id": "gretel:train:028090",
+        "kind": "schema",
+        "schema_id": "73cec68f14c5dbfc9e71471002df082fb64efb851ff047be5d09f2c8b6606d71"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:080020",
+        "id": "gretel:train:080020",
+        "kind": "schema",
+        "schema_id": "b10ad0bb0bc10541ae7d5301d84eba7671f575ba9fc09dd1ec9284ff3d704892"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:095017",
+        "id": "gretel:train:095017",
+        "kind": "schema",
+        "schema_id": "29b6d6a01b7b3971302f831ea9922275e6c94df5afc9ebc7ac4823ac9f40161f"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:089026",
+        "id": "gretel:train:089026",
+        "kind": "schema",
+        "schema_id": "71d4be3b85acdfc6b6ac9258631bb746351e10f553d156cb2196b4dcaeb62082"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006503",
+        "id": "spider:train:006503",
+        "kind": "schema",
+        "schema_id": "0765d70f7eeb31e67dcdc36b71fc2b82925d0c37dd7ba7b67b700a068b3795ef"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:003127",
+        "id": "spider:train:003127",
+        "kind": "schema",
+        "schema_id": "66d962ebb50d761f899502af57dddb3c3db54f2cabc1ae64a5af25a30451bd55"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:036625",
+        "id": "gretel:train:036625",
+        "kind": "schema",
+        "schema_id": "2c3eef25f02f0e9daebb8d728659276ef96d65973f391f4543bb08aeacd2c0c9"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:003486",
+        "id": "gretel:train:003486",
+        "kind": "schema",
+        "schema_id": "11b210bf28009ad1600456e0eac406f8c231dc4fc7230d4790aa67c6db2ad2d2"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:064287",
+        "id": "gretel:train:064287",
+        "kind": "schema",
+        "schema_id": "0a4604f42b2f6da6b5475611152bcdbd1223c053103d03db1424c9ecf309fc72"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:005891",
+        "id": "spider:train:005891",
+        "kind": "schema",
+        "schema_id": "ddb42683d11a7acca6006e0c01efbc3606fc72c877bccc4580dab761f9c344c3"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:089452",
+        "id": "gretel:train:089452",
+        "kind": "schema",
+        "schema_id": "f1c6fa8ed1fb2852691256356ab313568f4f1a4c484afcc725b8378a4168b2fe"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:test:005611",
+        "id": "gretel:test:005611",
+        "kind": "schema",
+        "schema_id": "c2e8ccf4e6f8d292f01001c995f68c639108777aaba0cc8d382cdb19ecca6a96"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:002263",
+        "id": "spider:train:002263",
+        "kind": "schema",
+        "schema_id": "1745def3a4a644b5722cc2a3115c86f6fbb2048e2747c246a4610f6300c63fcf"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:023400",
+        "id": "gretel:train:023400",
+        "kind": "schema",
+        "schema_id": "370486fbc5bcc235beb7a1f349500f66478267057c805e8230a74edbf27d1740"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006516",
+        "id": "spider:train:006516",
+        "kind": "schema",
+        "schema_id": "0765d70f7eeb31e67dcdc36b71fc2b82925d0c37dd7ba7b67b700a068b3795ef"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:022199",
+        "id": "gretel:train:022199",
+        "kind": "schema",
+        "schema_id": "2ade43a4bde7f2623e56c0b52af0c8c861be729d7912924b03ffed7d709103b1"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:065563",
+        "id": "gretel:train:065563",
+        "kind": "schema",
+        "schema_id": "13d234b9c6c18299f8199d7048853fd9f4504b3c182cc932624009f58b4d85fe"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:002092",
+        "id": "gretel:train:002092",
+        "kind": "schema",
+        "schema_id": "ed981f0e02e222f10d9e3c3e79cabed94dac6cda1f0012848bfe4f475c1aabbc"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:071515",
+        "id": "gretel:train:071515",
+        "kind": "schema",
+        "schema_id": "30a1ea6ae8efb2e44fe0bef2f1d2ce4679ae32a3298b8ed99c33d6af3e53f437"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:033924",
+        "id": "gretel:train:033924",
+        "kind": "schema",
+        "schema_id": "4ae828ac9991f0bbd0ee97dcec5054fc96a9a309096038ef4974feef63978ffd"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:099224",
+        "id": "gretel:train:099224",
+        "kind": "schema",
+        "schema_id": "dd2672cff63abb7e637f6c202e2445c35b2a273bd86455dbbad4376dc60c9607"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:002934",
+        "id": "gretel:train:002934",
+        "kind": "schema",
+        "schema_id": "3065decb076147b7c64882872c08d9aebc717aca8f24dfd7d1a8e870e1cfc562"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:058259",
+        "id": "gretel:train:058259",
+        "kind": "schema",
+        "schema_id": "e757030962bacde8dd8aad6b189ecdd72a3ad388d82170bcfd708695198256d2"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:005995",
+        "id": "gretel:train:005995",
+        "kind": "schema",
+        "schema_id": "1af10c1040f0f6c80f48ac9f9e8c5b25e48d0f5c68df78fe1c07696e84b71034"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006662",
+        "id": "spider:train:006662",
+        "kind": "schema",
+        "schema_id": "cf8e551fccd62431cd5be83345cd8f1667662cd8374bde499d5d677194571762"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:029589",
+        "id": "gretel:train:029589",
+        "kind": "schema",
+        "schema_id": "af1c5ead134327382b38f00728e074aa38cffdc4564932626343d2b3f965052a"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:075753",
+        "id": "gretel:train:075753",
+        "kind": "schema",
+        "schema_id": "4a8ce45af73f30d420440cf935fd9d4f957c5e917b43607e9a1d18e65695aa42"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006658",
+        "id": "spider:train:006658",
+        "kind": "schema",
+        "schema_id": "cf8e551fccd62431cd5be83345cd8f1667662cd8374bde499d5d677194571762"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:029312",
+        "id": "gretel:train:029312",
+        "kind": "schema",
+        "schema_id": "e65e80de1df3f6e4928b29b7716a2622da6875df4836594673be1bb3c59c97e6"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:068599",
+        "id": "gretel:train:068599",
+        "kind": "schema",
+        "schema_id": "0213bc58f870a816b300342c17baf5a6dbbdebbc1b7cebee263fabfb25536c05"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:091350",
+        "id": "gretel:train:091350",
+        "kind": "schema",
+        "schema_id": "121144d35a5cf9b3a00ec5ed6424687288742792fbf37ce0bed428fd646f6563"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:013513",
+        "id": "gretel:train:013513",
+        "kind": "schema",
+        "schema_id": "4bd69301285c98a8c0e3510c6059d1d5e8c0829a09ddd9f43ae040b768e17777"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:026548",
+        "id": "gretel:train:026548",
+        "kind": "schema",
+        "schema_id": "2228363c2ad59f6873b2d2773a5a753fa18b8043205d57baa53fe806d0a9bc92"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:003221",
+        "id": "spider:train:003221",
+        "kind": "schema",
+        "schema_id": "21f45c8f9738d0550c02fdc0ba1930de6d0c8993e48b9960cc9c73f1fe9795c7"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:058645",
+        "id": "gretel:train:058645",
+        "kind": "schema",
+        "schema_id": "5bf2bf7c481624141332d7c3800b46daa9f3dea2b76088ab54976316156ed68d"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:078474",
+        "id": "gretel:train:078474",
+        "kind": "schema",
+        "schema_id": "4b00de84f4fee8d87aa24219f5cb4125f30ce06e954e2283be2bfc32e4cd5ef1"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:032885",
+        "id": "gretel:train:032885",
+        "kind": "schema",
+        "schema_id": "eb2116643822ae8c154bb86bdfacb879b7355fe2dbb061c94224bc7cdc889058"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:044819",
+        "id": "gretel:train:044819",
+        "kind": "schema",
+        "schema_id": "fbf11c30c1752a87de9bb4bd22ab6c810bf80277d824e66cb6057a6325f82cdb"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:005904",
+        "id": "spider:train:005904",
+        "kind": "schema",
+        "schema_id": "ddb42683d11a7acca6006e0c01efbc3606fc72c877bccc4580dab761f9c344c3"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:005893",
+        "id": "spider:train:005893",
+        "kind": "schema",
+        "schema_id": "ddb42683d11a7acca6006e0c01efbc3606fc72c877bccc4580dab761f9c344c3"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:019093",
+        "id": "gretel:train:019093",
+        "kind": "schema",
+        "schema_id": "2e449d92b11bf84084c52ac7fa6ff42e359ed382a1873de6d22019722a1d2ee5"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:036018",
+        "id": "gretel:train:036018",
+        "kind": "schema",
+        "schema_id": "18da28fa4fc68910140a7614564e3e2451e84796ace22d843c0d0bc25595937e"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:042825",
+        "id": "gretel:train:042825",
+        "kind": "schema",
+        "schema_id": "1fddf274ed23d386336ee6dcda28afd64b53ba8eaeac99271e29147613e37f10"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:012610",
+        "id": "gretel:train:012610",
+        "kind": "schema",
+        "schema_id": "2a1fc26c8bbe8c35d507e89020d81a5c39088b173f1243d09ba9b1fd57aa7096"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:031603",
+        "id": "gretel:train:031603",
+        "kind": "schema",
+        "schema_id": "af0294d336d3b7e14ce62a928ac9ccd93634d888f179b9c481b01c10a74a71e6"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:088980",
+        "id": "gretel:train:088980",
+        "kind": "schema",
+        "schema_id": "8e44bf90d897c0cfdf93ccd8a7a4c772fc940e100682a7a358fa8749f74f3c62"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:083874",
+        "id": "gretel:train:083874",
+        "kind": "schema",
+        "schema_id": "064bc18b0706d030e9120e89bca58e3f95786c250f362478e5a49f9e6f2ba6fa"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:051947",
+        "id": "gretel:train:051947",
+        "kind": "schema",
+        "schema_id": "5bd30e62e68d9247a85a34ee3996aea5e8164820ce8c56f2e2463151baef217c"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:082728",
+        "id": "gretel:train:082728",
+        "kind": "schema",
+        "schema_id": "e95f40b393365ea12b88596a7ff8dbe540bf077ed6b746ab5aab862bebc61c7e"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:test:002800",
+        "id": "gretel:test:002800",
+        "kind": "schema",
+        "schema_id": "3156425a84aa4ee3a70b036b14e828613a990cbd1119cb1f84c177654d60f376"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:042491",
+        "id": "gretel:train:042491",
+        "kind": "schema",
+        "schema_id": "06eb3d60a30d52312d57a3e34cd878c50b174fa059dc122dc2b1650593505770"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:021075",
+        "id": "gretel:train:021075",
+        "kind": "schema",
+        "schema_id": "80e6d28443b31140b1214b9ee6560cff1a22e2d68989238b0f6be564ee0b7e98"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:062867",
+        "id": "gretel:train:062867",
+        "kind": "schema",
+        "schema_id": "37bf3789b06d21022badd93f78c4a9d74de3a31fcb179db49023d01f1b4b899b"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:003197",
+        "id": "spider:train:003197",
+        "kind": "schema",
+        "schema_id": "21f45c8f9738d0550c02fdc0ba1930de6d0c8993e48b9960cc9c73f1fe9795c7"
+      },
+      {
+        "family": "sql",
+        "group": "spider:train:006640",
+        "id": "spider:train:006640",
+        "kind": "schema",
+        "schema_id": "cf8e551fccd62431cd5be83345cd8f1667662cd8374bde499d5d677194571762"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:083759",
+        "id": "gretel:train:083759",
+        "kind": "schema",
+        "schema_id": "5a1c4342b966e833a5b56f49a084837b83908e2db3451e252ea5c1c4381d46f0"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:067416",
+        "id": "gretel:train:067416",
+        "kind": "schema",
+        "schema_id": "c25b4735280b7b6d05fb3c7b3691499ef5afe744e77f8ed8beba240eb4a424fc"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:026544",
+        "id": "gretel:train:026544",
+        "kind": "schema",
+        "schema_id": "72e795945c2c472e758f3998515ce43a2e99ab6f95aff7fa7f75a71b9f96c54a"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:085367",
+        "id": "gretel:train:085367",
+        "kind": "schema",
+        "schema_id": "c6c558080b3fc6c985fd2efc4bb47a249c2141e26b95e648ee1f72ca77ee973e"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:015384",
+        "id": "gretel:train:015384",
+        "kind": "schema",
+        "schema_id": "a09b578cc3cbdb3cd58c83efe1714d47b91a759ffd552a719f5da142c45aac2b"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:009637",
+        "id": "gretel:train:009637",
+        "kind": "schema",
+        "schema_id": "9e044154ef5d54ecadb996043d7823256a2556f4822e23cb2ef391c3f65cbe11"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:013632",
+        "id": "gretel:train:013632",
+        "kind": "schema",
+        "schema_id": "0981faaa51255bd30dfeb1bf975c203d81101b8aa0941731efaffe126c0f535e"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:004978",
+        "id": "gretel:train:004978",
+        "kind": "schema",
+        "schema_id": "5390d8bcfa35b682bc367786b37d6055dc799e5df2122deb54b079e3b7f960d4"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:000068",
+        "id": "gretel:train:000068",
+        "kind": "schema",
+        "schema_id": "4cfad3d05cf43f7d7a748cfa827b9ab349aee5efd0d1d24b0fdb5ad8abfc83f7"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:074181",
+        "id": "gretel:train:074181",
+        "kind": "schema",
+        "schema_id": "85c5d3b8aa758102853dad2edef57403bb899579517247fc72ff2393376027c8"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:010999",
+        "id": "gretel:train:010999",
+        "kind": "schema",
+        "schema_id": "0bc5a6f0b3bf21c5b47127d667ed20d7057e71eeb2b6712b3b0b1a31706d9f1e"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:070098",
+        "id": "gretel:train:070098",
+        "kind": "schema",
+        "schema_id": "d962a7da710e0fa385197c0954e49770b2652736c2b9852060a7b692290263a4"
+      },
+      {
+        "family": "sql",
+        "group": "gretel:train:031509",
+        "id": "gretel:train:031509",
+        "kind": "schema",
+        "schema_id": "bf048ee77909f1a738ee382aa34d1b2b96267d83234f56fe7f8da8777ced7237"
+      }
+    ]
+  }
+}
