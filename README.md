@@ -1,7 +1,7 @@
 # Remove or Reset?
 
-Companion code for **Remove or Reset? A Case Study of Channel Selection Before
-LoRA Fine-Tuning**.
+Companion code for [**Remove or Reset? A Case Study of Channel Selection Before
+LoRA Fine-Tuning** (PDF)](paper/paper.pdf).
 
 ## What does the paper study?
 
@@ -25,6 +25,35 @@ no channel changes, plus removal and reset under four selection methods:
 random, Taylor (gradient-based importance), uniform guided (the same number of
 channels selected in every layer), and quota-free guided (the same total
 number selected, but distributed unevenly across layers).
+
+## Results and conclusion
+
+Removing 20% of the MLP channels with quota-free guided selection reduced the
+native text-model parameter count by **13.78%** and peak allocated memory
+during training by **10.5–10.8%** relative to ordinary LoRA. Across three
+matched training seeds, SQL execution agreement averaged **72.40% for removal
+versus 74.48% for ordinary LoRA**. All runs used the same 128 SQL queries and
+120 cross-domain short-answer prompts.
+
+| Training seed | SQL correct: ordinary LoRA | SQL correct: removal | Broad Pass: ordinary LoRA | Broad Pass: removal |
+|---|---:|---:|---:|---:|
+| 42 | 93/128 | 98/128 | 64/120 | 55/120 |
+| 43 | 98/128 | 90/128 | 65/120 | 51/120 |
+| 44 | 95/128 | 90/128 | 65/120 | 55/120 |
+
+At seed 42, quota-free removal scored above random (88/128), Taylor (90/128),
+and uniform guided removal (93/128) on SQL. Its advantage over uniform guided
+removal was 3.91 percentage points, but the paired 95% interval included zero
+(−2.59 to +10.29). Resetting the same quota-free channels instead of removing
+them gave a different trade-off: lower SQL agreement (91 vs. 98 correct) but
+more broad-screen passes (62 vs. 55), while retaining full model width.
+
+**Conclusion:** Quota-free guided removal produced a smaller SQL specialist
+with repeatable training-memory savings. Its initial SQL lead reversed in
+both follow-up seeds, and it passed fewer broad-screen prompts at every seed.
+The study does not establish lossless compression or a universally better
+selector: only the ordinary-LoRA/removal pair was repeated, on one model and
+one specialization task.
 
 ## What does this repository contain?
 
